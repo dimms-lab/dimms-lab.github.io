@@ -24,7 +24,7 @@ repository               : "dimms-lab/dimms-lab.github.io"
 
 author:
   name             : "DIMMS Lab"
-  avatar           : "/images/dimms-logo.svg"
+  avatar           : "https://dimmslab.org/images/dimms-logo.svg"
   bio              : "Disease-Informed Modelling, Methods, and Systems Laboratory at York University"
   location         : "Toronto, ON, Canada"
   employer         : "York University"
