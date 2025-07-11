@@ -25,7 +25,9 @@ Our lab specializes in analyzing disease processes across multiple timescales—
 ## Immunity System Modeling
 
 We develop sophisticated models of immune response dynamics to understand how pathogens interact with host immunity. Our research encompasses antibody responses, T-cell dynamics, and cytokine signaling networks that drive infectious disease outcomes.
-
+<div style="margin: 40px 0; text-align: center;">
+  <img src="/images/immunity-modeling.png" alt="Immunity System Modeling" style="width: 100%; max-width: 700px; height: auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px;">
+</div>
 **Research highlights:**
 - Modeling dengue virus interactions with the immune system (Tue Dao's research)
 - Investigating vaccine efficacy through mathematical models
