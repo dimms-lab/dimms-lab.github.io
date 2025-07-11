@@ -1,0 +1,111 @@
+// DIMMS Lab - Compatible Professional Styles
+
+// Color scheme
+$york-red: #8B0000;
+$accent-blue: #3498db;
+$dark-gray: #2c3e50;
+$light-gray: #f8f9fa;
+
+// Basic typography - less aggressive overrides
+h1 {
+  color: $york-red;
+  border-bottom: 3px solid $accent-blue;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: $york-red;
+  margin-top: 30px;
+}
+
+h3 {
+  color: $accent-blue;
+}
+
+// Navigation - simpler approach
+.masthead {
+  background-color: $york-red;
+}
+
+.greedy-nav a {
+  color: white;
+}
+
+.greedy-nav a:hover {
+  color: $accent-blue;
+}
+
+// Ensure mobile menu button is visible
+.greedy-nav .nav-toggle {
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 8px;
+}
+
+.greedy-nav .nav-toggle:hover {
+  color: $york-red;
+  background-color: white;
+}
+
+// Dropdown menu for mobile
+.greedy-nav .nav-dropdown {
+  background-color: white;
+  border: 1px solid $york-red;
+}
+
+.greedy-nav .nav-dropdown a {
+  color: $dark-gray;
+  padding: 10px 15px;
+}
+
+.greedy-nav .nav-dropdown a:hover {
+  color: white;
+  background-color: $york-red;
+}
+
+// Content styling
+.content-card {
+  background-color: $light-gray;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  border-left: 4px solid $accent-blue;
+}
+
+.highlight-box {
+  background-color: $accent-blue;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.highlight-box h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+// Links
+a {
+  color: $accent-blue;
+}
+
+a:hover {
+  color: $york-red;
+}
+
+// Sidebar
+.sidebar .author__name {
+  color: $york-red;
+}
+
+.sidebar .author__urls a {
+  color: $accent-blue;
+}
+
+.sidebar .author__urls a:hover {
+  color: $york-red;
+}
