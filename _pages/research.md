@@ -14,7 +14,9 @@ The Disease-Informed Modelling, Methods, and Systems (DIMMS) Lab employs a multi
 ## Multi-timescale Analysis
 
 Our lab specializes in analyzing disease processes across multiple timescales—from rapid molecular interactions to long-term population dynamics. This integrated approach allows us to understand how phenomena at different temporal scales influence overall disease patterns and outcomes.
-
+<div style="margin: 40px 0; text-align: center;">
+  <img src="/images/multi-timescale-analysis.png" alt="Multi-timescale Analysis" style="width: 100%; max-width: 700px; height: auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px;">
+</div>
 **Current projects include:**
 - Modeling the relationship between short-term immune response and long-term disease progression
 - Developing mathematical frameworks that bridge molecular, cellular, individual, and population-level dynamics
