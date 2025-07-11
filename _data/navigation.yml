@@ -1,11 +1,12 @@
+# main links
 main:
-  - title: "Publications"
-    url: /publications/
   - title: "Research"
     url: /research/
+  - title: "Publications"
+    url: /publications/
   - title: "Team"
     url: /team/
-  - title: "News" 
+  - title: "News"
     url: /news/
   - title: "Contact"
     url: /contact/
