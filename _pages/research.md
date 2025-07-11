@@ -75,3 +75,4 @@ Our research benefits from international collaborations and interdisciplinary pa
 - **Interdisciplinary Approach**: Integration of mathematics, biology, computer science, and public health
 - **Industry Partnerships**: Working with health organizations on real-world applications
 - **Academic Collaborations**: Partnerships with institutions worldwide for comprehensive research projects
+
