@@ -1,14 +1,12 @@
 ---
 permalink: /
-title: "DIMMS Lab"
+title: "Disease-Informed Modelling, Methods, and Systems (DIMMS) Lab"
 excerpt: "Disease-Informed Modelling, Methods, and Systems Laboratory"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-
-# Disease-Informed Modelling, Methods, and Systems (DIMMS) Lab
 
 The DIMMS Lab at York University encompasses a broad scope of research, including mathematical biology, statistics, machine learning, spatial analysis, disease and immunity modelling, and multi-timescale analysis. Our research integrates diverse methodological approaches to address complex challenges in understanding disease dynamics and developing effective intervention strategies through innovative mathematical and computational frameworks.
 
