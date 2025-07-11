@@ -21,16 +21,43 @@ repository               : "dimms-lab/dimms-lab.github.io"
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
+
 author:
-  # Biographic information
-  # avatar           : "profile.png"
-  name             : "Woldgebriel Assefa Woldgerima"
-  pronouns         : # example: "she/her"  
-  bio              : "Director of the DIMMS Lab at York University."
+  name             : "DIMMS Lab"
+  avatar           : "/images/dimms-logo.svg"
+  bio              : "Disease-Informed Modelling, Methods, and Systems Laboratory at York University"
   location         : "Toronto, ON, Canada"
   employer         : "York University"
-  #url              : "https://dimms-lab.github.io"
-  email            : "wassefaw@yorku.ca" 
+  pubmed           : 
+  googlescholar    : "https://scholar.google.ca/citations?user=QjS_7EgAAAAJ&hl=en&oi=sra"
+  email            : "wassefaw@yorku.ca"
+  uri              : "https://www.yorku.ca/professor/waw/disease-informed-modelling-methods-and-systems-dimms-lab/"
+  researchgate     :
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  flickr           :
+  facebook         :
+  foursquare       :
+  github           :
+  google_plus      :
+  keybase          :
+  instagram        :
+  impactstory      :
+  lastfm           :
+  linkedin         :
+  orcid            : 
+  pinterest        :
+  soundcloud       :
+  stackoverflow    : 
+  steam            :
+  tumblr           :
+  twitter          :
+  vine             :
+  weibo            :
+  xing             :
+  youtube          :
+  wikipedia        :
 
   # Academic websites
   academia         : # URL
