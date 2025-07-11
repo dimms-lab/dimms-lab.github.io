@@ -1,1 +1,12 @@
+.author__avatar img {
+  max-width: 120px !important;
+  width: 120px !important;
+  height: auto !important;
+  border-radius: 0 !important;
+}
 
+.author__avatar {
+  display: table-cell;
+  vertical-align: top;
+  width: 120px;
+}
