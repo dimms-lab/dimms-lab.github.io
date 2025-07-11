@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "People"
-permalink: /people/
+title: "Team"
+permalink: /team/
 author_profile: true
 ---
 
@@ -10,7 +10,7 @@ author_profile: true
 ## Faculty
 
 <div style="margin: 40px 0; border-bottom: 1px solid #eee; padding-bottom: 30px;">
-  <img src="/images/assefa.jpeg" alt="Prof. Woldegerima" style="width: 200px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="/images/assefa.jpg" alt="Prof. Woldegerima" style="width: 200px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   
   <h3>Woldegeriel Assefa Woldegerima</h3>
   <p><strong>Director of the DIMMS Lab</strong><br>
