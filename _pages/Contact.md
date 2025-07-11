@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /contact/
-author_profile: true
+author_profile: false
 ---
 <p style="line-height: 1.6;">
 Department of Mathematics and Statistics,<br>
