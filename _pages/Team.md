@@ -4,10 +4,7 @@ title: "Team"
 permalink: /team/
 author_profile: true
 ---
-
-# Team
-
-## Faculty
+## Lab Director
 
 <div style="margin: 40px 0; border-bottom: 1px solid #eee; padding-bottom: 30px;">
   <img src="/images/assefa.jpg" alt="Prof. Woldegerima" style="width: 200px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
@@ -76,7 +73,7 @@ author_profile: true
 
 <div style="margin: 40px 0; border-bottom: 1px solid #eee; padding-bottom: 30px;">
   <h3>Atiqa Naeem Alam Din</h3>
-  <p><strong>PhD Candidate in Applied Mathematics, Research Assistant and Teaching Assistant</strong></p>
+  <p><strong>PhD Student in Applied Mathematics, Research Assistant and Teaching Assistant</strong></p>
   
   <p>Atiqa earned her Master of Science degree in Mathematics from the University of Bahrain (2019) and Bachelor of Science degree in Mathematics with a minor in physics from the University of Bahrain (2015).</p>
   
@@ -91,7 +88,7 @@ author_profile: true
   <img src="/images/Tue.jpeg" alt="Tue Dao" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   
   <h3>Tue Dao</h3>
-  <p><strong>Master's Student</strong></p>
+  <p><strong>MA Student</strong></p>
   
   <p>Tue is a Master's student researching how the immune system interacts with the dengue virus using mathematical models to better understand disease dynamics. Her research interests focus on mathematical modelling of infectious diseases and immune response.</p>
 </div>
@@ -100,7 +97,7 @@ author_profile: true
   <img src="/images/joe.jpeg" alt="Joe Tran" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   
   <h3>Joe Tran</h3>
-  <p><strong>Master's Student in Pure Mathematics, transitioning to PhD program</strong></p>
+  <p><strong>MA Student in Pure Mathematics, transitioning to PhD program</strong></p>
   
   <p>Joe is a graduate student pursuing a Master of Arts in Pure Mathematics at York University. With a strong passion for abstract reasoning and theoretical problem-solving, he has immersed himself in advanced mathematical studies throughout his academic journey.</p>
   
@@ -137,9 +134,7 @@ author_profile: true
   
   <p>Khue is currently working on a project that focuses on modeling the interaction between parasite evasion and the immune system using ordinary differential equations (ODEs) and partial differential equations (PDEs). This project represents the intersection of his passion for solving complex differential equations and applying them to real-world biological problems. He is deeply committed to understanding the dynamics of biological systems through mathematical modeling and is eager to further pursue this interest in advanced studies. With this in mind, he plans to continue in a Master's and PhD program, where he can deepen his knowledge and make meaningful contributions to the field of applied mathematics.</p>
 </div>
-
 <div style="clear: both;"></div>
-
 ## International Collaborations
 
 Our lab benefits from extensive international partnerships, with team members bringing diverse global perspectives:
