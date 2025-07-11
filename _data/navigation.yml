@@ -1,56 +1,11 @@
-# The following is the order of the links in the header of the website.
-#
-# Changing the order here will adjust the order and you can also add additional
-# links. Removing a link prevents it from showing in the header, but does not
-# prevent it from being included in the site.
-#
-# NOTE that only one of the CV options should be selected, the first is for the
-#      Markdown formatted page while the second is generated using JSON.
-
-  # main links
 main:
   - title: "Publications"
     url: /publications/
   - title: "Research"
-    url: /portfolio/    # We will rename this to "Research" on the site
+    url: /research/
   - title: "People"
-    url: /collection-archive/ # We will set this up later
-  - title: "News"
-    url: /year-archive/
-  # - title: "Talks"
-  #   url: /talks/
-  # - title: "Teaching"
-  #   url: /teaching/
-  # - title: "Portfolio"
-  #   url: /portfolio/
-  # - title: "Blog Posts"
-  #   url: /year-archive/
-  # - title: "CV"
-  #   url: /cv/
-  # - title: "Guide"
-  #   url: /guide/
-
-# author links
-author:
-  - label: "Email"
-    icon: "fas fa-fw fa-envelope-square"
-    url: "mailto:wassefaw@yorku.ca"
-  - label: "Google Scholar"
-    icon: "ai ai-fw ai-google-scholar-square"
-    url: "https://scholar.google.ca/citations?user=QjS_7EgAAAAJ"
-  # - label: "ORCID"
-  #   icon: "ai ai-fw ai-orcid-square"
-  #   url: "https://orcid.org"
-  # - label: "PubMed"
-  #   icon: "ai ai-fw ai-pubmed-square"
-  #   url: "https://www.ncbi.nlm.nih.gov/pubmed"
-  # - label: "GitHub"
-  #   icon: "fab fa-fw fa-github-square"
-  #   url: "https://github.com"
-  # - label: "Bluesky"
-  #   icon: "fab fa-fw fa-bluesky"
-  #   url: "https://bsky.app"
-  #   url: /cv-json/
-    
-  - title: "Guide"
-    url: /markdown/
+    url: /people/
+  - title: "News" 
+    url: /news/
+  - title: "Contact"
+    url: /contact/
