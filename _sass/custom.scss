@@ -216,11 +216,30 @@ h1 {
 }
 
 .greedy-nav a {
-  color: white;
+  color: white !important;
+  text-decoration: none;
 }
 
 .greedy-nav a:hover {
-  color: $accent-blue;
+  color: $accent-blue !important;
+}
+
+// Fix for navigation links visibility
+.greedy-nav .visible-links a {
+  color: white !important;
+}
+
+.greedy-nav .visible-links a:hover {
+  color: $accent-blue !important;
+}
+
+// Ensure site title is always visible
+.site-title {
+  color: white !important;
+}
+
+.site-title:hover {
+  color: $accent-blue !important;
 }
 
 // Footer styling
