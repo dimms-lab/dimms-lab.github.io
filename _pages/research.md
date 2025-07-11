@@ -8,7 +8,9 @@ author_profile: true
 # Our Research Approach
 
 The Disease-Informed Modelling, Methods, and Systems (DIMMS) Lab employs a multidisciplinary approach to understand disease dynamics through advanced mathematical modeling, statistical analysis, and machine learning techniques.
-
+<div style="text-align: center; margin: 40px 0;">
+  <img src="/images/dimms-overview.png" alt="DIMMS Research Overview" style="width: 100%; max-width: 700px; height: auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px;">
+</div>
 ## Multi-timescale Analysis
 
 Our lab specializes in analyzing disease processes across multiple timescales—from rapid molecular interactions to long-term population dynamics. This integrated approach allows us to understand how phenomena at different temporal scales influence overall disease patterns and outcomes.
