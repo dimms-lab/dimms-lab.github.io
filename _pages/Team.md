@@ -7,7 +7,7 @@ author_profile: true
 ## Lab Director
 
 <div style="margin: 40px 0; border-bottom: 1px solid #eee; padding-bottom: 30px;">
-  <img src="/images/assefa.jpg" alt="Prof. Woldegerima" style="width: 200px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="/images/assefa.jpeg" alt="Prof. Woldegerima" style="width: 200px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   
   <h3>Woldegeriel Assefa Woldegerima</h3>
   <p><strong>Director of the DIMMS Lab</strong><br>
@@ -24,7 +24,7 @@ author_profile: true
 ## Postdoctoral Researchers
 
 <div style="margin: 40px 0; border-bottom: 1px solid #eee; padding-bottom: 30px;">
-  <img src="/images/qi.jpeg" alt="Dr. Qi Deng" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="/images/qi.jpg" alt="Dr. Qi Deng" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   
   <h3>Dr. Qi Deng</h3>
   <p><strong>Postdoctoral Researcher</strong></p>
@@ -35,7 +35,7 @@ author_profile: true
 </div>
 
 <div style="margin: 40px 0; border-bottom: 1px solid #eee; padding-bottom: 30px;">
-  <img src="/images/andrew.jpeg" alt="Dr. Andrew Omame" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="/images/andrew.jpg" alt="Dr. Andrew Omame" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   
   <h3>Dr. Andrew Omame</h3>
   <p><strong>Postdoctoral Research Fellow</strong></p>
@@ -61,7 +61,7 @@ author_profile: true
 ## Doctoral Students
 
 <div style="margin: 40px 0; border-bottom: 1px solid #eee; padding-bottom: 30px;">
-  <img src="/images/Farah's photo.jpeg" alt="Farah Al Hashimi" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="/images/Farah's photo.jpg" alt="Farah Al Hashimi" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   
   <h3>Farah Al Hashimi</h3>
   <p><strong>PhD Candidate in Applied Mathematics</strong></p>
@@ -85,7 +85,7 @@ author_profile: true
 ## Master's Students
 
 <div style="margin: 40px 0; border-bottom: 1px solid #eee; padding-bottom: 30px;">
-  <img src="/images/Tue.jpeg" alt="Tue Dao" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="/images/Tue.jpg" alt="Tue Dao" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   
   <h3>Tue Dao</h3>
   <p><strong>MA Student</strong></p>
@@ -94,7 +94,7 @@ author_profile: true
 </div>
 
 <div style="margin: 40px 0; border-bottom: 1px solid #eee; padding-bottom: 30px;">
-  <img src="/images/joe.jpeg" alt="Joe Tran" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="/images/joe.jpg" alt="Joe Tran" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   
   <h3>Joe Tran</h3>
   <p><strong>MA Student in Pure Mathematics, transitioning to PhD program</strong></p>
@@ -109,7 +109,7 @@ author_profile: true
 ## Undergraduate Students
 
 <div style="margin: 40px 0; border-bottom: 1px solid #eee; padding-bottom: 30px;">
-  <img src="/images/manav.jpeg" alt="Manav Pundir" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="/images/manav.jpg" alt="Manav Pundir" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   
   <h3>Manav Pundir</h3>
   <p><strong>Third-year Psychology undergraduate student</strong></p>
@@ -118,7 +118,7 @@ author_profile: true
 </div>
 
 <div style="margin: 40px 0; border-bottom: 1px solid #eee; padding-bottom: 30px;">
-  <img src="/images/Chuchu.jpeg" alt="Chu Chu" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="/images/Chuchu.jpg" alt="Chu Chu" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   
   <h3>Chu Chu</h3>
   <p><strong>Fourth-year Pure Mathematics undergraduate student</strong></p>
@@ -127,7 +127,7 @@ author_profile: true
 </div>
 
 <div style="margin: 40px 0; border-bottom: 1px solid #eee; padding-bottom: 30px;">
-  <img src="/images/khue.jpeg" alt="Khue Bui" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="/images/khue.jpg" alt="Khue Bui" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   
   <h3>Duc Anh Khue Bui (Andrew Jr)</h3>
   <p><strong>Undergraduate Researcher</strong></p>
