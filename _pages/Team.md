@@ -61,7 +61,7 @@ author_profile: true
 ## Doctoral Students
 
 <div style="margin: 40px 0; border-bottom: 1px solid #eee; padding-bottom: 30px;">
-  <img src="/images/Farah's photo.jpg" alt="Farah Al Hashimi" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="/images/Farah.jpg" alt="Farah Al Hashimi" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   
   <h3>Farah Al Hashimi</h3>
   <p><strong>PhD Candidate in Applied Mathematics</strong></p>
