@@ -135,7 +135,6 @@ The DIMMS Lab at York University encompasses a broad scope of research, includin
   </g>
 </svg>
 </div>
-
 ## Research Areas
 
 ### Mathematical Biology and Disease Modeling
