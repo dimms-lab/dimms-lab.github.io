@@ -1,0 +1,288 @@
+// DIMMS Lab Custom Styles
+
+// Color scheme inspired by York University
+$york-red: #8B0000;
+$accent-blue: #3498db;
+$dark-gray: #2c3e50;
+$light-gray: #f8f9fa;
+$border-color: #eee;
+
+// Typography enhancements
+h1, h2, h3, h4, h5, h6 {
+  color: $dark-gray;
+  font-weight: 600;
+}
+
+h1 {
+  color: $york-red;
+  border-bottom: 3px solid $accent-blue;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+// Logo styling
+.dimms-logo {
+  max-width: 500px;
+  width: 100%;
+  margin: 20px auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.dimms-logo:hover {
+  transform: scale(1.05);
+}
+
+// Research visualization styling
+.research-viz {
+  width: 100%;
+  max-width: 700px;
+  margin: 30px auto;
+  display: block;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.research-viz:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+// Research areas grid styling
+.research-areas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+
+.research-area {
+  flex: 1;
+  min-width: 300px;
+  margin: 20px;
+  text-align: center;
+  padding: 20px;
+  background-color: $light-gray;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.research-area:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.research-area img {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.research-area h3 {
+  color: $york-red;
+  margin-bottom: 15px;
+}
+
+// Team member styling
+.team-member {
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid $border-color;
+  overflow: hidden; // Clearfix for floated images
+}
+
+.team-member:last-child {
+  border-bottom: none;
+}
+
+.team-member img {
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-member img:hover {
+  transform: scale(1.05);
+}
+
+.team-member h3 {
+  color: $york-red;
+  margin-bottom: 5px;
+}
+
+.team-member h4 {
+  color: $accent-blue;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+// News post styling
+.news-post {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-left: 4px solid $accent-blue;
+  background-color: $light-gray;
+  border-radius: 0 8px 8px 0;
+  transition: all 0.3s ease;
+}
+
+.news-post:hover {
+  background-color: darken($light-gray, 2%);
+  border-left-color: $york-red;
+}
+
+.news-post h3 {
+  color: $york-red;
+  margin-bottom: 10px;
+}
+
+.news-post .date {
+  color: $dark-gray;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+// Publication styling
+.publication-item {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: $light-gray;
+  border-radius: 8px;
+  border-left: 4px solid $accent-blue;
+}
+
+.publication-item h3 {
+  color: $york-red;
+  margin-bottom: 10px;
+}
+
+.publication-item .authors {
+  font-style: italic;
+  color: $dark-gray;
+  margin-bottom: 5px;
+}
+
+.publication-item .journal {
+  font-weight: bold;
+  color: $accent-blue;
+  margin-bottom: 5px;
+}
+
+// Button styling
+.btn-primary {
+  background-color: $york-red;
+  border-color: $york-red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: darken($york-red, 10%);
+  border-color: darken($york-red, 10%);
+  color: white;
+  text-decoration: none;
+}
+
+// Contact page styling
+.contact-info {
+  background-color: $light-gray;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  border-left: 4px solid $york-red;
+}
+
+.contact-info h2 {
+  color: $york-red;
+  margin-bottom: 20px;
+}
+
+.contact-info .contact-item {
+  margin-bottom: 15px;
+}
+
+.contact-info .contact-item strong {
+  color: $dark-gray;
+}
+
+// Navigation enhancements
+.masthead {
+  background-color: $york-red;
+}
+
+.greedy-nav a {
+  color: white;
+}
+
+.greedy-nav a:hover {
+  color: $accent-blue;
+}
+
+// Footer styling
+.page__footer {
+  background-color: $dark-gray;
+  color: white;
+}
+
+.page__footer a {
+  color: $accent-blue;
+}
+
+.page__footer a:hover {
+  color: white;
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .team-member img {
+    float: none !important;
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 200px;
+  }
+  
+  .research-area {
+    min-width: 100%;
+    margin: 10px 0;
+  }
+  
+  .research-areas {
+    flex-direction: column;
+  }
+  
+  .dimms-logo {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .news-post, .publication-item, .contact-info {
+    padding: 15px;
+  }
+  
+  .team-member {
+    text-align: center;
+  }
+  
+  .team-member img {
+    max-width: 150px;
+  }
+}
+
+// Print styles
+@media print {
+  .dimms-logo, .research-viz, .team-member img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .news-post, .publication-item {
+    background-color: white;
+    border: 1px solid $border-color;
+  }
+}
