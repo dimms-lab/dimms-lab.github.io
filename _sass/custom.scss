@@ -210,31 +210,43 @@ h1 {
   color: $dark-gray;
 }
 
-// Navigation enhancements
+// Complete navigation fix
 .masthead {
   background-color: $york-red;
 }
 
-.greedy-nav a {
+// All navigation links
+.masthead a,
+.greedy-nav a,
+.visible-links a,
+.site-title,
+.site-subtitle {
   color: white !important;
   text-decoration: none;
 }
 
-.greedy-nav a:hover {
+// Hover states
+.masthead a:hover,
+.greedy-nav a:hover,
+.visible-links a:hover,
+.site-title:hover {
   color: $accent-blue !important;
 }
 
-// Fix for navigation links visibility
-.greedy-nav .visible-links a {
+// Mobile menu button
+.greedy-nav .nav-toggle {
   color: white !important;
 }
 
-.greedy-nav .visible-links a:hover {
-  color: $accent-blue !important;
+// Dropdown menu items (if any)
+.greedy-nav .nav-dropdown a {
+  color: $dark-gray !important;
+  background-color: white;
 }
 
-// Ensure site title is always visible
-.site-title {
+.greedy-nav .nav-dropdown a:hover {
+  color: $york-red !important;
+}
   color: white !important;
 }
 
