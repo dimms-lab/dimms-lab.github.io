@@ -34,7 +34,7 @@ The paper is now available online: [Read the full paper](https://journals.plos.o
 
 ---
 
-### Congratulations to Dr. Chigozie L. Ugwu on Two Recent Publications
+### Two Recent Publications by Dr. Chigozie L. Ugwu 
 **March 15, 2025**
 
 We are pleased to congratulate Dr. <strong>Chigozie L. Ugwu</strong> on her two recent publications in prestigious journals. <a href="/people/#woldegeriel-assefa-woldegerima">WA Woldegerima</a> is a co-author on both of these significant research papers:
