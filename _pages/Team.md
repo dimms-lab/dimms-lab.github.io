@@ -127,7 +127,7 @@ author_profile: true
 </div>
 
 <div style="margin: 40px 0; border-bottom: 1px solid #eee; padding-bottom: 30px;">
-  <img src="/images/khue.jpg" alt="Khue Bui" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="/images/Khue.jpg" alt="Khue Bui" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   
   <h3>Duc Anh Khue Bui (Andrew Jr)</h3>
   <p><strong>Undergraduate Researcher</strong></p>
