@@ -1,111 +1,386 @@
-// DIMMS Lab - Compatible Professional Styles
+// DIMMS Lab - Modern Professional Styles
 
-// Color scheme
+// Enhanced Color Palette
 $york-red: #8B0000;
+$york-gold: #FFD700;
+$dimms-cyan: #00bcd4;
+$dimms-teal: #0097a7;
 $accent-blue: #3498db;
 $dark-gray: #2c3e50;
 $light-gray: #f8f9fa;
+$gradient-primary: linear-gradient(135deg, #8B0000 0%, #B22222 100%);
+$gradient-secondary: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%);
 
-// Basic typography - less aggressive overrides
+// Modern Typography
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+// Base styling improvements
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.7;
+  color: #333;
+}
+
+// Enhanced Headers
 h1 {
   color: $york-red;
-  border-bottom: 3px solid $accent-blue;
-  padding-bottom: 10px;
+  font-weight: 700;
+  border-bottom: 3px solid transparent;
+  background: $gradient-primary;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  padding-bottom: 15px;
   margin-bottom: 30px;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: $gradient-secondary;
+    border-radius: 2px;
+  }
 }
 
 h2 {
   color: $york-red;
-  margin-top: 30px;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 24px;
+    background: $gradient-secondary;
+    border-radius: 2px;
+  }
 }
 
 h3 {
-  color: $accent-blue;
+  color: $dimms-teal;
+  font-weight: 600;
+  margin-bottom: 15px;
 }
 
-// Navigation - simpler approach
+// Modern Navigation
 .masthead {
-  background-color: $york-red;
+  background: $gradient-primary;
+  border-bottom: none;
+  box-shadow: 0 2px 20px rgba(139, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
 }
 
-.greedy-nav a {
-  color: white;
+.site-title {
+  font-weight: 700;
+  color: white !important;
+  text-decoration: none;
 }
 
-.greedy-nav a:hover {
-  color: $accent-blue;
+.greedy-nav {
+  a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background: $york-gold;
+      transition: width 0.3s ease;
+    }
+    
+    &:hover {
+      color: $york-gold;
+      transform: translateY(-2px);
+      
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  .nav-toggle {
+    color: white;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: white;
+    }
+  }
+
+  .nav-dropdown {
+    background: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    
+    a {
+      color: $dark-gray;
+      padding: 12px 20px;
+      
+      &:hover {
+        background: $gradient-primary;
+        color: white;
+      }
+    }
+  }
 }
 
-// Ensure mobile menu button is visible
-.greedy-nav .nav-toggle {
-  color: white;
-  background-color: transparent;
-  border: 2px solid white;
-  padding: 8px;
-}
-
-.greedy-nav .nav-toggle:hover {
-  color: $york-red;
-  background-color: white;
-}
-
-// Dropdown menu for mobile
-.greedy-nav .nav-dropdown {
-  background-color: white;
-  border: 1px solid $york-red;
-}
-
-.greedy-nav .nav-dropdown a {
-  color: $dark-gray;
-  padding: 10px 15px;
-}
-
-.greedy-nav .nav-dropdown a:hover {
-  color: white;
-  background-color: $york-red;
-}
-
-// Content styling
+// Enhanced Content Cards
 .content-card {
-  background-color: $light-gray;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px 0;
-  border-left: 4px solid $accent-blue;
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  margin: 30px 0;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 188, 212, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: $gradient-secondary;
+  }
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  }
 }
 
 .highlight-box {
-  background-color: $accent-blue;
+  background: $gradient-secondary;
   color: white;
-  padding: 20px;
-  border-radius: 10px;
-  margin: 20px 0;
+  padding: 30px;
+  border-radius: 12px;
+  margin: 30px 0;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    animation: shimmer 3s infinite;
+  }
+  
+  h3 {
+    color: white;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
 }
 
-.highlight-box h3 {
-  color: white;
-  margin-bottom: 10px;
+@keyframes shimmer {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
-// Links
+// Research Areas Grid
+.research-areas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin: 40px 0;
+}
+
+.research-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-left: 4px solid $dimms-cyan;
+  
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  }
+  
+  h3 {
+    color: $dimms-teal;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+  }
+  
+  p {
+    color: #666;
+    line-height: 1.6;
+  }
+}
+
+// Enhanced Links
 a {
-  color: $accent-blue;
+  color: $dimms-cyan;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    color: $york-red;
+    text-decoration: underline;
+  }
 }
 
-a:hover {
-  color: $york-red;
+// Modern Sidebar
+.sidebar {
+  .author__avatar {
+    border-radius: 50%;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  
+  .author__name {
+    color: $york-red;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .author__bio {
+    color: #666;
+    font-style: italic;
+  }
+  
+  .author__urls {
+    a {
+      color: $dimms-cyan;
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 12px;
+      margin: 4px 0;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        background: rgba(0, 188, 212, 0.1);
+        color: $dimms-teal;
+        transform: translateX(3px);
+      }
+    }
+  }
 }
 
-// Sidebar
-.sidebar .author__name {
-  color: $york-red;
+// Enhanced Buttons
+.btn {
+  background: $gradient-secondary;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 188, 212, 0.4);
+    color: white;
+  }
 }
 
-.sidebar .author__urls a {
-  color: $accent-blue;
+// Page animations
+.page__content {
+  animation: fadeInUp 0.8s ease-out;
 }
 
-.sidebar .author__urls a:hover {
-  color: $york-red;
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Mobile responsiveness
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  
+  .content-card, .highlight-box {
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  .research-areas {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+// Footer enhancements
+.page__footer {
+  background: $dark-gray;
+  color: white;
+  border-top: 4px solid $dimms-cyan;
+  
+  a {
+    color: $dimms-cyan;
+    
+    &:hover {
+      color: $york-gold;
+    }
+  }
+}
+
+// Custom scrollbar
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $gradient-secondary;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $dimms-teal;
 }

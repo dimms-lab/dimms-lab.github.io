@@ -137,16 +137,21 @@ author_profile: true
 <div style="clear: both;"></div>
 ## International Collaborations
 
-Our lab benefits from extensive international partnerships, with team members bringing diverse global perspectives:
-
-- **Canada**: York University (Primary Institution)
-- **Italy**: University of L'Aquila
-- **Nigeria**: Federal University of Technology Owerri
-- **Pakistan**: Abdus Salam School of Mathematical Sciences Lahore
-- **South Africa**: University of KwaZulu-Natal, Durban
-- **Iraq**: University of Al-Qadisiyah
-- **Bahrain**: University of Bahrain
-- **United States**: Miami University, Ohio
+<div class="content-card">
+  <h3>🌍 Global Research Network</h3>
+  <p>Our lab benefits from extensive international partnerships, with team members bringing diverse global perspectives:</p>
+  
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 20px;">
+    <div>🇨🇦 <strong>Canada</strong>: York University (Primary Institution)</div>
+    <div>🇮🇹 <strong>Italy</strong>: University of L'Aquila</div>
+    <div>🇳🇬 <strong>Nigeria</strong>: Federal University of Technology Owerri</div>
+    <div>🇵🇰 <strong>Pakistan</strong>: Abdus Salam School of Mathematical Sciences</div>
+    <div>🇿🇦 <strong>South Africa</strong>: University of KwaZulu-Natal, Durban</div>
+    <div>🇮🇶 <strong>Iraq</strong>: University of Al-Qadisiyah</div>
+    <div>🇧🇭 <strong>Bahrain</strong>: University of Bahrain</div>
+    <div>🇺🇸 <strong>United States</strong>: Miami University, Ohio</div>
+  </div>
+</div>
 
 ## Alumni
 
@@ -154,13 +159,41 @@ Our lab benefits from extensive international partnerships, with team members br
 
 ## Join Our Team
 
-Interested in joining our research team? We offer opportunities for:
-- **Graduate Students** (MSc and PhD programs)
-- **Undergraduate Researchers** (NSERC USRA and volunteer positions)
-- **Postdoctoral Fellows**
-- **Visiting Researchers**
+<div class="highlight-box">
+  <h3>🚀 Join the DIMMS Lab Team!</h3>
+  <p>We're always looking for passionate researchers to join our dynamic team and contribute to cutting-edge disease modeling and computational biology research.</p>
+</div>
 
-Please send your CV and research interests to [wassefaw@yorku.ca](mailto:wassefaw@yorku.ca).
+<div class="research-areas">
+  <div class="research-card">
+    <h3>🎓 Graduate Students</h3>
+    <p>MSc and PhD programs in Applied Mathematics, Statistics, and related fields. Full funding opportunities available.</p>
+  </div>
+  
+  <div class="research-card">
+    <h3>🔬 Undergraduate Researchers</h3>
+    <p>NSERC USRA positions and volunteer research opportunities for motivated undergraduates.</p>
+  </div>
+  
+  <div class="research-card">
+    <h3>📚 Postdoctoral Fellows</h3>
+    <p>Competitive fellowships for recent PhD graduates in mathematical biology, epidemiology, or related areas.</p>
+  </div>
+  
+  <div class="research-card">
+    <h3>🌍 Visiting Researchers</h3>
+    <p>Short-term and sabbatical positions for established researchers interested in collaborative work.</p>
+  </div>
+</div>
+
+<div class="content-card">
+  <h3>📧 How to Apply</h3>
+  <p>Please send your CV and a brief description of your research interests to:</p>
+  <p><strong>Prof. Woldegeriel Assefa Woldegerima</strong><br>
+  Email: <a href="mailto:wassefaw@yorku.ca">wassefaw@yorku.ca</a></p>
+  
+  <p><em>We welcome applications from candidates of all backgrounds and are committed to fostering an inclusive research environment.</em></p>
+</div>
 
 <style>
 @media (max-width: 768px) {

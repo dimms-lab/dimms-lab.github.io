@@ -137,37 +137,82 @@ The DIMMS Lab at York University encompasses a broad scope of research, includin
 </div>
 ## Research Areas
 
-### Mathematical Biology and Disease Modeling
-Our lab specializes in developing mathematical models to understand biological processes and disease dynamics. We focus on creating robust frameworks that can predict and analyze disease behavior across different populations and environments.
-
-### Machine Learning and Neural Networks
-We pioneer the development of disease-informed neural networks that combine epidemiological principles with deep learning architectures. These hybrid models enhance prediction accuracy by incorporating domain knowledge into machine learning frameworks.
-
-### Statistical Methods and Data Analysis
-We employ advanced statistical frameworks including Bayesian inference, MCMC methods, time series analysis, and spatial statistics to analyze complex disease data and extract meaningful patterns from epidemiological datasets.
-
-### Multi-timescale Analysis
-Our research analyzes disease processes across multiple temporal scales—from rapid molecular interactions to long-term population dynamics. This integrated approach helps us understand how phenomena at different scales influence overall disease patterns.
-
-### Spatial Epidemiology
-We examine how geographical and socioeconomic factors influence disease transmission and outcomes, integrating spatial statistics with epidemiological models to identify risk factors and predict disease spread patterns.
-
-### Immunity Modeling
-We develop sophisticated models of immune response dynamics to understand how pathogens interact with host immunity, encompassing antibody responses, T-cell dynamics, and cytokine signaling networks.
+<div class="research-areas">
+  <div class="research-card">
+    <h3>Mathematical Biology and Disease Modeling</h3>
+    <p>Our lab specializes in developing mathematical models to understand biological processes and disease dynamics. We focus on creating robust frameworks that can predict and analyze disease behavior across different populations and environments.</p>
+  </div>
+  
+  <div class="research-card">
+    <h3>Machine Learning and Neural Networks</h3>
+    <p>We pioneer the development of disease-informed neural networks that combine epidemiological principles with deep learning architectures. These hybrid models enhance prediction accuracy by incorporating domain knowledge into machine learning frameworks.</p>
+  </div>
+  
+  <div class="research-card">
+    <h3>Statistical Methods and Data Analysis</h3>
+    <p>We employ advanced statistical frameworks including Bayesian inference, MCMC methods, time series analysis, and spatial statistics to analyze complex disease data and extract meaningful patterns from epidemiological datasets.</p>
+  </div>
+  
+  <div class="research-card">
+    <h3>Multi-timescale Analysis</h3>
+    <p>Our research analyzes disease processes across multiple temporal scales—from rapid molecular interactions to long-term population dynamics. This integrated approach helps us understand how phenomena at different scales influence overall disease patterns.</p>
+  </div>
+  
+  <div class="research-card">
+    <h3>Spatial Epidemiology</h3>
+    <p>We examine how geographical and socioeconomic factors influence disease transmission and outcomes, integrating spatial statistics with epidemiological models to identify risk factors and predict disease spread patterns.</p>
+  </div>
+  
+  <div class="research-card">
+    <h3>Immunity Modeling</h3>
+    <p>We develop sophisticated models of immune response dynamics to understand how pathogens interact with host immunity, encompassing antibody responses, T-cell dynamics, and cytokine signaling networks.</p>
+  </div>
+</div>
 
 ## Recent Highlights
 
-- **Avian Influenza Prediction**: Breakthrough neural network model for predicting avian influenza spread
-- **Mpox Research**: Comprehensive analysis of geographical and socioeconomic factors in Mpox transmission in Ontario
-- **Dengue Immunodynamics**: Innovative work on immune system interactions with dengue virus
-- **Computational Biology**: Recent publications in high-impact journals including PLoS Computational Biology
+<div class="highlight-box">
+  <h3>🏆 Latest Achievements</h3>
+  <p>Our lab continues to push the boundaries of disease modeling and computational biology through groundbreaking research and innovative methodologies.</p>
+</div>
+
+<div class="content-card">
+  <h3>🦆 Avian Influenza Prediction</h3>
+  <p>Breakthrough neural network model for predicting avian influenza spread using advanced machine learning techniques and epidemiological data integration.</p>
+</div>
+
+<div class="content-card">
+  <h3>🔬 Mpox Research</h3>
+  <p>Comprehensive analysis of geographical and socioeconomic factors in Mpox transmission in Ontario, providing crucial insights for public health policy.</p>
+</div>
+
+<div class="content-card">
+  <h3>🦠 Dengue Immunodynamics</h3>
+  <p>Innovative work on immune system interactions with dengue virus, exploring complex host-pathogen dynamics and immunity modeling.</p>
+</div>
+
+<div class="content-card">
+  <h3>📚 Computational Biology Publications</h3>
+  <p>Recent publications in high-impact journals including PLoS Computational Biology, advancing the field through rigorous research and methodology.</p>
+</div>
 
 ## Lab Director
 
-**Woldegeriel Assefa Woldegerima**  
-Assistant Professor in the Professional stream  
-Department of Mathematics and Statistics, York University  
-
-Director of the DIMMS Lab at York University with expertise in mathematical biology, disease modeling, and computational epidemiology. Research focuses on developing innovative mathematical frameworks for understanding complex disease dynamics.
-
-Contact: wassefaw@yorku.ca
+<div class="content-card">
+  <h3>👨‍🔬 Prof. Woldegeriel Assefa Woldegerima</h3>
+  <p><strong>Assistant Professor in the Professional stream</strong><br>
+  Department of Mathematics and Statistics, York University</p>
+  
+  <p>Director of the DIMMS Lab at York University with expertise in mathematical biology, disease modeling, and computational epidemiology. Research focuses on developing innovative mathematical frameworks for understanding complex disease dynamics.</p>
+  
+  <p><strong>Contact:</strong> <a href="mailto:wassefaw@yorku.ca">wassefaw@yorku.ca</a></p>
+  
+  <p><strong>Research Interests:</strong></p>
+  <ul>
+    <li>Mathematical Biology & Disease Modeling</li>
+    <li>Computational Epidemiology</li>
+    <li>Machine Learning in Healthcare</li>
+    <li>Multi-scale Analysis</li>
+    <li>Spatial Statistics</li>
+  </ul>
+</div>
