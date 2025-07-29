@@ -24,4 +24,99 @@
 <!-- Critical footer positioning JavaScript - runs immediately -->
 <script src="{{ base_path }}/assets/js/footer-fix.js"></script>
 
+<!-- EMERGENCY SPACING FIX - INLINE CSS TO OVERRIDE EVERYTHING -->
+<style>
+/* CRITICAL: Remove massive gap between header and content */
+body {
+    padding: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin: 0 !important;
+}
+
+.initial-content {
+    margin-top: 15px !important;
+    padding-top: 0 !important;
+}
+
+.layout--single {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+#main {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.page {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.page__content {
+    margin-top: 0 !important;
+    padding-top: 15px !important;
+}
+
+/* Force immediate application */
+* {
+    box-sizing: border-box;
+}
+</style>
+
+<!-- IMMEDIATE JAVASCRIPT FIX FOR SPACING -->
+<script>
+// Execute immediately when script loads
+(function() {
+    console.log('EMERGENCY SPACING FIX: Removing header gap...');
+    
+    function removeHeaderGap() {
+        // Force body padding to zero
+        if (document.body) {
+            document.body.style.cssText += `
+                padding: 0 !important;
+                padding-top: 0 !important;
+                padding-bottom: 0 !important;
+                margin: 0 !important;
+            `;
+        }
+        
+        // Fix content containers
+        const selectors = ['.initial-content', '.layout--single', '#main', '.page', '.page__content'];
+        selectors.forEach(function(selector) {
+            const elements = document.querySelectorAll(selector);
+            elements.forEach(function(el) {
+                if (selector === '.initial-content') {
+                    el.style.cssText += 'margin-top: 15px !important; padding-top: 0 !important;';
+                } else if (selector === '.page__content') {
+                    el.style.cssText += 'margin-top: 0 !important; padding-top: 15px !important;';
+                } else {
+                    el.style.cssText += 'margin-top: 0 !important; padding-top: 0 !important;';
+                }
+            });
+        });
+        
+        console.log('Header gap removal completed');
+    }
+    
+    // Try immediately
+    removeHeaderGap();
+    
+    // Try when DOM loads
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', removeHeaderGap);
+    }
+    
+    // Try when everything loads
+    window.addEventListener('load', removeHeaderGap);
+    
+    // Keep trying for 3 seconds
+    const intervalId = setInterval(removeHeaderGap, 100);
+    setTimeout(function() {
+        clearInterval(intervalId);
+    }, 3000);
+})();
+</script>
+
 <meta http-equiv="cleartype" content="on">
