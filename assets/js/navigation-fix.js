@@ -46,15 +46,55 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
+    // Critical footer positioning fix
+    function fixFooterPosition() {
+        const footer = document.querySelector('.page__footer');
+        if (footer) {
+            // Force remove absolute positioning
+            footer.style.position = 'static';
+            footer.style.position = 'relative';
+            footer.style.bottom = 'auto';
+            footer.style.top = 'auto';
+            footer.style.left = '0';
+            footer.style.right = '0';
+            footer.style.width = '100%';
+            footer.style.height = 'auto';
+            footer.style.clear = 'both';
+            footer.style.display = 'block';
+            footer.style.marginTop = '80px';
+            footer.style.marginBottom = '0';
+            footer.style.transform = 'none';
+            footer.style.animation = 'none';
+            footer.style.webkitAnimation = 'none';
+            
+            console.log('Footer positioning fixed - forced to static/relative');
+        }
+    }
+    
     // Apply fixes immediately and on scroll
     enforceStaticLayout();
+    fixFooterPosition();
     
     // Reapply fixes on scroll to prevent any dynamic positioning
     let scrollTimeout;
     window.addEventListener('scroll', function() {
         clearTimeout(scrollTimeout);
-        scrollTimeout = setTimeout(enforceStaticLayout, 10);
+        scrollTimeout = setTimeout(function() {
+            enforceStaticLayout();
+            fixFooterPosition();
+        }, 10);
     });
+    
+    // Additional enforcement every 500ms for the first 3 seconds
+    let attempts = 0;
+    const maxAttempts = 6;
+    const footerInterval = setInterval(function() {
+        fixFooterPosition();
+        attempts++;
+        if (attempts >= maxAttempts) {
+            clearInterval(footerInterval);
+        }
+    }, 500);
     // Find the hamburger button and hidden menu
     const menuButton = document.querySelector('.greedy-nav > button');
     const hiddenLinks = document.querySelector('.greedy-nav .hidden-links');
