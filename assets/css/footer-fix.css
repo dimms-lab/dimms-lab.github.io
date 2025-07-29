@@ -1,0 +1,82 @@
+/* CRITICAL FOOTER POSITIONING FIX - HIGHEST PRIORITY */
+/* This file forces the footer to appear at the bottom of the page */
+
+/* Override Jekyll theme's sticky footer completely */
+.page__footer {
+    position: static !important;
+    position: relative !important;
+    bottom: auto !important;
+    top: auto !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    clear: both !important;
+    float: none !important;
+    display: block !important;
+    margin-top: 80px !important;
+    margin-bottom: 0 !important;
+    padding: 30px 0 !important;
+    background: #2c3e50 !important;
+    color: white !important;
+    border-top: 4px solid #00bcd4 !important;
+    transform: none !important;
+    animation: none !important;
+    -webkit-animation: none !important;
+}
+
+/* Ensure body uses flexbox to push footer down */
+body {
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: 100vh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Main content area should grow to push footer down */
+.layout--single,
+.layout {
+    flex: 1 0 auto !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: flex-start !important;
+}
+
+/* Remove height constraints that interfere with flexbox */
+html {
+    min-height: 100% !important;
+    position: relative !important;
+}
+
+.initial-content,
+#main,
+.page,
+.archive {
+    height: auto !important;
+    min-height: auto !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 40px !important;
+}
+
+/* Ensure content has minimum height to push footer down */
+.page__content {
+    min-height: 400px !important;
+    margin-bottom: 40px !important;
+}
+
+/* Footer styling */
+.page__footer-copyright {
+    text-align: center !important;
+    padding: 20px !important;
+    font-size: 14px !important;
+    color: #ccc !important;
+}
+
+.page__footer-copyright small {
+    display: block !important;
+    margin-top: 8px !important;
+    font-size: 12px !important;
+    color: #aaa !important;
+    font-style: italic !important;
+}
