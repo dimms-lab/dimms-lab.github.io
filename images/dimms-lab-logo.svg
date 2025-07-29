@@ -1,0 +1,86 @@
+<svg width="280" height="280" viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient for the background circle -->
+    <radialGradient id="bgGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0f0f0;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- Gradient for the main elements -->
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B0000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DC143C;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gold gradient for accents -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Cyan gradient for data elements -->
+    <linearGradient id="dataGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00CED1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0097A7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="140" cy="140" r="135" fill="url(#bgGradient)" stroke="#ddd" stroke-width="2"/>
+  
+  <!-- Mathematical modeling symbol (sine wave) -->
+  <path d="M 40 140 Q 70 100, 100 140 T 160 140 T 220 140" 
+        stroke="url(#mainGradient)" 
+        stroke-width="4" 
+        fill="none" 
+        opacity="0.8"/>
+  
+  <!-- Second sine wave offset -->
+  <path d="M 40 160 Q 70 200, 100 160 T 160 160 T 220 160" 
+        stroke="url(#goldGradient)" 
+        stroke-width="3" 
+        fill="none" 
+        opacity="0.7"/>
+  
+  <!-- DNA double helix representing biological/disease research -->
+  <g transform="translate(140, 140)">
+    <!-- Helix strands -->
+    <path d="M -30,-60 Q -20,-40 -10,-20 Q 0,0 10,20 Q 20,40 30,60" 
+          stroke="url(#dataGradient)" 
+          stroke-width="3" 
+          fill="none"/>
+    <path d="M 30,-60 Q 20,-40 10,-20 Q 0,0 -10,20 Q -20,40 -30,60" 
+          stroke="url(#dataGradient)" 
+          stroke-width="3" 
+          fill="none"/>
+    
+    <!-- Connecting lines -->
+    <line x1="-25" y1="-50" x2="25" y2="-50" stroke="#00CED1" stroke-width="2" opacity="0.6"/>
+    <line x1="-15" y1="-30" x2="15" y2="-30" stroke="#00CED1" stroke-width="2" opacity="0.6"/>
+    <line x1="-5" y1="-10" x2="5" y2="-10" stroke="#00CED1" stroke-width="2" opacity="0.6"/>
+    <line x1="-5" y1="10" x2="5" y2="10" stroke="#00CED1" stroke-width="2" opacity="0.6"/>
+    <line x1="-15" y1="30" x2="15" y2="30" stroke="#00CED1" stroke-width="2" opacity="0.6"/>
+    <line x1="-25" y1="50" x2="25" y2="50" stroke="#00CED1" stroke-width="2" opacity="0.6"/>
+  </g>
+  
+  <!-- Data points representing data science -->
+  <circle cx="60" cy="80" r="4" fill="url(#goldGradient)" opacity="0.8"/>
+  <circle cx="90" cy="60" r="3" fill="url(#mainGradient)" opacity="0.8"/>
+  <circle cx="120" cy="75" r="3.5" fill="url(#dataGradient)" opacity="0.8"/>
+  <circle cx="150" cy="55" r="3" fill="url(#goldGradient)" opacity="0.8"/>
+  <circle cx="180" cy="70" r="4" fill="url(#mainGradient)" opacity="0.8"/>
+  <circle cx="210" cy="65" r="3" fill="url(#dataGradient)" opacity="0.8"/>
+  
+  <!-- Mathematical symbols -->
+  <text x="50" y="210" font-family="Georgia, serif" font-size="24" fill="#8B0000" opacity="0.7">∑</text>
+  <text x="200" y="210" font-family="Georgia, serif" font-size="20" fill="#8B0000" opacity="0.7">∫</text>
+  <text x="125" y="220" font-family="Georgia, serif" font-size="18" fill="#00CED1" opacity="0.7">∂/∂t</text>
+  
+  <!-- DIMMS text -->
+  <text x="140" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="url(#mainGradient)">DIMMS</text>
+  <text x="140" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666" letter-spacing="1">DISEASE MODELING LAB</text>
+  
+  <!-- Orbital rings around the DNA -->
+  <ellipse cx="140" cy="140" rx="100" ry="30" fill="none" stroke="url(#goldGradient)" stroke-width="1" opacity="0.3" transform="rotate(45 140 140)"/>
+  <ellipse cx="140" cy="140" rx="100" ry="30" fill="none" stroke="url(#dataGradient)" stroke-width="1" opacity="0.3" transform="rotate(-45 140 140)"/>
+</svg>
