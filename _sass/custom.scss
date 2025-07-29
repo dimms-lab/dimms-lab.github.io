@@ -86,15 +86,107 @@ h3 {
   min-height: 60px;
 }
 
-/* FORCE REMOVE ANY STICKY BEHAVIOR */
+/* FORCE REMOVE ANY STICKY/FIXED BEHAVIOR - CRITICAL OVERRIDES */
 .masthead,
 .masthead__inner-wrap,
 .greedy-nav {
   position: static !important;
   position: initial !important;
+  position: relative !important;
   top: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: auto !important;
   transform: none !important;
   will-change: auto !important;
+  height: auto !important;
+  width: auto !important;
+  z-index: 1 !important;
+}
+
+/* OVERRIDE THEME'S FIXED MASTHEAD */
+.masthead {
+  position: static !important;
+  top: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  animation: none !important;
+  -webkit-animation: none !important;
+}
+
+/* OVERRIDE THEME'S FIXED SIDEBAR */
+.sidebar {
+  position: static !important;
+  height: auto !important;
+  overflow-y: visible !important;
+  padding-top: 0 !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  transform: none !important;
+  will-change: auto !important;
+}
+
+/* ENSURE NORMAL DOCUMENT FLOW - PREVENT JUMPING */
+body,
+html,
+#main,
+.initial-content,
+.page {
+  position: static !important;
+  height: auto !important;
+  overflow: visible !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  transform: none !important;
+  will-change: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* PREVENT LAYOUT SHIFTS AND JUMPING */
+.page__content {
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  transform: none !important;
+  will-change: auto !important;
+  margin: 0 !important;
+  padding: 20px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* STABLE LAYOUT CONTAINER */
+.layout {
+  position: static !important;
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* REMOVE ALL TRANSFORMS AND ANIMATIONS THAT CAUSE JUMPING */
+* {
+  will-change: auto !important;
+}
+
+/* OVERRIDE ANY STICKY/FIXED UTILITIES */
+.sticky,
+.fixed {
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important;
 }
 
 .masthead__inner-wrap {
@@ -409,8 +501,16 @@ a {
   }
 }
 
-// Modern Sidebar
+// Modern Sidebar - FIXED POSITIONING
 .sidebar {
+  /* ENSURE SIDEBAR STAYS IN PLACE */
+  position: static !important;
+  float: none !important;
+  width: auto !important;
+  max-width: 300px !important;
+  margin: 20px auto !important;
+  padding: 20px !important;
+  
   .author__avatar {
     border-radius: 50%;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
@@ -422,6 +522,8 @@ a {
     justify-content: center;
     width: 150px;
     height: 150px;
+    margin: 0 auto 20px auto !important;
+    position: static !important;
     
     img {
       width: 100%;
@@ -429,45 +531,13 @@ a {
       object-fit: contain;
       border-radius: 50%;
       background: transparent;
-      
-      /* Fallback for when image doesn't load */
-      &:after {
-        content: "DIMMS\ALAB";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        font-weight: bold;
-        font-size: 16px;
-        text-align: center;
-        line-height: 1.2;
-        white-space: pre;
-      }
+      position: static !important;
     }
     
     &:hover {
       transform: scale(1.05);
       box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
     }
-  }
-  
-  /* If no image, show text logo */
-  .author__avatar:empty::before,
-  .author__avatar img[src=""]:after,
-  .author__avatar img:not([src])::after {
-    content: "DIMMS\ALAB";
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-    line-height: 1.2;
-    white-space: pre;
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
   
   .author__name {

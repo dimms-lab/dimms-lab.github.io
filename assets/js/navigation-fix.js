@@ -2,18 +2,84 @@
 // Ensures mobile hamburger menu functionality works properly
 
 document.addEventListener('DOMContentLoaded', function() {
-    // FORCE STATIC HEADER - NO SCROLLING BEHAVIOR
-    const masthead = document.querySelector('.masthead');
-    if (masthead) {
-        masthead.style.position = 'static';
-        masthead.style.top = 'auto';
-        masthead.style.transform = 'none';
-        masthead.style.willChange = 'auto';
+    // COMPREHENSIVE LAYOUT FIX - PREVENT ALL FLOATING/JUMPING
+    function enforceStaticLayout() {
+        // Fix masthead/header
+        const masthead = document.querySelector('.masthead');
+        if (masthead) {
+            masthead.style.position = 'static';
+            masthead.style.top = 'auto';
+            masthead.style.left = 'auto';
+            masthead.style.right = 'auto';
+            masthead.style.bottom = 'auto';
+            masthead.style.transform = 'none';
+            masthead.style.willChange = 'auto';
+            masthead.style.animation = 'none';
+            masthead.style.webkitAnimation = 'none';
+            masthead.classList.remove('sticky', 'fixed');
+            masthead.removeAttribute('data-sticky');
+        }
         
-        // Remove any scroll event listeners that might make it sticky
-        masthead.classList.remove('sticky', 'fixed');
-        masthead.removeAttribute('data-sticky');
+        // Fix sidebar
+        const sidebar = document.querySelector('.sidebar');
+        if (sidebar) {
+            sidebar.style.position = 'static';
+            sidebar.style.top = 'auto';
+            sidebar.style.left = 'auto';
+            sidebar.style.right = 'auto';
+            sidebar.style.bottom = 'auto';
+            sidebar.style.height = 'auto';
+            sidebar.style.overflowY = 'visible';
+            sidebar.style.paddingTop = '0';
+            sidebar.style.transform = 'none';
+            sidebar.style.willChange = 'auto';
+        }
+        
+        // Fix author avatar
+        const avatar = document.querySelector('.author__avatar');
+        if (avatar) {
+            avatar.style.position = 'static';
+            avatar.style.top = 'auto';
+            avatar.style.left = 'auto';
+            avatar.style.right = 'auto';
+            avatar.style.bottom = 'auto';
+            avatar.style.transform = 'none';
+            avatar.style.willChange = 'auto';
+            avatar.style.margin = '0 auto 20px auto';
+        }
+        
+        // Remove any elements with sticky/fixed classes
+        const stickyElements = document.querySelectorAll('.sticky, .fixed');
+        stickyElements.forEach(function(element) {
+            element.style.position = 'static';
+            element.style.top = 'auto';
+            element.style.left = 'auto';
+            element.style.right = 'auto';
+            element.style.bottom = 'auto';
+            element.classList.remove('sticky', 'fixed');
+        });
+        
+        // Ensure page content doesn't jump
+        const pageContent = document.querySelector('.page__content');
+        if (pageContent) {
+            pageContent.style.position = 'static';
+            pageContent.style.top = 'auto';
+            pageContent.style.transform = 'none';
+            pageContent.style.willChange = 'auto';
+            pageContent.style.width = '100%';
+            pageContent.style.boxSizing = 'border-box';
+        }
     }
+    
+    // Apply fixes immediately and on scroll
+    enforceStaticLayout();
+    
+    // Reapply fixes on scroll to prevent any dynamic positioning
+    let scrollTimeout;
+    window.addEventListener('scroll', function() {
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(enforceStaticLayout, 10);
+    });
     // Find the hamburger button and hidden menu
     const menuButton = document.querySelector('.greedy-nav > button');
     const hiddenLinks = document.querySelector('.greedy-nav .hidden-links');
