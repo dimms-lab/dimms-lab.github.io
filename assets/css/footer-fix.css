@@ -32,6 +32,9 @@ body {
     min-height: 100vh !important;
     margin: 0 !important;
     padding: 0 !important;
+    /* CRITICAL: Remove theme's excessive top padding */
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 /* Main content area should grow to push footer down */
@@ -49,14 +52,30 @@ html {
     position: relative !important;
 }
 
-.initial-content,
+/* CRITICAL SPACING FIX - Remove huge gap between header and content */
+.initial-content {
+    margin-top: 20px !important;  /* Small professional gap */
+    padding-top: 0 !important;
+    height: auto !important;
+    min-height: auto !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 40px !important;
+}
+
 #main,
 .page,
 .archive {
     height: auto !important;
     min-height: auto !important;
+    margin-top: 0 !important;
     margin-bottom: 0 !important;
+    padding-top: 0 !important;
     padding-bottom: 40px !important;
+}
+
+.layout--single {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
 }
 
 /* Ensure content has minimum height to push footer down */

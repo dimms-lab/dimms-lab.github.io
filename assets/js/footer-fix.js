@@ -34,14 +34,41 @@
             console.log('Footer styles applied');
         }
         
-        // Ensure body uses flexbox layout
+        // Ensure body uses flexbox layout and remove excessive padding
         document.body.style.cssText = `
             display: flex !important;
             flex-direction: column !important;
             min-height: 100vh !important;
             margin: 0 !important;
             padding: 0 !important;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
         `;
+        
+        // Fix content spacing - remove huge gap after header
+        const initialContent = document.querySelector('.initial-content');
+        if (initialContent) {
+            initialContent.style.cssText += `
+                margin-top: 20px !important;
+                padding-top: 0 !important;
+            `;
+        }
+        
+        const layoutSingle = document.querySelector('.layout--single');
+        if (layoutSingle) {
+            layoutSingle.style.cssText += `
+                margin-top: 0 !important;
+                padding-top: 0 !important;
+            `;
+        }
+        
+        const mainElement = document.querySelector('#main');
+        if (mainElement) {
+            mainElement.style.cssText += `
+                margin-top: 0 !important;
+                padding-top: 0 !important;
+            `;
+        }
         
         // Make main content area flexible
         const layout = document.querySelector('.layout--single, .layout');

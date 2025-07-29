@@ -128,9 +128,13 @@ body {
   height: auto !important;
   overflow: visible !important;
   margin: 0 !important;
-  /* Override theme's sticky footer padding */
+  /* CRITICAL: Override theme's $masthead-height padding that causes huge gap */
+  padding: 0 !important;
   padding-bottom: 0 !important;
   padding-top: 0 !important;
+  /* Force override the theme's padding: $masthead-height 0 0; */
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 #main,
@@ -149,10 +153,29 @@ body {
   padding: 0 !important;
 }
 
-/* ENSURE PROPER MAIN CONTENT AREA */
+/* CRITICAL SPACING FIX - Remove huge gap between header and content */
+.initial-content {
+  margin-top: 20px !important;  /* Small professional gap */
+  padding-top: 0 !important;
+}
+
+.layout--single {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Override theme's masthead height padding */
+.page {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* CRITICAL - Ensure main content starts close to header */
 .page__content {
+  margin-top: 0 !important;
   margin-left: 0 !important;
-  padding: 20px !important;
+  padding: 20px !important;  /* Minimal professional spacing */
+  padding-top: 20px !important;  /* Small gap from header */
   box-sizing: border-box !important;
   clear: none !important;
 }
