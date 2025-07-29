@@ -20,33 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
             masthead.removeAttribute('data-sticky');
         }
         
-        // Fix sidebar
-        const sidebar = document.querySelector('.sidebar');
-        if (sidebar) {
-            sidebar.style.position = 'static';
-            sidebar.style.top = 'auto';
-            sidebar.style.left = 'auto';
-            sidebar.style.right = 'auto';
-            sidebar.style.bottom = 'auto';
-            sidebar.style.height = 'auto';
-            sidebar.style.overflowY = 'visible';
-            sidebar.style.paddingTop = '0';
-            sidebar.style.transform = 'none';
-            sidebar.style.willChange = 'auto';
-        }
-        
-        // Fix author avatar
-        const avatar = document.querySelector('.author__avatar');
-        if (avatar) {
-            avatar.style.position = 'static';
-            avatar.style.top = 'auto';
-            avatar.style.left = 'auto';
-            avatar.style.right = 'auto';
-            avatar.style.bottom = 'auto';
-            avatar.style.transform = 'none';
-            avatar.style.willChange = 'auto';
-            avatar.style.margin = '0 auto 20px auto';
-        }
+        // DO NOT MODIFY SIDEBAR - Let theme handle positioning
+        // Sidebar needs to maintain its grid/float positioning for proper layout
         
         // Remove any elements with sticky/fixed classes
         const stickyElements = document.querySelectorAll('.sticky, .fixed');

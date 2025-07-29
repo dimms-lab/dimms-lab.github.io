@@ -114,19 +114,8 @@ h3 {
   -webkit-animation: none !important;
 }
 
-/* OVERRIDE THEME'S FIXED SIDEBAR */
-.sidebar {
-  position: static !important;
-  height: auto !important;
-  overflow-y: visible !important;
-  padding-top: 0 !important;
-  top: auto !important;
-  left: auto !important;
-  right: auto !important;
-  bottom: auto !important;
-  transform: none !important;
-  will-change: auto !important;
-}
+/* KEEP ORIGINAL SIDEBAR BEHAVIOR - DO NOT OVERRIDE */
+/* Sidebar positioning handled by theme's responsive grid */
 
 /* ENSURE NORMAL DOCUMENT FLOW - PREVENT JUMPING */
 body,
@@ -147,20 +136,45 @@ html,
   padding: 0 !important;
 }
 
-/* PREVENT LAYOUT SHIFTS AND JUMPING */
+/* ENSURE PROPER MAIN CONTENT AREA */
 .page__content {
-  position: static !important;
-  top: auto !important;
-  left: auto !important;
-  right: auto !important;
-  bottom: auto !important;
-  transform: none !important;
-  will-change: auto !important;
-  margin: 0 !important;
+  margin-left: 0 !important;
   padding: 20px !important;
-  width: 100% !important;
-  max-width: 100% !important;
   box-sizing: border-box !important;
+  clear: none !important;
+}
+
+/* RESTORE TWO-COLUMN LAYOUT */
+.layout--single {
+  .sidebar {
+    float: left !important;
+    width: 20% !important;
+    min-width: 200px !important;
+    
+    @media (max-width: 768px) {
+      float: none !important;
+      width: 100% !important;
+    }
+  }
+  
+  #main {
+    float: right !important;
+    width: 75% !important;
+    margin-left: 2% !important;
+    
+    @media (max-width: 768px) {
+      float: none !important;
+      width: 100% !important;
+      margin-left: 0 !important;
+    }
+  }
+  
+  /* Clear floats */
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 /* STABLE LAYOUT CONTAINER */
@@ -501,15 +515,22 @@ a {
   }
 }
 
-// Modern Sidebar - FIXED POSITIONING
+// Modern Sidebar - PROPER LEFT POSITIONING
 .sidebar {
-  /* ENSURE SIDEBAR STAYS IN PLACE */
-  position: static !important;
-  float: none !important;
-  width: auto !important;
-  max-width: 300px !important;
-  margin: 20px auto !important;
+  /* KEEP SIDEBAR ON THE LEFT SIDE */
+  float: left !important;
+  width: 20% !important;
+  min-width: 200px !important;
+  max-width: 250px !important;
+  margin-right: 20px !important;
   padding: 20px !important;
+  
+  @media (max-width: 768px) {
+    float: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 30px !important;
+  }
   
   .author__avatar {
     border-radius: 50%;
@@ -523,7 +544,6 @@ a {
     width: 150px;
     height: 150px;
     margin: 0 auto 20px auto !important;
-    position: static !important;
     
     img {
       width: 100%;
@@ -531,7 +551,6 @@ a {
       object-fit: contain;
       border-radius: 50%;
       background: transparent;
-      position: static !important;
     }
     
     &:hover {
