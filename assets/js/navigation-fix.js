@@ -65,17 +65,29 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('DIMMS Lab navigation fix applied successfully');
     }
     
-    // Force white text color on navigation items
-    const navItems = document.querySelectorAll('.greedy-nav .visible-links .masthead__menu-item a');
+    // Force GOLD text color on navigation items - HIGHLY VISIBLE
+    const navItems = document.querySelectorAll('.greedy-nav .visible-links .masthead__menu-item a, .greedy-nav a, .masthead a');
     navItems.forEach(function(item) {
-        item.style.color = 'white';
-        item.style.textShadow = '1px 1px 2px rgba(0, 0, 0, 0.3)';
+        item.style.color = '#FFD700';  // BRIGHT GOLD
+        item.style.textShadow = '2px 2px 4px rgba(0, 0, 0, 0.8)';
+        item.style.fontWeight = '700';
+        item.style.fontSize = '1.1em';
     });
     
-    // Ensure site title is white
+    // Ensure site title is GOLD and highly visible
     const siteTitle = document.querySelector('.masthead__menu-item--lg a');
     if (siteTitle) {
-        siteTitle.style.color = 'white';
-        siteTitle.style.textShadow = '2px 2px 4px rgba(0, 0, 0, 0.3)';
+        siteTitle.style.color = '#FFD700';  // BRIGHT GOLD
+        siteTitle.style.textShadow = '3px 3px 6px rgba(0, 0, 0, 0.8)';
+        siteTitle.style.fontWeight = '800';
+        siteTitle.style.fontSize = '1.4em';
     }
+    
+    // Force all masthead links to be gold
+    const allMastheadLinks = document.querySelectorAll('.masthead a, .greedy-nav a, .visible-links a');
+    allMastheadLinks.forEach(function(link) {
+        link.style.color = '#FFD700';
+        link.style.textShadow = '2px 2px 4px rgba(0, 0, 0, 0.8)';
+        link.style.fontWeight = '700';
+    });
 });
