@@ -558,6 +558,8 @@ a {
   background: $dark-gray;
   color: white;
   border-top: 4px solid $dimms-cyan;
+  padding: 30px 0;
+  margin-top: 50px;
   
   a {
     color: $dimms-cyan;
@@ -565,6 +567,22 @@ a {
     &:hover {
       color: $york-gold;
     }
+  }
+}
+
+// Professional footer copyright styling
+.page__footer-copyright {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #ccc;
+  
+  small {
+    display: block;
+    margin-top: 8px;
+    font-size: 12px;
+    color: #aaa;
+    font-style: italic;
   }
 }
 
