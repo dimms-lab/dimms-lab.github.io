@@ -8,7 +8,7 @@ repository: "dimms-lab/dimms-lab.github.io"
 # Site Author
 author:
   name             : "DIMMS Lab"
-  avatar           : "/images/dimms-lab-logo.svg"  # New visible logo
+  avatar           : "https://dimmslab.org/images/dimms-logo.svg"  # Original working logo
   bio              : "Disease-Informed Modelling, Methods, and Systems Laboratory at York University"
   location         : "Toronto, ON, Canada"
   employer         : "York University"

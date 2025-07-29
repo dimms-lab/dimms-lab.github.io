@@ -2,6 +2,18 @@
 // Ensures mobile hamburger menu functionality works properly
 
 document.addEventListener('DOMContentLoaded', function() {
+    // FORCE STATIC HEADER - NO SCROLLING BEHAVIOR
+    const masthead = document.querySelector('.masthead');
+    if (masthead) {
+        masthead.style.position = 'static';
+        masthead.style.top = 'auto';
+        masthead.style.transform = 'none';
+        masthead.style.willChange = 'auto';
+        
+        // Remove any scroll event listeners that might make it sticky
+        masthead.classList.remove('sticky', 'fixed');
+        masthead.removeAttribute('data-sticky');
+    }
     // Find the hamburger button and hidden menu
     const menuButton = document.querySelector('.greedy-nav > button');
     const hiddenLinks = document.querySelector('.greedy-nav .hidden-links');
