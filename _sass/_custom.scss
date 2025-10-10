@@ -1,11 +1,10 @@
-/* DIMMS: collapse any lingering top band under the header */
-.page__inner-wrap,
-.page__content { padding-top: 0 !important; margin-top: 0 !important; }
-.page__title { margin-top: .25rem !important; }   /* prevents double-H1 bump */
+/* ==========================================================================
+   DIMMS Lab – Custom (lean + deterministic)
+   This file compiles last (via assets/css/main.scss -> "custom"),
+   so these rules win over theme defaults.
+   ========================================================================== */
 
-// DIMMS Lab - Modern Professional Styles
-
-// Enhanced Color Palette
+/* ------------------  Brand palette (safe to keep)  ------------------ */
 $york-red: #8B0000;
 $york-gold: #FFD700;
 $dimms-cyan: #00bcd4;
@@ -16,298 +15,81 @@ $light-gray: #f8f9fa;
 $gradient-primary: linear-gradient(135deg, #8B0000 0%, #B22222 100%);
 $gradient-secondary: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%);
 
-// Modern Typography
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+/* Optional modern typography */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-/* ===================================================================
-   CRITICAL HERO/SPACING FIXES - Remove tall hero/overlay spacing site-wide
-   =================================================================== */
-.page__hero,
-.page__hero--overlay {
-  display: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  min-height: 0 !important;
-}
-
-/* Collapse gap below masthead */
-.masthead {
-  margin-bottom: 0 !important;
-}
-
-/* Remove padding-top from all content containers */
-.initial-content,
-.page,
-.page__inner-wrap,
-.page__content {
-  padding-top: 0 !important;
-  margin-top: 0 !important;
-}
-
-/* First H1 shouldn't push page down */
-h1,
-.page__title {
-  margin-top: 0.25rem !important;
-}
-
-/* Keep the left author card visible and snug with sticky positioning */
-.sidebar {
-  margin-top: 0 !important;
-  position: sticky !important;
-  top: 96px !important;
-}
-
-// Base styling improvements
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.7;
   color: #333;
 }
 
-// Enhanced Headers
-h1 {
-  color: $york-red;
-  font-weight: 700;
-  border-bottom: 3px solid transparent;
-  background: $gradient-primary;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: relative;
-  padding-bottom: 15px;
-  margin-bottom: 30px;
-  
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 60px;
-    height: 3px;
-    background: $gradient-secondary;
-    border-radius: 2px;
-  }
+/* ==========================================================================
+   A) GLOBAL TOP-GAP FIXES (header/body/main/content)
+   ========================================================================== */
+
+/* Theme sometimes reserves space for a fixed masthead. We don't. */
+body { padding-top: 0 !important; }
+
+/* Keep the header tight; we’re using a static (relative) masthead. */
+.masthead { margin-bottom: 0 !important; }
+
+/* Remove any hero band if a page declares it. */
+.page__hero,
+.page__hero--overlay {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 0 !important;
 }
 
-h2 {
-  color: $york-red;
-  font-weight: 600;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  position: relative;
-  
-  &::before {
-    content: '';
-    position: absolute;
-    left: -20px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 4px;
-    height: 24px;
-    background: $gradient-secondary;
-    border-radius: 2px;
-  }
+/* Main wrapper and article header must start flush under the masthead. */
+#main { margin-top: 0 !important; padding-top: 0 !important; }
+article.page > header { margin-top: 0 !important; padding-top: 0 !important; }
+
+/* Inner wrappers/content should not add top spacing. */
+.page__inner-wrap,
+.page__content { margin-top: 0 !important; padding-top: 0 !important; }
+
+/* Trim the first real element (prevents H1/H2/figure bumps). */
+.page__content > *:first-child,
+.page__inner-wrap > header:first-child {
+  margin-top: 0 !important; padding-top: 0 !important;
 }
 
-h3 {
-  color: $dimms-teal;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
+/* Page title: a small, consistent offset looks polished. */
+.page__title { margin-top: 0.25rem !important; }
 
-// Masthead styling (let theme handle positioning)
-.masthead {
-  background: $york-red !important;
-  border-bottom: 2px solid rgba(255, 215, 0, 0.3) !important;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2) !important;
-  margin-bottom: 0 !important;
-}
+/* Slightly gentler defaults for other headings elsewhere. */
+h1, h2, h3, h4, h5, h6 { margin: 1.2em 0 0.5em; }
+h1 { color: $york-red; }
 
-.masthead__inner-wrap {
-  padding: 10px 20px !important;
-  background: transparent !important;
-}
+/* ==========================================================================
+   B) SIDEBAR – align with header, never reserve masthead height
+   ========================================================================== */
 
-.masthead__menu {
-  background: transparent !important;
-}
+/* Kill all top spacing on the sidebar itself. */
+.sidebar { margin-top: 0 !important; padding-top: 0 !important; }
 
-// SITE TITLE - HIGHLY VISIBLE GOLD
-.masthead__menu-item--lg a {
-  color: #FFD700 !important;  /* BRIGHT GOLD */
-  font-weight: 800 !important;
-  font-size: 1.4em !important;
-  text-decoration: none !important;
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8) !important;
-  padding: 10px 15px !important;
-  
-  &:hover {
-    color: #FFF8DC !important;  /* CORNSILK - LIGHTER GOLD */
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9) !important;
-  }
-}
+/* Make the sidebar sticky in normal flow; never fixed. */
+.sidebar { position: sticky !important; top: 0.75rem !important; }
 
-// MAIN NAVIGATION - CRITICAL VISIBILITY FIXES
-.greedy-nav {
-  background: transparent !important;
-  
-  // VISIBLE LINKS - WHITE TEXT ON RED BACKGROUND
-  .visible-links {
-    background: transparent !important;
-    
-    .masthead__menu-item a {
-      color: #FFD700 !important;  /* BRIGHT GOLD - HIGHLY VISIBLE */
-      background: transparent !important;
-      font-weight: 700 !important;
-      font-size: 1.1em !important;
-      text-decoration: none !important;
-      padding: 12px 18px !important;
-      margin: 0 2px !important;
-      border-radius: 5px !important;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8) !important;
-      transition: all 0.3s ease !important;
-      display: inline-block !important;
-      
-      &:hover {
-        color: #FFF8DC !important;  /* CORNSILK - LIGHTER GOLD */
-        background: rgba(255, 255, 255, 0.1) !important;
-        transform: translateY(-1px) !important;
-        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9) !important;
-      }
-    }
-  }
-  
-  // MOBILE HAMBURGER BUTTON - HIGHLY VISIBLE
-  > button {
-    background: rgba(255, 255, 255, 0.1) !important;
-    border: 2px solid white !important;
-    color: white !important;
-    padding: 8px 10px !important;
-    border-radius: 5px !important;
-    cursor: pointer !important;
-    
-    &:hover {
-      background: rgba(255, 255, 255, 0.2) !important;
-      border-color: $york-gold !important;
-    }
-    
-    // HAMBURGER LINES
-    .navicon,
-    .navicon::before,
-    .navicon::after {
-      background: white !important;
-      height: 3px !important;
-      width: 20px !important;
-    }
-  }
-  
-  // MOBILE DROPDOWN MENU
-  .hidden-links {
-    background: white !important;
-    border: 2px solid $york-red !important;
-    border-radius: 8px !important;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2) !important;
-    margin-top: 5px !important;
-    overflow: hidden !important;
-    
-    &.hidden {
-      display: none !important;
-    }
-    
-    li a {
-      color: $dark-gray !important;
-      background: white !important;
-      padding: 15px 20px !important;
-      display: block !important;
-      text-decoration: none !important;
-      font-weight: 500 !important;
-      border-bottom: 1px solid #eee !important;
-      
-      &:hover {
-        background: $york-red !important;
-        color: white !important;
-      }
-      
-      &:last-child {
-        border-bottom: none !important;
-      }
-    }
-  }
-}
+/* Some builds attach a generic .sticky utility – neutralize if present. */
+.sidebar.sticky,
+.sticky { position: sticky !important; top: 0.75rem !important; }
 
-// THEME TOGGLE BUTTON
-#theme-toggle a {
-  color: white !important;
-  padding: 8px !important;
-  
-  &:hover {
-    color: $york-gold !important;
-  }
-  
-  i {
-    color: inherit !important;
-    font-size: 1.1em !important;
-  }
-}
+/* If the HTML happens to be "#main > .sidebar", keep it tight too. */
+#main > .sidebar { margin-top: 0 !important; padding-top: 0 !important; }
 
-// FORCE MOBILE RESPONSIVENESS
-@media (max-width: 768px) {
-  .masthead {
-    min-height: 50px !important;
-  }
-  
-  .masthead__inner-wrap {
-    padding: 8px 15px !important;
-  }
-  
-  .masthead__menu-item--lg a {
-    font-size: 1.1em !important;
-    padding: 8px 10px !important;
-  }
-  
-  .greedy-nav .visible-links .masthead__menu-item a {
-    padding: 8px 12px !important;
-    font-size: 0.9em !important;
-  }
-  
-  .greedy-nav > button {
-    padding: 6px 8px !important;
-  }
-}
+/* Sidebar internals shouldn't introduce a top bump. */
+.sidebar .author__avatar,
+.sidebar .author__content,
+.sidebar .author__urls-wrapper { margin-top: 0 !important; }
 
-// ACCESSIBILITY IMPROVEMENTS
-.masthead a:focus,
-.greedy-nav a:focus,
-.greedy-nav button:focus {
-  outline: 3px solid $york-gold !important;
-  outline-offset: 2px !important;
-}
+/* ==========================================================================
+   C) NAV – ensure visibility; keep your color choices
+   ========================================================================== */
 
-// EMERGENCY NAVIGATION VISIBILITY FIXES - GOLD TEXT ON RED BACKGROUND
-// These are critical overrides to ensure navigation is always visible
-.masthead .greedy-nav a,
-.masthead .visible-links a,
-.masthead .masthead__menu-item a,
-.greedy-nav .visible-links .masthead__menu-item a,
-.visible-links a,
-.greedy-nav a {
-  color: #FFD700 !important;  /* BRIGHT GOLD - HIGHLY VISIBLE */
-  background-color: transparent !important;
-  text-decoration: none !important;
-  font-weight: 700 !important;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8) !important;
-  font-size: 1.1em !important;
-}
-
-// Force site title to be gold
-.masthead .site-title,
-.masthead__menu-item--lg a {
-  color: #FFD700 !important;  /* BRIGHT GOLD */
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8) !important;
-  font-weight: 800 !important;
-}
-
-// Ensure masthead background is always red
 .masthead,
 .masthead__inner-wrap,
 .masthead__menu,
@@ -316,335 +98,53 @@ h3 {
   background-image: none !important;
 }
 
-// Additional mobile menu fixes
-.greedy-nav .hidden-links.hidden {
-  display: none !important;
+.masthead__menu-item--lg a,
+.masthead .greedy-nav a,
+.masthead .visible-links a,
+.masthead .masthead__menu-item a,
+.greedy-nav .visible-links .masthead__menu-item a {
+  color: $york-gold !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,.8) !important;
 }
 
-.greedy-nav .hidden-links:not(.hidden) {
-  display: block !important;
-  position: absolute !important;
-  top: 100% !important;
-  right: 0 !important;
-  width: 200px !important;
-}
+/* ==========================================================================
+   D) NICE-TO-HAVES (kept minimal and safe)
+   ========================================================================== */
 
-// Enhanced Content Cards
-.content-card {
-  background: white;
-  border-radius: 12px;
-  padding: 30px;
-  margin: 30px 0;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
-  border: 1px solid rgba(0, 188, 212, 0.1);
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: $gradient-secondary;
-  }
-  
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
-  }
-}
-
-.highlight-box {
-  background: $gradient-secondary;
-  color: white;
-  padding: 30px;
-  border-radius: 12px;
-  margin: 30px 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  
-  &::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
-    animation: shimmer 3s infinite;
-  }
-  
-  h3 {
-    color: white;
-    margin-bottom: 15px;
-    font-weight: 600;
-  }
-}
-
-@keyframes shimmer {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-// Research Areas Grid
-.research-areas {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 25px;
-  margin: 40px 0;
-}
-
-.research-card {
-  background: white;
-  border-radius: 12px;
-  padding: 25px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-  border-left: 4px solid $dimms-cyan;
-  
-  &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-  }
-  
-  h3 {
-    color: $dimms-teal;
-    margin-bottom: 15px;
-    font-size: 1.2em;
-  }
-  
-  p {
-    color: #666;
-    line-height: 1.6;
-  }
-}
-
-// Enhanced Links
 a {
   color: $dimms-cyan;
   text-decoration: none;
-  transition: all 0.3s ease;
-  
-  &:hover {
-    color: $york-red;
-    text-decoration: underline;
+  transition: all .2s ease;
+  &:hover { color: $york-red; text-decoration: underline; }
+}
+
+/* Optional: small visual underline for main H1 */
+h1.page__title {
+  position: relative;
+  padding-bottom: 12px;
+  margin-bottom: 24px;
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 60px; height: 3px;
+    background: $gradient-secondary;
+    border-radius: 2px;
   }
 }
 
-// Modern Sidebar - PROPER LEFT POSITIONING
-.sidebar {
-  /* KEEP SIDEBAR ON THE LEFT SIDE */
-  float: left !important;
-  width: 20% !important;
-  min-width: 200px !important;
-  max-width: 250px !important;
-  margin-right: 20px !important;
-  padding: 20px !important;
-  
-  @media (max-width: 768px) {
-    float: none !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    margin-bottom: 30px !important;
-  }
-  
-  .author__avatar {
-    border-radius: 50%;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-    transition: all 0.3s ease;
-    background: $york-red !important;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 150px;
-    height: 150px;
-    margin: 0 auto 20px auto !important;
-    
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      border-radius: 50%;
-      background: transparent;
-    }
-    
-    &:hover {
-      transform: scale(1.05);
-      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
-    }
-  }
-  
-  .author__name {
-    color: $york-red;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-  
-  .author__bio {
-    color: #666;
-    font-style: italic;
-  }
-  
-  .author__urls {
-    a {
-      color: $dimms-cyan;
-      display: inline-flex;
-      align-items: center;
-      padding: 8px 12px;
-      margin: 4px 0;
-      border-radius: 6px;
-      transition: all 0.3s ease;
-      
-      &:hover {
-        background: rgba(0, 188, 212, 0.1);
-        color: $dimms-teal;
-        transform: translateX(3px);
-      }
-    }
-  }
-}
+/* ==========================================================================
+   E) LAST-RESORT PIN (keep at bottom so it wins)
+   ========================================================================== */
 
-// Enhanced Buttons
-.btn {
-  background: $gradient-secondary;
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
-  
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 188, 212, 0.4);
-    color: white;
-  }
-}
-
-// Page animations
-.page__content {
-  animation: fadeInUp 0.8s ease-out;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-// Mobile responsiveness
-@media (max-width: 768px) {
-  h1 {
-    font-size: 1.8em;
-  }
-  
-  .content-card, .highlight-box {
-    padding: 20px;
-    margin: 20px 0;
-  }
-  
-  .research-areas {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-}
-
-// Footer enhancements (let theme handle positioning)
-.page__footer {
-  background: $dark-gray !important;
-  color: white !important;
-  border-top: 4px solid $dimms-cyan !important;
-
-  a {
-    color: $dimms-cyan;
-
-    &:hover {
-      color: $york-gold;
-    }
-  }
-}
-
-// Professional footer copyright styling
-.page__footer-copyright {
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-  color: #ccc;
-  
-  small {
-    display: block;
-    margin-top: 8px;
-    font-size: 12px;
-    color: #aaa;
-    font-style: italic;
-  }
-}
-
-// Custom scrollbar
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: $gradient-secondary;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: $dimms-teal;
-}
-
-/* ===================================================================
-   FINAL OVERRIDES - Must be last to override theme defaults
-   =================================================================== */
-
-// Fix body padding that theme adds for fixed masthead
-body {
-  padding-top: 0 !important;
-}
-
-// Ensure initial-content has no top gap
-.initial-content {
-  padding-top: 0 !important;
-  margin-top: 0 !important;
-}
-
-// Ensure all layout containers have no top gap
+.initial-content,
 .layout--single .page__inner-wrap,
 .layout--single .page__content,
 .page,
 .page__inner-wrap,
 .page__content {
+  margin-top: 0 !important;
   padding-top: 0 !important;
-  margin-top: 0 !important;
-}
-
-// Override sidebar positioning one more time (must be last!)
-.sidebar {
-  margin-top: 0 !important;
-  position: sticky !important;
-  top: 96px !important;
-}
-
-// Make hamburger button always visible for testing
-.greedy-nav > button {
-  display: block !important;
-  visibility: visible !important;
 }
