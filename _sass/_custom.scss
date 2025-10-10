@@ -1,3 +1,10 @@
+/* DIMMS — collapse the big band under the header site-wide */
+.masthead { margin-bottom: 0 !important; }
+body      { padding-top: 0 !important; }
+.page__inner-wrap,
+.page__content { padding-top: 0 !important; margin-top: 0 !important; }
+.page__title     { margin-top: .25rem !important; }
+
 // DIMMS Lab - Modern Professional Styles
 
 // Enhanced Color Palette
