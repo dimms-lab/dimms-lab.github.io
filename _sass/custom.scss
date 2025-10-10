@@ -1,3 +1,9 @@
+/* TEMP DIAGNOSTIC — remove top gap unconditionally */
+.masthead { margin-bottom: 0 !important; }
+.masthead + .initial-content { margin-top: 0 !important; }
+.layout--single .page__content > *:first-child { margin-top: 0 !important; }
+
+
 // DIMMS Lab - Modern Professional Styles
 
 // Enhanced Color Palette
