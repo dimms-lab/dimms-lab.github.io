@@ -7,12 +7,6 @@ header: null
 classes: wide
 ---
 
-<style>
-.masthead + .initial-content{margin-top:0!important}
-body{padding-top:0!important}
-.layout--single .page__inner-wrap,.layout--single .page__content{margin-top:0!important;padding-top:0!important}
-</style>
-
 
 ## Our Research Approach
 
