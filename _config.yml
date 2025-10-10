@@ -1,7 +1,7 @@
 # Basic Site Settings
 title: "DIMMS Lab"
 description: "Disease-Informed Modelling, Methods, and Systems Laboratory at York University"
-url: "https://dimms-lab.github.io"
+url: "https://dimmslab.org"
 baseurl: ""
 repository: "dimms-lab/dimms-lab.github.io"
 
