@@ -14,6 +14,44 @@ $gradient-secondary: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%);
 // Modern Typography
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
+/* ===================================================================
+   CRITICAL HERO/SPACING FIXES - Remove tall hero/overlay spacing site-wide
+   =================================================================== */
+.page__hero,
+.page__hero--overlay {
+  display: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  min-height: 0 !important;
+}
+
+/* Collapse gap below masthead */
+.masthead {
+  margin-bottom: 0 !important;
+}
+
+/* Remove padding-top from all content containers */
+.initial-content,
+.page,
+.page__inner-wrap,
+.page__content {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* First H1 shouldn't push page down */
+h1,
+.page__title {
+  margin-top: 0.25rem !important;
+}
+
+/* Keep the left author card visible and snug with sticky positioning */
+.sidebar {
+  margin-top: 0 !important;
+  position: sticky !important;
+  top: 96px !important;
+}
+
 // Base styling improvements
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;

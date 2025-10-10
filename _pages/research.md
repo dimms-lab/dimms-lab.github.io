@@ -7,7 +7,7 @@ header: null
 classes: wide
 ---
 
-# Our Research Approach
+## Our Research Approach
 
 The Disease-Informed Modelling, Methods, and Systems (DIMMS) Lab employs a multidisciplinary approach to understand disease dynamics through advanced mathematical modeling, statistical analysis, and machine learning techniques.
 <div style="text-align: center; margin: 40px 0;">
