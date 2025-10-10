@@ -605,3 +605,41 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background: $dimms-teal;
 }
+
+/* ===================================================================
+   FINAL OVERRIDES - Must be last to override theme defaults
+   =================================================================== */
+
+// Fix body padding that theme adds for fixed masthead
+body {
+  padding-top: 0 !important;
+}
+
+// Ensure initial-content has no top gap
+.initial-content {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+// Ensure all layout containers have no top gap
+.layout--single .page__inner-wrap,
+.layout--single .page__content,
+.page,
+.page__inner-wrap,
+.page__content {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+// Override sidebar positioning one more time (must be last!)
+.sidebar {
+  margin-top: 0 !important;
+  position: sticky !important;
+  top: 96px !important;
+}
+
+// Make hamburger button always visible for testing
+.greedy-nav > button {
+  display: block !important;
+  visibility: visible !important;
+}
