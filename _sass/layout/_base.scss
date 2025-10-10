@@ -13,8 +13,9 @@ body {
   background-color: var(--global-bg-color);
 
   margin: 0;
-  padding: 20px 0 0; /* Reduced from $masthead-height (70px) to 20px for minimal professional spacing */
-  padding-bottom: 9em;
+  /* was: padding: 20px 0 0; */
+  padding: 0;                 /* no top padding now that header is static */
+  padding-bottom: 9em;        /* keep your footer space */
   font-family: $global-font-family;
   line-height: 1.5;
 
