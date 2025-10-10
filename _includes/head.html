@@ -18,6 +18,26 @@
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
 
+<!-- DIMMS: hard override any body/content top spacing after CSS and after any JS runs -->
+<script>
+(function() {
+  function nukeTopGap(){
+    // kill any body padding injected for fixed masthead
+    document.body && (document.body.style.paddingTop = '0px');
+    // remove margin below masthead just in case
+    var m = document.querySelector('.masthead'); if (m) m.style.marginBottom = '0px';
+    // zero content wrappers
+    var w = document.querySelector('.page__inner-wrap'); if (w){ w.style.marginTop='0px'; w.style.paddingTop='0px'; }
+    var c = document.querySelector('.page__content'); if (c){ c.style.marginTop='0px'; c.style.paddingTop='0px'; }
+    // #main sometimes has a default margin-top
+    var main = document.getElementById('main'); if (main){ main.style.marginTop='0px'; }
+  }
+  nukeTopGap();
+  window.addEventListener('load', nukeTopGap);
+  window.addEventListener('resize', nukeTopGap);
+})();
+</script>
+
 <!-- DIMMS emergency: kill the big band under the header -->
 <style>
   body{padding-top:0!important;}
