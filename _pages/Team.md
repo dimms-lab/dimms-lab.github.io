@@ -1,8 +1,10 @@
 ---
-layout: archive
+layout: single
 title: "Team"
 permalink: /team/
 author_profile: true
+header: null
+classes: wide
 ---
 ## Lab Director
 

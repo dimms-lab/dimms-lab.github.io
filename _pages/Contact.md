@@ -1,7 +1,10 @@
 ---
-layout: archive
+layout: single
+title: "Contact"
 permalink: /contact/
 author_profile: true
+header: null
+classes: wide
 ---
 <p style="line-height: 1.6;">
 Department of Mathematics and Statistics,<br>

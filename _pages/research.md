@@ -1,8 +1,10 @@
 ---
-layout: archive
+layout: single
 title: "Research"
 permalink: /research/
 author_profile: true
+header: null
+classes: wide
 ---
 
 # Our Research Approach

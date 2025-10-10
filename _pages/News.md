@@ -1,8 +1,10 @@
 ---
-layout: archive
+layout: single
 title: "News"
 permalink: /news/
 author_profile: true
+header: null
+classes: wide
 ---
 
 ### New Publication: Computational Biology Research

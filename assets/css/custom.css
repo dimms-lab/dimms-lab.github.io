@@ -1,6 +1,6 @@
 /* Custom CSS for header spacing fixes */
 
-/* Kill any tall hero/overlay if a theme tries to inject it */
+/* Remove any tall hero/overlay spacing site-wide */
 .page__hero,
 .page__hero--overlay {
   display: none !important;
@@ -9,29 +9,28 @@
   min-height: 0 !important;
 }
 
-/* Collapse the default top gap below the masthead */
+/* Collapse the default gap that many academicpages/minimal-mistakes layouts add */
 .masthead {
   margin-bottom: 0 !important;
 }
 
 .initial-content,
-main,
-.page__content,
 .page,
-.page__inner-wrap {
-  padding-top: 0.75rem !important;
+.page__inner-wrap,
+.page__content {
+  padding-top: 0 !important;
   margin-top: 0 !important;
 }
 
-/* First H1 shouldn't push content down */
+/* First heading shouldn't push the page down */
 h1,
 .page__title {
   margin-top: 0.25rem !important;
 }
 
-/* Tighten the profile card + content alignment */
-.sidebar,
-.author__bio,
-.author__avatar {
+/* Keep the sidebar tight and visible */
+.sidebar {
   margin-top: 0 !important;
+  position: sticky;
+  top: 96px;
 }
