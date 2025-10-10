@@ -13,17 +13,15 @@
   @include clearfix();
   margin-bottom: 1em;
 
-  @media (orientation: portrait) {
-    margin-top: 1em;
-  }
-
+  /* >>> DIMMS FIX: sidebar should NOT reserve space for a fixed masthead.
+         Make it sticky (not fixed) and remove any top padding. <<< */
   @media screen and (min-width: $sidebar-screen-min-width) {
     height: auto;
     max-height: calc(100vh - 2rem);
     overflow-y: auto;
-    position: sticky;   /* follows scroll, respects document flow */
-    top: 1rem;          /* small breathing room */
-    padding-top: 0;
+    position: sticky;        /* follows scroll, respects document flow */
+    top: 1rem;               /* small breathing room under header */
+    padding-top: 0;          /* was $masthead-height — this created the big band */
   }
 
   @include breakpoint($large) {
@@ -32,9 +30,7 @@
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
 
-    &:hover {
-      opacity: 1;
-    }
+    &:hover { opacity: 1; }
   }
 
   @include breakpoint($x-large) {
@@ -47,9 +43,7 @@
     font-family: $sans-serif-narrow;
   }
 
-  h3, h4 {
-    font-size: $type-size-5;
-  }
+  h3, h4 { font-size: $type-size-5; }
 
   p, li {
     font-family: $sans-serif;
@@ -57,9 +51,7 @@
     line-height: 1.5;
   }
 
-  img {
-    width: 100%;
-  }
+  img { width: 100%; }
 }
 
 .sidebar__right {
@@ -73,9 +65,7 @@
     z-index: 10;
   }
 
-  @include breakpoint($x-large) {
-    width: $right-sidebar-width;
-  }
+  @include breakpoint($x-large) { width: $right-sidebar-width; }
 }
 
 /*
@@ -86,8 +76,6 @@
   display: table-cell;
   vertical-align: top;
   width: 36px;
-  // set width only, for non-square avatars
-  // height: 36px;
 
   @include breakpoint($large) {
     display: block;
@@ -129,6 +117,7 @@
     margin-bottom: 10px;
   }
 }
+
 .sidebar .author__name {
   font-family: $sans-serif;
   font-size: $type-size-5;
@@ -136,9 +125,7 @@
 
 .sidebar .author__desktop {
   display: none;
-  @media screen and (min-width: 1024px) {
-    display: block;
-  }
+  @media screen and (min-width: 1024px) { display: block; }
 }
 
 .author__pronouns {
@@ -165,25 +152,15 @@
   vertical-align: middle;
   font-family: $sans-serif;
   z-index: 10;
-  position: relative;
   cursor: pointer;
 
-  li:last-child {
-    a {
-      margin-bottom: 0;
-    }
-  }
+  li:last-child a { margin-bottom: 0; }
 
-  @include breakpoint($large) {
-    display: block;
-  }
+  @include breakpoint($large) { display: block; }
 
   button {
     margin-bottom: 0;
-
-    @include breakpoint($large) {
-      display: none;
-    }
+    @include breakpoint($large) { display: none; }
   }
 }
 
@@ -223,9 +200,7 @@
     border-color: var(--global-border-color) transparent;
     z-index: 0;
 
-    @include breakpoint($large) {
-      display: none;
-    }
+    @include breakpoint($large) { display: none; }
   }
 
   &:after {
@@ -240,14 +215,10 @@
     border-color: #fff transparent;
     z-index: 1;
 
-    @include breakpoint($large) {
-      display: none;
-    }
+    @include breakpoint($large) { display: none; }
   }
 
-  li {
-    white-space: nowrap;
-  }
+  li { white-space: nowrap; }
 
   a {
     display: block;
@@ -259,8 +230,6 @@
     font-size: $type-size-5;
     text-decoration: none;
 
-    &:hover {
-      text-decoration: underline;
-    }
+    &:hover { text-decoration: underline; }
   }
 }
