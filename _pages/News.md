@@ -7,10 +7,23 @@ header: null
 classes: wide
 ---
 
-### Lab Member Attends 2025 SIAM/CAIMS Annual Meetings
+### DIMMS Lab Members Attend 2025 SIAM/CAIMS Annual Meetings in Montreal
 **August 2025**
 
-Dr. Andrew Omame attended the Third Joint SIAM/CAIMS Annual Meetings held in Montreal, Canada in July 2025. The conference brought together researchers from the Society for Industrial and Applied Mathematics (SIAM) and the Canadian Applied and Industrial Mathematics Society (CAIMS).
+<div style="overflow: auto; margin-bottom: 20px;">
+  <img src="/images/andrew1.jpg" alt="Andrew Omame at SIAM/CAIMS 2025" style="width: 300px; float: right; margin-left: 20px; margin-bottom: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  
+  <p>Dr. <strong>Andrew Omame</strong> and Dr. <strong>Qi Deng</strong> represented the DIMMS Lab at the Third Joint SIAM/CAIMS Annual Meetings held in Montreal, Canada from July 28-August 1, 2025.</p>
+  
+  <p>The conference brought together researchers from the Society for Industrial and Applied Mathematics (SIAM) and the Canadian Applied and Industrial Mathematics Society (CAIMS), providing an excellent platform for our lab members to present their research, network with colleagues, and engage with the latest advances in applied and computational mathematics.</p>
+</div>
+
+<div style="display: flex; gap: 15px; margin-top: 20px; flex-wrap: wrap;">
+  <img src="/images/andrew2.jpg" alt="Andrew Omame at conference" style="width: 48%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="/images/andrewandqi3.jpg" alt="Andrew Omame and Qi Deng at SIAM/CAIMS" style="width: 48%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+</div>
+
+<p style="margin-top: 15px;"><strong>Congratulations to Andrew and Qi on representing the DIMMS Lab at this prestigious conference!</strong></p>
 
 ---
 
