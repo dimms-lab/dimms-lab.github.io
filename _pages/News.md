@@ -9,18 +9,18 @@ classes: wide
 
 ### DIMMS Lab Members Attend 2025 SIAM/CAIMS Annual Meetings in Montreal
 **August 2025**
-  
+<div style="clear: both; margin-top: 20px;">
+  <figure style="display: inline-block; width: 48%; margin: 0 1% 20px 0; vertical-align: top;">
+    <img src="/images/andrewandqi3.jpg" alt="Andrew Omame and Qi Deng" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <figcaption style="text-align: center; margin-top: 8px; font-style: italic; color: #666;">Dr. Andrew Omame (left) and Dr. Qi Deng (center) at the conference</figcaption>
+  </figure>
+
   <p>Dr. <strong>Andrew Omame</strong> and Dr. <strong>Qi Deng</strong> represented the DIMMS Lab at the Third Joint SIAM/CAIMS Annual Meetings held in Montreal, Canada from July 28-August 1, 2025.</p>
   
   <p>The conference brought together researchers from the Society for Industrial and Applied Mathematics (SIAM) and the Canadian Applied and Industrial Mathematics Society (CAIMS), providing an excellent platform for our lab members to present their research, network with colleagues, and engage with the latest advances in applied and computational mathematics.</p>
 </div>
 
 <div style="clear: both; margin-top: 20px;">
-  <figure style="display: inline-block; width: 48%; margin: 0 1% 20px 0; vertical-align: top;">
-    <img src="/images/andrewandqi3.jpg" alt="Andrew Omame and Qi Deng" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-    <figcaption style="text-align: center; margin-top: 8px; font-style: italic; color: #666;">Dr. Andrew Omame (left) and Dr. Qi Deng (center) at the conference</figcaption>
-  </figure>
-  
   <figure style="display: inline-block; width: 48%; margin: 0 0 20px 1%; vertical-align: top;">
     <img src="/images/andrew2.jpg" alt="Andrew Omame presenting" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
     <figcaption style="text-align: center; margin-top: 8px; font-style: italic; color: #666;">Dr. Andrew Omame presenting his research</figcaption>
