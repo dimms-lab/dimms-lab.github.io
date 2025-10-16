@@ -84,6 +84,19 @@ classes: wide
   <p>Outside academia, she enjoys nature.</p>
 </div>
 
+<div style="margin: 40px 0; border-bottom: 1px solid #eee; padding-bottom: 30px;">
+  <img src="/images/joe.jpg" alt="Joe Tran" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  
+  <h3>Joe Tran</h3>
+  <p><strong>PhD Student in Applied Mathematics</strong></p>
+  
+  <p>Joe is a doctoral student pursuing a PhD in Applied Mathematics at York University. He previously completed his Master of Arts in Pure Mathematics at York University, and has successfully transitioned his focus toward applied mathematical research.</p>
+  
+  <p>His research interests focus on mathematical modeling and computational approaches to understanding complex systems in epidemiology and public health.</p>
+  
+  <p>Joe achieved first authorship on a publication in <em>Chaos, Solitons & Fractals</em> (2025), marking an important milestone early in his academic career.</p>
+</div>
+
 ## Master's Students
 
 <div style="margin: 40px 0; border-bottom: 1px solid #eee; padding-bottom: 30px;">
@@ -93,19 +106,6 @@ classes: wide
   <p><strong>MA Student</strong></p>
   
   <p>Tue is a Master's student researching how the immune system interacts with the dengue virus using mathematical models to better understand disease dynamics. Her research interests focus on mathematical modelling of infectious diseases and immune response.</p>
-</div>
-
-<div style="margin: 40px 0; border-bottom: 1px solid #eee; padding-bottom: 30px;">
-  <img src="/images/joe.jpg" alt="Joe Tran" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  
-  <h3>Joe Tran</h3>
-  <p><strong>MA Student in Pure Mathematics, transitioning to PhD program</strong></p>
-  
-  <p>Joe is a graduate student pursuing a Master of Arts in Pure Mathematics at York University. With a strong passion for abstract reasoning and theoretical problem-solving, he has immersed himself in advanced mathematical studies throughout his academic journey.</p>
-  
-  <p>Looking ahead, he is set to continue his academic journey at York University, where he will pursue a PhD in Pure Mathematics. His academic interests and dedication reflect his commitment to contributing to the field through research, teaching, and continued exploration of foundational mathematical theory.</p>
-  
-  <p>Joe recently achieved first authorship on a publication in <em>Chaos, Solitons & Fractals</em> (2025), marking an important milestone in his academic career.</p>
 </div>
 
 ## Undergraduate Students
