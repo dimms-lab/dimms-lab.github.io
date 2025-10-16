@@ -7,16 +7,10 @@ header: null
 classes: wide
 ---
 
-### New Publication: Computational Biology Research
-**May 22, 2025**
+### Lab Member Attends 2025 SIAM/CAIMS Annual Meetings
+**August 2025**
 
-We are pleased to announce that Dr. Qi Deng, Postdoctoral Researcher at the DIMMS Lab, has published a new paper in PLoS Computational Biology, a leading journal in computational biology research.
-
-This publication represents significant progress in our lab's computational biology research initiatives and demonstrates the high-quality work being conducted by our team members.
-
-The paper is now available online: [Read the full paper](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013073)
-
-**Congratulations to Dr. Qi Deng on this excellent achievement!**
+Dr. Andrew Omame attended the Third Joint SIAM/CAIMS Annual Meetings held in Montreal, Canada in July 2025. The conference brought together researchers from the Society for Industrial and Applied Mathematics (SIAM) and the Canadian Applied and Industrial Mathematics Society (CAIMS).
 
 ---
 
@@ -33,6 +27,19 @@ The paper is now available online: [Read the full paper](https://journals.plos.o
   
   <p><strong>Congratulations to Nickson on this outstanding achievement!</strong></p>
 </div>
+
+---
+
+### New Publication: Computational Biology Research
+**May 22, 2025**
+
+We are pleased to announce that Dr. Qi Deng, Postdoctoral Researcher at the DIMMS Lab, has published a new paper in PLoS Computational Biology, a leading journal in computational biology research.
+
+This publication represents significant progress in our lab's computational biology research initiatives and demonstrates the high-quality work being conducted by our team members.
+
+The paper is now available online: [Read the full paper](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013073)
+
+**Congratulations to Dr. Qi Deng on this excellent achievement!**
 
 ---
 
