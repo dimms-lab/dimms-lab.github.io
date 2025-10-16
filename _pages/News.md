@@ -9,9 +9,6 @@ classes: wide
 
 ### DIMMS Lab Members Attend 2025 SIAM/CAIMS Annual Meetings in Montreal
 **August 2025**
-
-<div style="overflow: auto; margin-bottom: 20px;">
-  <img src="/images/andrewandqi3.jpg" alt="Andrew Omame and Qi Deng at SIAM/CAIMS 2025" style="width: 300px; float: right; margin-left: 20px; margin-bottom: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   
   <p>Dr. <strong>Andrew Omame</strong> and Dr. <strong>Qi Deng</strong> represented the DIMMS Lab at the Third Joint SIAM/CAIMS Annual Meetings held in Montreal, Canada from July 28-August 1, 2025.</p>
   
