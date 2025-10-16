@@ -23,7 +23,7 @@ classes: wide
   <img src="/images/andrewandqi3.jpg" alt="Andrew Omame and Qi Deng at SIAM/CAIMS" style="width: 48%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 </div>
 
-<p style="margin-top: 15px;"><strong>Congratulations to Andrew and Qi on representing the DIMMS Lab at this prestigious conference!</strong></p>
+<p style="margin-top: 15px;"><strong>A big THANK YOU to Andrew and Qi on representing the DIMMS Lab at this prestigious conference!</strong></p>
 
 ---
 
