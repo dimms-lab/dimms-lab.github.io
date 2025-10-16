@@ -7,6 +7,25 @@ header: null
 classes: wide
 ---
 
+### Upcoming Seminar: Guest Speaker Sherif Shuaib
+**October 16, 2025**
+
+<div style="overflow: auto; margin-bottom: 20px;">
+  <img src="/images/Seminar_Flyer_Sherif_Shuaib.JPG" alt="Sherif Shuaib Seminar" style="width: 250px; float: right; margin-left: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  
+  <p>The DIMMS Lab is pleased to welcome a guest speaker, <strong>Sherif Shuaib</strong>, Ph.D. candidate at York University, on <strong>October 17, 2025, from 10:00 AM to 11:30 AM</strong>. This is an in-person research presentation located in Ross Building, Room N638 with snacks and coffee provided.</p>
+  
+  <p>Sherif will present his research titled "<strong>A mechanistic stage-structured model for estimating maturation, mortality, and recruitment parameters of three economically significant fish species in Canadian waters</strong>."</p>
+  
+  <p>The study analyzes discrete-time, stage-structured models to estimate key life-history parameters for three economically significant fish species: Chinook Salmon (<em>Oncorhynchus tshawytscha</em>), Capelin (<em>Mallotus villosus</em>), and Cod (<em>Gadus morhua</em>). The research examines model well-posedness, net reproductive number, and global stability of equilibria, providing insights into effective fisheries management strategies.</p>
+  
+  <p>His research interests include mathematical biology, data analytics, and population dynamics.</p>
+  
+  <p><strong>All are welcome to attend this seminar!</strong></p>
+</div>
+
+---
+
 ### DIMMS Lab Members Attend 2025 SIAM/CAIMS Annual Meetings in Montreal
 **August 2025**
 <div style="clear: both; margin-top: 20px;">
