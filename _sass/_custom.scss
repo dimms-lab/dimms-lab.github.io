@@ -4,16 +4,33 @@
    so these rules win over theme defaults.
    ========================================================================== */
 
-/* ------------------  Brand palette (safe to keep)  ------------------ */
-$york-red: #8B0000;
-$york-gold: #FFD700;
-$dimms-cyan: #00bcd4;
-$dimms-teal: #0097a7;
+/* ------------------  MODERNIZED COLOR PALETTE  ------------------ */
+/* Deep Navy/Slate Blue Theme - sophisticated academic aesthetic */
+
+// Primary Colors - Deep Navy/Slate (replaces harsh red)
+$navy-primary: #1e3a5f;        // Main header background
+$navy-dark: #152a45;           // Darker variant for footer
+$navy-light: #2d4a6f;          // Lighter variant for accents
+
+// Accent Colors - Refined Gold & Teal
+$accent-gold: #c9a227;         // Muted gold (subtle York connection)
+$accent-gold-light: #d4b23d;   // Lighter gold for hover states
+$accent-teal: #0097a7;         // Links/highlights
+$accent-teal-light: #00acc1;   // Lighter teal for hover
+$accent-teal-dark: #00796b;    // Darker teal for emphasis
+
+// Legacy variable mappings (for compatibility)
+$york-red: $navy-primary;
+$york-gold: $accent-gold;
+$dimms-cyan: $accent-teal-light;
+$dimms-teal: $accent-teal;
 $accent-blue: #3498db;
 $dark-gray: #2c3e50;
 $light-gray: #f8f9fa;
-$gradient-primary: linear-gradient(135deg, #8B0000 0%, #B22222 100%);
-$gradient-secondary: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%);
+
+// Gradients
+$gradient-primary: linear-gradient(135deg, $navy-primary 0%, $navy-light 100%);
+$gradient-secondary: linear-gradient(135deg, $accent-teal 0%, $accent-teal-dark 100%);
 
 /* Optional modern typography */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
@@ -98,15 +115,36 @@ h1 { color: $york-red; }
   background-image: none !important;
 }
 
-.masthead__menu-item--lg a,
+/* Site title */
+.masthead__menu-item--lg a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px !important;
+  transition: color 0.25s ease !important;
+  &:hover { color: $accent-gold-light !important; }
+}
+
+/* Navigation links - clean white on navy */
 .masthead .greedy-nav a,
 .masthead .visible-links a,
 .masthead .masthead__menu-item a,
 .greedy-nav .visible-links .masthead__menu-item a {
-  color: $york-gold !important;
+  color: rgba(255, 255, 255, 0.9) !important;
   text-decoration: none !important;
-  font-weight: 700 !important;
-  text-shadow: 2px 2px 4px rgba(0,0,0,.8) !important;
+  font-weight: 500 !important;
+  transition: all 0.25s ease !important;
+  &:hover {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+}
+
+/* Focus states for accessibility */
+.masthead a:focus,
+.greedy-nav a:focus {
+  outline: 2px solid $accent-gold !important;
+  outline-offset: 2px !important;
 }
 
 /* ==========================================================================
@@ -114,10 +152,10 @@ h1 { color: $york-red; }
    ========================================================================== */
 
 a {
-  color: $dimms-cyan;
+  color: $accent-teal;
   text-decoration: none;
   transition: all .2s ease;
-  &:hover { color: $york-red; text-decoration: underline; }
+  &:hover { color: $navy-primary; text-decoration: underline; }
 }
 
 /* Optional: small visual underline for main H1 */
