@@ -1,9 +1,9 @@
 ---
 permalink: /
-title: "DIMMS Lab"
+title: ""
 excerpt: "Disease-Informed Modelling, Methods, and Systems Laboratory"
 author_profile: true
-classes: wide
+classes: wide homepage
 header: null
 redirect_from:
   - /about/

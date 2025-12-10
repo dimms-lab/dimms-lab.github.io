@@ -82,26 +82,72 @@ h1, h2, h3, h4, h5, h6 { margin: 1.2em 0 0.5em; }
 h1 { color: $york-red; }
 
 /* ==========================================================================
-   B) SIDEBAR – align with header, never reserve masthead height
+   B) SIDEBAR – LEFT side on desktop, BELOW content on mobile
    ========================================================================== */
 
-/* Kill all top spacing on the sidebar itself. */
-.sidebar { margin-top: 0 !important; padding-top: 0 !important; }
+/* Main container uses flexbox for proper sidebar positioning */
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
 
-/* Make the sidebar sticky in normal flow; never fixed. */
-.sidebar { position: sticky !important; top: 0.75rem !important; }
+/* Sidebar on LEFT - desktop */
+.sidebar {
+  order: 1; /* First in visual order (left side) */
+  flex: 0 0 200px;
+  max-width: 200px;
+  margin-top: 0 !important;
+  padding: 1rem !important;
+  position: sticky !important;
+  top: 1rem !important;
+  align-self: flex-start;
+}
+
+/* Main article takes remaining space */
+#main > article.page {
+  order: 2; /* Second in visual order (right of sidebar) */
+  flex: 1;
+  min-width: 0; /* Prevent flex overflow */
+  max-width: calc(100% - 220px);
+}
 
 /* Some builds attach a generic .sticky utility – neutralize if present. */
 .sidebar.sticky,
-.sticky { position: sticky !important; top: 0.75rem !important; }
-
-/* If the HTML happens to be "#main > .sidebar", keep it tight too. */
-#main > .sidebar { margin-top: 0 !important; padding-top: 0 !important; }
+.sticky {
+  position: sticky !important;
+  top: 1rem !important;
+}
 
 /* Sidebar internals shouldn't introduce a top bump. */
 .sidebar .author__avatar,
 .sidebar .author__content,
 .sidebar .author__urls-wrapper { margin-top: 0 !important; }
+
+/* ==========================================================================
+   B2) HOMEPAGE-SPECIFIC LAYOUT FIXES
+   ========================================================================== */
+
+/* Homepage: hide the empty page title header */
+.homepage .page__title:empty,
+.homepage header:empty,
+.homepage .page__inner-wrap > header {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 0 !important;
+}
+
+/* Homepage: full width content, no sidebar constraint */
+.homepage #main > article.page {
+  max-width: 100%;
+}
+
+/* Hide any empty h1 elements */
+h1:empty {
+  display: none !important;
+}
 
 /* ==========================================================================
    C) NAV – ensure visibility; keep your color choices
@@ -180,46 +226,47 @@ h1.page__title {
 /* ---------- HERO SECTION ---------- */
 .homepage-hero {
   background: linear-gradient(135deg, $light-gray 0%, #ffffff 100%);
-  padding: 3rem 0;
-  margin: -1rem -1rem 3rem -1rem;
+  padding: 3rem 1rem;
+  margin: 0 0 2rem 0;
   border-bottom: 1px solid rgba(30, 58, 95, 0.1);
 }
 
 .hero-content {
   display: flex;
+  flex-direction: row; /* Side by side on desktop */
   align-items: center;
   justify-content: space-between;
   gap: 3rem;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 0 1.5rem;
 }
 
 .hero-text {
-  flex: 1;
-  max-width: 550px;
+  flex: 1 1 55%;
+  max-width: 600px;
+  min-width: 300px;
 }
 
 .hero-title {
-  font-size: 3rem;
+  font-size: 2.75rem;
   font-weight: 700;
   color: $navy-primary;
   margin: 0 0 0.5rem 0;
   padding: 0;
-  line-height: 1.1;
+  line-height: 1.15;
   &::after { display: none; }
 }
 
 .hero-subtitle {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   color: $accent-teal;
   font-weight: 600;
   margin: 0 0 1rem 0;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
 }
 
 .hero-tagline {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: #555;
   line-height: 1.7;
   margin: 0 0 1.5rem 0;
@@ -233,15 +280,21 @@ h1.page__title {
 }
 
 .hero-affiliation {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #777;
   margin: 0;
 }
 
 .hero-graphic {
-  flex: 0 0 380px;
-  max-width: 380px;
-  svg { width: 100%; height: auto; }
+  flex: 0 0 340px;
+  max-width: 340px;
+  min-width: 280px;
+
+  svg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 }
 
 /* ---------- BUTTONS ---------- */
@@ -688,12 +741,13 @@ p a, li a, td a, .pub-content a {
   }
 
   .hero-graphic {
-    flex: 0 0 320px;
-    max-width: 320px;
+    flex: 0 0 300px;
+    max-width: 300px;
+    min-width: 250px;
   }
 
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 
   /* Research grid: 2 columns */
@@ -706,10 +760,14 @@ p a, li a, td a, .pub-content a {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Sidebar adjustments */
+  /* Sidebar still on left but slightly narrower */
   .sidebar {
-    position: relative !important;
-    top: 0 !important;
+    flex: 0 0 180px;
+    max-width: 180px;
+  }
+
+  #main > article.page {
+    max-width: calc(100% - 200px);
   }
 }
 
@@ -758,28 +816,62 @@ p a, li a, td a, .pub-content a {
     padding: 0.5rem !important;
   }
 
-  /* Hero section - stack vertically */
+  /* ========== SIDEBAR - MOVE BELOW CONTENT ========== */
+  #main {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    order: 3 !important; /* Move AFTER article content */
+    flex: 0 0 auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    position: relative !important;
+    top: 0 !important;
+    margin-top: 2rem;
+    padding: 1.5rem !important;
+    text-align: center;
+    background: $light-gray;
+    border-radius: 8px;
+  }
+
+  #main > article.page {
+    order: 2; /* Article comes before sidebar */
+    flex: 1 1 100%;
+    max-width: 100% !important;
+    width: 100%;
+  }
+
+  .sidebar .author__avatar {
+    max-width: 100px;
+    margin: 0 auto 1rem auto;
+  }
+
+  /* ========== HERO SECTION - TEXT FIRST, GRAPHIC BELOW ========== */
   .homepage-hero {
-    padding: 2rem 0;
+    padding: 2rem 1rem;
     margin: 0 0 2rem 0;
   }
 
   .hero-content {
     flex-direction: column;
     text-align: center;
-    padding: 0 1rem;
+    gap: 2rem;
   }
 
   .hero-text {
+    order: 1; /* Text FIRST */
     max-width: 100%;
-    order: 2;
+    min-width: auto;
+    flex: 1 1 auto;
   }
 
   .hero-graphic {
+    order: 2; /* Graphic SECOND (below text) */
     flex: 0 0 auto;
     max-width: 280px;
-    order: 1;
-    margin-bottom: 1rem;
+    min-width: auto;
+    margin: 0 auto;
   }
 
   .hero-subtitle {
@@ -835,17 +927,6 @@ p a, li a, td a, .pub-content a {
 
   .director-info h3 {
     font-size: 1.3rem;
-  }
-
-  /* Sidebar - move below content on tablet */
-  .sidebar {
-    position: relative !important;
-    top: 0 !important;
-    float: none !important;
-    width: 100% !important;
-    margin-bottom: 2rem;
-    padding: 1rem !important;
-    text-align: center;
   }
 
   /* Page layout adjustments */
