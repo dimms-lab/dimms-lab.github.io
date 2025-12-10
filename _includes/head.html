@@ -22,7 +22,7 @@
 <script>
 (function() {
   function nukeTopGap(){
-    // kill any body padding injected for fixed masthead
+    // kill any body padding injected for fixed masthead (greedy-nav.js sets this)
     document.body && (document.body.style.paddingTop = '0px');
     // remove margin below masthead just in case
     var m = document.querySelector('.masthead'); if (m) m.style.marginBottom = '0px';
@@ -31,10 +31,14 @@
     var c = document.querySelector('.page__content'); if (c){ c.style.marginTop='0px'; c.style.paddingTop='0px'; }
     // #main sometimes has a default margin-top
     var main = document.getElementById('main'); if (main){ main.style.marginTop='0px'; }
+    // sidebar padding - greedy-nav.js sets this, we don't want it
+    var sidebar = document.querySelector('.sidebar'); if (sidebar) sidebar.style.paddingTop = '';
   }
   nukeTopGap();
   window.addEventListener('load', nukeTopGap);
   window.addEventListener('resize', nukeTopGap);
+  // Run periodically to catch any JS that sets padding after load
+  setInterval(nukeTopGap, 500);
 })();
 </script>
 
