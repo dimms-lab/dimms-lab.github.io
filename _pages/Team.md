@@ -4,205 +4,284 @@ title: "Team"
 permalink: /team/
 author_profile: true
 header: null
-classes: wide
+classes: wide team-page
 ---
-## Lab Director
 
-<div style="margin: 40px 0; border-bottom: 1px solid #eee; padding-bottom: 30px;">
-  <img src="/images/assefa.jpeg" alt="Prof. Woldegerima" style="width: 200px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  
-  <h3>Woldegeriel Assefa Woldegerima</h3>
-  <p><strong>Director of the DIMMS Lab</strong><br>
-  Assistant Professor in the Professional stream<br>
-  Department of Mathematics and Statistics, York University</p>
-  
-  <p>Prof. Woldegerima leads the DIMMS Lab with expertise in mathematical biology, disease modeling, and computational epidemiology. His research focuses on developing innovative mathematical frameworks for understanding complex disease dynamics.</p>
-  
-  <p><strong>Contact</strong>: <a href="mailto:wassefaw@yorku.ca">wassefaw@yorku.ca</a><br>
-  <strong>Office</strong>: S614 Ross Building<br>
-  <strong>Phone</strong>: +1 (416) 736 2100 ext. 22889</p>
-</div>
+<!-- ======================= LAB DIRECTOR ======================= -->
+<section class="team-section">
+  <h2 class="section-title">Lab Director</h2>
 
-## Postdoctoral Researchers
-
-<div style="margin: 40px 0; border-bottom: 1px solid #eee; padding-bottom: 30px;">
-  <img src="/images/qi.jpg" alt="Dr. Qi Deng" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  
-  <h3>Dr. Qi Deng</h3>
-  <p><strong>Postdoctoral Researcher</strong></p>
-  
-  <p><strong>Topic</strong>: Modeling sexually transmitted diseases and theoretical immunology</p>
-  
-  <p>Qi Deng is currently a postdoc working on modeling sexually transmitted diseases and theoretical immunology. Her main interests and recent works include data-driven mathematical modeling, agent-based models, and deep learning.</p>
-</div>
-
-<div style="margin: 40px 0; border-bottom: 1px solid #eee; padding-bottom: 30px;">
-  <img src="/images/andrew.jpg" alt="Dr. Andrew Omame" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  
-  <h3>Dr. Andrew Omame</h3>
-  <p><strong>Postdoctoral Research Fellow</strong></p>
-  
-  <p>Dr. Andrew Omame is a motivated, goal-driven individual with a strong passion for teaching, research and development. He obtained his PhD in Applied Mathematics from the Federal University of Technology Owerri, Nigeria in 2020. He was a Postdoctoral Research Fellow at the Abdus Salam School of Mathematical Sciences Lahore, Pakistan from 2021 to 2023.</p>
-  
-  <p>His research areas include mathematical biology, nonlinear dynamical systems and applied mathematics in general. His research interests focus on the design and analysis of robust mathematical models for public health, policy and for wider industrial applications.</p>
-  
-  <p>He is currently a Postdoctoral Research Fellow under the supervision of Prof. W. A. Woldegerima at the Department of Mathematics and Statistics, York University Canada.</p>
-</div>
-
-<div style="margin: 40px 0; border-bottom: 1px solid #eee; padding-bottom: 30px;">
-  <img src="/images/chigozie.png" alt="Dr. Chigozie Ugwu" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  
-  <h3>Dr. Chigozie Louisa Jane Ugwu</h3>
-  <p><strong>Postdoctoral Fellow</strong></p>
-  
-  <p>Dr. Chigozie Louisa Jane Ugwu completed her Doctorate in Statistics at the University of KwaZulu-Natal, Durban, South Africa (UKZN) in 2021, under the guidance of Professor Temesgen Zewotir. Currently, she holds the position of a postdoctoral fellow at the Department of Mathematics and Statistics at York University, with direct supervision from Professor Woldegebriel Assefa Woldegerima.</p>
-  
-  <p>Her primary research areas center around infectious disease modeling and spatial epidemiology. Dr. Ugwu's research is dedicated to utilizing a multidisciplinary approach that incorporates mathematical, statistical, geospatial, and machine-learning techniques. Her focus is on modeling, predicting, and assessing the risk associated with monkeypox (mpox) and other (re)emerging zoonotic threats. Through her work, she aims to provide valuable insights and data-driven information that can inform decision-making processes and guide public health actions.</p>
-</div>
-
-## Doctoral Students
-
-<div style="margin: 40px 0; border-bottom: 1px solid #eee; padding-bottom: 30px;">
-  <img src="/images/Farah.jpg" alt="Farah Al Hashimi" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  
-  <h3>Farah Al Hashimi</h3>
-  <p><strong>PhD Candidate in Applied Mathematics</strong></p>
-  
-  <p>Farah is currently pursuing a Ph.D. in the Department of Mathematics and Statistics at York University. She received her Bachelor of Science with Honors in Mathematics from the University of Al-Qadisiyah, Iraq, in 2010, and her Master of Science in Applied Mathematics from Miami University, Ohio, in 2019.</p>
-  
-  <p>Her research interests include mathematical modeling and stochastic optimization in epidemiology, with a particular focus on vaccination strategy optimization, infectious disease dynamics, and public health policy planning.</p>
-</div>
-
-<div style="margin: 40px 0; border-bottom: 1px solid #eee; padding-bottom: 30px;">
-  <h3>Atiqa Naeem Alam Din</h3>
-  <p><strong>PhD Student in Applied Mathematics, Research Assistant and Teaching Assistant</strong></p>
-  
-  <p>Atiqa earned her Master of Science degree in Mathematics from the University of Bahrain (2019) and Bachelor of Science degree in Mathematics with a minor in physics from the University of Bahrain (2015).</p>
-  
-  <p>Her research interests include Disease Modeling, ODEs, and Neural Networks. In her current projects, she is using Artificial Neural Networks to study disease spread and epidemiology. With a strong background in pure mathematics, Atiqa is also interested in the theoretical understanding of Deep Learning and Model building.</p>
-  
-  <p>Outside academia, she enjoys nature.</p>
-</div>
-
-<div style="margin: 40px 0; border-bottom: 1px solid #eee; padding-bottom: 30px;">
-  <img src="/images/joe.jpg" alt="Joe Tran" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  
-  <h3>Joe Tran</h3>
-  <p><strong>PhD Student in Applied Mathematics</strong></p>
-  
-  <p>Joe is a doctoral student pursuing a PhD in Applied Mathematics at York University. He previously completed his Master of Arts in Pure Mathematics at York University, and has successfully transitioned his focus toward applied mathematical research.</p>
-  
-  <p>His research interests focus on mathematical modeling and computational approaches to understanding complex systems in epidemiology and public health.</p>
-  
-  <p>Joe achieved first authorship on a publication in <em>Chaos, Solitons & Fractals</em> (2025), marking an important milestone early in his academic career.</p>
-</div>
-
-## Master's Students
-
-<div style="margin: 40px 0; border-bottom: 1px solid #eee; padding-bottom: 30px;">
-  <img src="/images/Tue.jpg" alt="Tue Dao" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  
-  <h3>Tue Dao</h3>
-  <p><strong>MA Student</strong></p>
-  
-  <p>Tue is a Master's student researching how the immune system interacts with the dengue virus using mathematical models to better understand disease dynamics. Her research interests focus on mathematical modelling of infectious diseases and immune response.</p>
-</div>
-
-## Undergraduate Students
-
-<div style="margin: 40px 0; border-bottom: 1px solid #eee; padding-bottom: 30px;">
-  <img src="/images/manav.jpg" alt="Manav Pundir" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  
-  <h3>Manav Pundir</h3>
-  <p><strong>Third-year Psychology undergraduate student</strong></p>
-  
-  <p>Manav's research interests include human and microbolomic immunodynamics and mathematical modelling.</p>
-</div>
-
-<div style="margin: 40px 0; border-bottom: 1px solid #eee; padding-bottom: 30px;">
-  <img src="/images/Chuchu.jpg" alt="Chu Chu" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  
-  <h3>Chu Chu</h3>
-  <p><strong>Fourth-year Pure Mathematics undergraduate student</strong></p>
-  
-  <p>Chu Chu's research interests include algebraic number theory, partial differential equations (PDEs), and graph theory. She brings a strong mathematical foundation to the lab's research projects.</p>
-</div>
-
-<div style="margin: 40px 0; border-bottom: 1px solid #eee; padding-bottom: 30px;">
-  <img src="/images/Khue.jpg" alt="Khue Bui" style="width: 150px; float: right; margin: 0 0 20px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  
-  <h3>Duc Anh Khue Bui (Andrew Jr)</h3>
-  <p><strong>Undergraduate Researcher</strong></p>
-  
-  <p>Khue is currently working on a project that focuses on modeling the interaction between parasite evasion and the immune system using ordinary differential equations (ODEs) and partial differential equations (PDEs). This project represents the intersection of his passion for solving complex differential equations and applying them to real-world biological problems. He is deeply committed to understanding the dynamics of biological systems through mathematical modeling and is eager to further pursue this interest in advanced studies. With this in mind, he plans to continue in a Master's and PhD program, where he can deepen his knowledge and make meaningful contributions to the field of applied mathematics.</p>
-</div>
-<div style="clear: both;"></div>
-## International Collaborations
-
-<div class="content-card">
-  <h3>🌍 Global Research Network</h3>
-  <p>Our lab benefits from extensive international partnerships, with team members bringing diverse global perspectives:</p>
-  
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 20px;">
-    <div>🇨🇦 <strong>Canada</strong>: York University (Primary Institution)</div>
-    <div>🇮🇹 <strong>Italy</strong>: University of L'Aquila</div>
-    <div>🇳🇬 <strong>Nigeria</strong>: Federal University of Technology Owerri</div>
-    <div>🇵🇰 <strong>Pakistan</strong>: Abdus Salam School of Mathematical Sciences</div>
-    <div>🇿🇦 <strong>South Africa</strong>: University of KwaZulu-Natal, Durban</div>
-    <div>🇮🇶 <strong>Iraq</strong>: University of Al-Qadisiyah</div>
-    <div>🇧🇭 <strong>Bahrain</strong>: University of Bahrain</div>
-    <div>🇺🇸 <strong>United States</strong>: Miami University, Ohio</div>
+  <div class="director-feature">
+    <div class="director-photo">
+      <img src="/images/assefa.jpeg" alt="Prof. Woldegeriel Assefa Woldegerima">
+    </div>
+    <div class="director-details">
+      <h3>Woldegeriel Assefa Woldegerima</h3>
+      <p class="member-title">Director of the DIMMS Lab | Assistant Professor</p>
+      <p class="member-dept">Department of Mathematics and Statistics, York University</p>
+      <p class="member-bio">Prof. Woldegerima leads the DIMMS Lab with expertise in mathematical biology, disease modeling, and computational epidemiology. His research focuses on developing innovative mathematical frameworks for understanding complex disease dynamics.</p>
+      <div class="member-interests">
+        <span class="interest">Mathematical Biology</span>
+        <span class="interest">Disease Modeling</span>
+        <span class="interest">Computational Epidemiology</span>
+      </div>
+      <div class="member-links">
+        <a href="mailto:wassefaw@yorku.ca" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://scholar.google.com/citations?user=YOUR_ID" class="link-icon" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+      </div>
+      <p class="member-contact"><strong>Office:</strong> S614 Ross Building | <strong>Phone:</strong> +1 (416) 736-2100 ext. 22889</p>
+    </div>
   </div>
-</div>
+</section>
 
-## Alumni
+<!-- ======================= POSTDOCTORAL RESEARCHERS ======================= -->
+<section class="team-section">
+  <h2 class="section-title">Postdoctoral Researchers</h2>
 
-*[To be updated as students graduate and move on to new positions]*
+  <div class="team-grid">
+    <!-- Qi Deng -->
+    <div class="team-card">
+      <div class="card-photo">
+        <img src="/images/qi.jpg" alt="Dr. Qi Deng">
+      </div>
+      <div class="card-content">
+        <h3 class="card-name">Dr. Qi Deng</h3>
+        <p class="card-title">Postdoctoral Researcher</p>
+        <p class="card-interests">Modeling sexually transmitted diseases, theoretical immunology, data-driven mathematical modeling, agent-based models, deep learning</p>
+        <div class="card-links">
+          <a href="mailto:" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com/" class="link-icon" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+        </div>
+      </div>
+    </div>
 
-## Join Our Team
+    <!-- Andrew Omame -->
+    <div class="team-card">
+      <div class="card-photo">
+        <img src="/images/andrew.jpg" alt="Dr. Andrew Omame">
+      </div>
+      <div class="card-content">
+        <h3 class="card-name">Dr. Andrew Omame</h3>
+        <p class="card-title">Postdoctoral Research Fellow</p>
+        <p class="card-interests">Mathematical biology, nonlinear dynamical systems, mathematical models for public health policy and industrial applications</p>
+        <div class="card-links">
+          <a href="mailto:" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com/" class="link-icon" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+        </div>
+      </div>
+    </div>
 
-<div class="highlight-box">
-  <h3>🚀 Join the DIMMS Lab Team!</h3>
-  <p>We're always looking for passionate researchers to join our dynamic team and contribute to cutting-edge disease modeling and computational biology research.</p>
-</div>
-
-<div class="research-areas">
-  <div class="research-card">
-    <h3>🎓 Graduate Students</h3>
-    <p>MSc and PhD programs in Applied Mathematics, Statistics, and related fields. Full funding opportunities available.</p>
+    <!-- Chigozie Ugwu -->
+    <div class="team-card">
+      <div class="card-photo">
+        <img src="/images/chigozie.png" alt="Dr. Chigozie Ugwu">
+      </div>
+      <div class="card-content">
+        <h3 class="card-name">Dr. Chigozie L. J. Ugwu</h3>
+        <p class="card-title">Postdoctoral Fellow</p>
+        <p class="card-interests">Infectious disease modeling, spatial epidemiology, mathematical and statistical modeling, geospatial analysis, machine learning</p>
+        <div class="card-links">
+          <a href="mailto:" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com/" class="link-icon" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+        </div>
+      </div>
+    </div>
   </div>
-  
-  <div class="research-card">
-    <h3>🔬 Undergraduate Researchers</h3>
-    <p>NSERC USRA positions and volunteer research opportunities for motivated undergraduates.</p>
-  </div>
-  
-  <div class="research-card">
-    <h3>📚 Postdoctoral Fellows</h3>
-    <p>Competitive fellowships for recent PhD graduates in mathematical biology, epidemiology, or related areas.</p>
-  </div>
-  
-  <div class="research-card">
-    <h3>🌍 Visiting Researchers</h3>
-    <p>Short-term and sabbatical positions for established researchers interested in collaborative work.</p>
-  </div>
-</div>
+</section>
 
-<div class="content-card">
-  <h3>📧 How to Apply</h3>
-  <p>Please send your CV and a brief description of your research interests to:</p>
-  <p><strong>Prof. Woldegeriel Assefa Woldegerima</strong><br>
-  Email: <a href="mailto:wassefaw@yorku.ca">wassefaw@yorku.ca</a></p>
-  
-  <p><em>We welcome applications from candidates of all backgrounds and are committed to fostering an inclusive research environment.</em></p>
-</div>
+<!-- ======================= DOCTORAL STUDENTS ======================= -->
+<section class="team-section">
+  <h2 class="section-title">Doctoral Students</h2>
 
-<style>
-@media (max-width: 768px) {
-  img[style*="float: right"] {
-    float: none !important;
-    display: block !important;
-    margin: 0 auto 20px auto !important;
-  }
-}
-</style>
+  <div class="team-grid">
+    <!-- Farah Al Hashimi -->
+    <div class="team-card">
+      <div class="card-photo">
+        <img src="/images/Farah.jpg" alt="Farah Al Hashimi">
+      </div>
+      <div class="card-content">
+        <h3 class="card-name">Farah Al Hashimi</h3>
+        <p class="card-title">PhD Candidate in Applied Mathematics</p>
+        <p class="card-interests">Mathematical modeling in epidemiology, stochastic optimization, vaccination strategy optimization, infectious disease dynamics</p>
+        <div class="card-links">
+          <a href="mailto:" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Atiqa Naeem -->
+    <div class="team-card">
+      <div class="card-photo card-photo-placeholder">
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="card-content">
+        <h3 class="card-name">Atiqa Naeem Alam Din</h3>
+        <p class="card-title">PhD Student | Research & Teaching Assistant</p>
+        <p class="card-interests">Disease modeling, ODEs, neural networks, artificial neural networks for epidemiology, deep learning theory</p>
+        <div class="card-links">
+          <a href="mailto:" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Joe Tran -->
+    <div class="team-card">
+      <div class="card-photo">
+        <img src="/images/joe.jpg" alt="Joe Tran">
+      </div>
+      <div class="card-content">
+        <h3 class="card-name">Joe Tran</h3>
+        <p class="card-title">PhD Student in Applied Mathematics</p>
+        <p class="card-interests">Mathematical modeling, computational approaches to epidemiology and public health</p>
+        <div class="card-links">
+          <a href="mailto:" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://doi.org/10.1016/j.chaos.2025.116209" class="link-icon" title="Publication"><i class="fas fa-file-alt"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= MASTER'S STUDENTS ======================= -->
+<section class="team-section">
+  <h2 class="section-title">Master's Students</h2>
+
+  <div class="team-grid">
+    <!-- Tue Dao -->
+    <div class="team-card">
+      <div class="card-photo">
+        <img src="/images/Tue.jpg" alt="Tue Dao">
+      </div>
+      <div class="card-content">
+        <h3 class="card-name">Tue Dao</h3>
+        <p class="card-title">MA Student</p>
+        <p class="card-interests">Mathematical modeling of immune system-dengue virus interactions, infectious disease dynamics, immune response modeling</p>
+        <div class="card-links">
+          <a href="mailto:" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= UNDERGRADUATE STUDENTS ======================= -->
+<section class="team-section">
+  <h2 class="section-title">Undergraduate Students</h2>
+
+  <div class="team-grid">
+    <!-- Manav Pundir -->
+    <div class="team-card">
+      <div class="card-photo">
+        <img src="/images/manav.jpg" alt="Manav Pundir">
+      </div>
+      <div class="card-content">
+        <h3 class="card-name">Manav Pundir</h3>
+        <p class="card-title">Third-year Psychology Student</p>
+        <p class="card-interests">Human and microbolomic immunodynamics, mathematical modeling</p>
+        <div class="card-links">
+          <a href="mailto:" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chu Chu -->
+    <div class="team-card">
+      <div class="card-photo">
+        <img src="/images/Chuchu.jpg" alt="Chu Chu">
+      </div>
+      <div class="card-content">
+        <h3 class="card-name">Chu Chu</h3>
+        <p class="card-title">Fourth-year Pure Mathematics Student</p>
+        <p class="card-interests">Algebraic number theory, partial differential equations (PDEs), graph theory</p>
+        <div class="card-links">
+          <a href="mailto:" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Khue Bui -->
+    <div class="team-card">
+      <div class="card-photo">
+        <img src="/images/Khue.jpg" alt="Khue Bui">
+      </div>
+      <div class="card-content">
+        <h3 class="card-name">Duc Anh Khue Bui</h3>
+        <p class="card-title">Undergraduate Researcher</p>
+        <p class="card-interests">Parasite-immune system interaction modeling, ODEs and PDEs for biological systems</p>
+        <div class="card-links">
+          <a href="mailto:" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= INTERNATIONAL COLLABORATIONS ======================= -->
+<section class="team-section">
+  <h2 class="section-title">International Collaborations</h2>
+
+  <div class="collaborations-box">
+    <p class="collab-intro">Our lab benefits from extensive international partnerships, with team members bringing diverse global perspectives:</p>
+    <div class="collab-grid">
+      <div class="collab-item"><span class="flag">&#127464;&#127462;</span> <strong>Canada</strong> - York University</div>
+      <div class="collab-item"><span class="flag">&#127470;&#127481;</span> <strong>Italy</strong> - University of L'Aquila</div>
+      <div class="collab-item"><span class="flag">&#127475;&#127468;</span> <strong>Nigeria</strong> - Federal Univ. of Technology Owerri</div>
+      <div class="collab-item"><span class="flag">&#127477;&#127472;</span> <strong>Pakistan</strong> - Abdus Salam School</div>
+      <div class="collab-item"><span class="flag">&#127487;&#127462;</span> <strong>South Africa</strong> - Univ. of KwaZulu-Natal</div>
+      <div class="collab-item"><span class="flag">&#127470;&#127478;</span> <strong>Iraq</strong> - Univ. of Al-Qadisiyah</div>
+      <div class="collab-item"><span class="flag">&#127463;&#127469;</span> <strong>Bahrain</strong> - University of Bahrain</div>
+      <div class="collab-item"><span class="flag">&#127482;&#127480;</span> <strong>United States</strong> - Miami University</div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= ALUMNI ======================= -->
+<section class="team-section">
+  <h2 class="section-title">Alumni</h2>
+  <p class="alumni-note"><em>This section will be updated as students graduate and move on to new positions.</em></p>
+</section>
+
+<!-- ======================= JOIN OUR TEAM ======================= -->
+<section class="team-section join-section">
+  <h2 class="section-title">Join Our Team</h2>
+
+  <div class="join-intro">
+    <p>We're always looking for passionate researchers to join our dynamic team and contribute to cutting-edge disease modeling and computational biology research.</p>
+  </div>
+
+  <div class="opportunities-grid">
+    <div class="opportunity-card">
+      <div class="opp-icon"><i class="fas fa-user-graduate"></i></div>
+      <h4>Graduate Students</h4>
+      <p>MSc and PhD programs in Applied Mathematics, Statistics, and related fields. Full funding opportunities available.</p>
+    </div>
+
+    <div class="opportunity-card">
+      <div class="opp-icon"><i class="fas fa-flask"></i></div>
+      <h4>Undergraduate Researchers</h4>
+      <p>NSERC USRA positions and volunteer research opportunities for motivated undergraduates.</p>
+    </div>
+
+    <div class="opportunity-card">
+      <div class="opp-icon"><i class="fas fa-microscope"></i></div>
+      <h4>Postdoctoral Fellows</h4>
+      <p>Competitive fellowships for recent PhD graduates in mathematical biology, epidemiology, or related areas.</p>
+    </div>
+
+    <div class="opportunity-card">
+      <div class="opp-icon"><i class="fas fa-globe"></i></div>
+      <h4>Visiting Researchers</h4>
+      <p>Short-term and sabbatical positions for established researchers interested in collaborative work.</p>
+    </div>
+  </div>
+
+  <div class="apply-box">
+    <h4>How to Apply</h4>
+    <p>Please send your CV and a brief description of your research interests to:</p>
+    <p class="apply-contact">
+      <strong>Prof. Woldegeriel Assefa Woldegerima</strong><br>
+      <a href="mailto:wassefaw@yorku.ca">wassefaw@yorku.ca</a>
+    </p>
+    <p class="apply-note"><em>We welcome applications from candidates of all backgrounds and are committed to fostering an inclusive research environment.</em></p>
+  </div>
+</section>
