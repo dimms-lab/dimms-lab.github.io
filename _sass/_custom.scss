@@ -161,18 +161,8 @@ h1:empty {
   background-image: none !important;
 }
 
-/* Site title - white on navy */
-.masthead__menu-item--lg a {
-  color: #ffffff !important;
-  text-decoration: none !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.5px !important;
-  transition: color 0.25s ease !important;
-  &:hover { color: $accent-gold-light !important; }
-}
-
-/* Navigation links - TEAL COLOR to match "Disease-Informed Modelling, Methods & Systems" */
-.masthead .greedy-nav .visible-links .masthead__menu-item:not(.masthead__menu-item--lg) a {
+/* ALL navigation links - same teal color, same style */
+.masthead .greedy-nav .visible-links .masthead__menu-item a {
   color: $accent-teal-light !important; /* #00acc1 - teal */
   text-decoration: none !important;
   font-weight: 500 !important;
@@ -186,11 +176,12 @@ h1:empty {
   }
 }
 
-/* Theme toggle icon */
+/* Theme toggle icon - slightly different style */
 #theme-toggle a {
   color: rgba(255, 255, 255, 0.8) !important;
   &:hover {
     color: #ffffff !important;
+    background: transparent !important;
   }
 }
 
