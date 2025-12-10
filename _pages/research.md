@@ -7,79 +7,218 @@ header: null
 classes: wide
 ---
 
-
-## Our Research Approach
-
-The Disease-Informed Modelling, Methods, and Systems (DIMMS) Lab employs a multidisciplinary approach to understand disease dynamics through advanced mathematical modeling, statistical analysis, and machine learning techniques.
-<div style="text-align: center; margin: 40px 0;">
-  <img src="/images/dimms-overview.png" alt="DIMMS Research Overview" style="width: 100%; max-width: 700px; height: auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px;">
+<!-- Hero Section -->
+<div class="research-hero">
+  <h1 class="research-hero-title">Our Research</h1>
+  <p class="research-hero-intro">
+    The DIMMS Lab employs a multidisciplinary approach to understand disease dynamics through advanced mathematical modeling, statistical analysis, and machine learning. Our work bridges molecular-level interactions to population-scale epidemiology, informing public health strategies and clinical decisions.
+  </p>
 </div>
-## Multi-timescale Analysis
 
-Our lab specializes in analyzing disease processes across multiple timescales—from rapid molecular interactions to long-term population dynamics. This integrated approach allows us to understand how phenomena at different temporal scales influence overall disease patterns and outcomes.
-<div style="margin: 40px 0; text-align: center;">
-  <img src="/images/multi-timescale-analysis.png" alt="Multi-timescale Analysis" style="width: 100%; max-width: 700px; height: auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px;">
-</div>
-**Current projects include:**
-- Modeling the relationship between short-term immune response and long-term disease progression
-- Developing mathematical frameworks that bridge molecular, cellular, individual, and population-level dynamics
-- Multi-scale analysis of vaccination strategies and their long-term effectiveness
+<!-- Research Areas Section -->
+<section class="research-areas-section">
+  <h2 class="research-section-title">Research Areas</h2>
 
-## Immunity System Modeling
+  <div class="research-cards-grid">
+    <!-- Multi-timescale Analysis -->
+    <div class="research-card">
+      <div class="research-card-icon">
+        <i class="fas fa-layer-group"></i>
+      </div>
+      <h3 class="research-card-title">Multi-timescale Analysis</h3>
+      <p class="research-card-desc">
+        Analyzing disease processes across multiple timescales—from rapid molecular interactions to long-term population dynamics. We develop mathematical frameworks that bridge molecular, cellular, individual, and population-level dynamics.
+      </p>
+    </div>
 
-We develop sophisticated models of immune response dynamics to understand how pathogens interact with host immunity. Our research encompasses antibody responses, T-cell dynamics, and cytokine signaling networks that drive infectious disease outcomes.
-<div style="margin: 40px 0; text-align: center;">
-  <img src="/images/immunity-modeling.png" alt="Immunity System Modeling" style="width: 100%; max-width: 700px; height: auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px;">
-</div>
-**Research highlights:**
-- Modeling dengue virus interactions with the immune system (Tue Dao's research)
-- Investigating vaccine efficacy through mathematical models
-- Exploring immunological memory formation and duration
-- Theoretical immunology and disease modeling (Dr. Qi Deng's work)
+    <!-- Immunity System Modeling -->
+    <div class="research-card">
+      <div class="research-card-icon">
+        <i class="fas fa-shield-virus"></i>
+      </div>
+      <h3 class="research-card-title">Immunity System Modeling</h3>
+      <p class="research-card-desc">
+        Developing sophisticated models of immune response dynamics to understand how pathogens interact with host immunity. Our research encompasses antibody responses, T-cell dynamics, and cytokine signaling networks.
+      </p>
+    </div>
 
-## Spatial Epidemiology
+    <!-- Spatial Epidemiology -->
+    <div class="research-card">
+      <div class="research-card-icon">
+        <i class="fas fa-map-marked-alt"></i>
+      </div>
+      <h3 class="research-card-title">Spatial Epidemiology</h3>
+      <p class="research-card-desc">
+        Examining how geographical and socioeconomic factors influence disease transmission and outcomes. We integrate spatial statistics with epidemiological models to identify risk factors and predict disease spread patterns.
+      </p>
+    </div>
 
-Our spatial analysis research examines how geographical and socioeconomic factors influence disease transmission and outcomes. We integrate spatial statistics with epidemiological models to identify risk factors and predict disease spread patterns across regions.
+    <!-- Statistical Methods & ML -->
+    <div class="research-card">
+      <div class="research-card-icon">
+        <i class="fas fa-chart-bar"></i>
+      </div>
+      <h3 class="research-card-title">Statistical Methods & Machine Learning</h3>
+      <p class="research-card-desc">
+        Employing advanced statistical frameworks and machine learning techniques including Bayesian inference, time series analysis, deep neural networks, and random forests for epidemiological data analysis.
+      </p>
+    </div>
 
-**Recent work includes:**
-- Mapping the geographical distribution of Mpox in Ontario (Dr. Chigozie Ugwu's research)
-- Analyzing socio-environmental indicators associated with disease risk
-- Developing spatial models for targeted public health interventions
+    <!-- Neural Network Disease Prediction -->
+    <div class="research-card">
+      <div class="research-card-icon">
+        <i class="fas fa-brain"></i>
+      </div>
+      <h3 class="research-card-title">Neural Network Disease Prediction</h3>
+      <p class="research-card-desc">
+        Pioneering disease-informed neural networks that combine epidemiological principles with deep learning architectures. These hybrid models enhance prediction accuracy for outbreak forecasting and disease progression.
+      </p>
+    </div>
 
-## Statistical Methods and Machine Learning
+    <!-- Mathematical Biology -->
+    <div class="research-card">
+      <div class="research-card-icon">
+        <i class="fas fa-square-root-alt"></i>
+      </div>
+      <h3 class="research-card-title">Mathematical Biology</h3>
+      <p class="research-card-desc">
+        Developing robust mathematical models for public health and policy applications, including nonlinear dynamical systems analysis, disease modeling using ODEs, and vaccination strategy optimization.
+      </p>
+    </div>
+  </div>
+</section>
 
-We employ advanced statistical frameworks and machine learning techniques to analyze complex disease data. Our approach combines traditional statistical methods with cutting-edge AI to extract meaningful patterns and predictions from epidemiological datasets.
+<!-- Research Methodology Diagram -->
+<section class="research-methodology-section">
+  <h2 class="research-section-title">How Our Research Connects</h2>
+  <div class="research-diagram-container">
+    <img src="/images/dimms-overview.png" alt="DIMMS Research Overview - showing interconnections between research areas" class="research-diagram-img">
+    <p class="research-diagram-caption">
+      Our research areas are deeply interconnected, with insights from one domain informing and enhancing work in others. This integrated approach allows us to tackle complex health challenges from multiple angles.
+    </p>
+  </div>
+</section>
 
-**Our toolkit includes:**
-- Bayesian inference and MCMC methods
-- Time series analysis and spatial statistics
-- Deep neural networks and random forests (Atiqa Naeem Alam Din's research)
-- Recurrent networks for temporal data analysis
+<!-- Research Applications Section -->
+<section class="research-applications-section">
+  <h2 class="research-section-title">Research Applications</h2>
+  <p class="research-applications-intro">Our research directly impacts real-world health outcomes through:</p>
 
-## Neural Network Disease Prediction
+  <div class="research-applications-grid">
+    <div class="research-application-badge">
+      <i class="fas fa-virus"></i>
+      <span>Epidemic Predictions</span>
+    </div>
+    <div class="research-application-badge">
+      <i class="fas fa-syringe"></i>
+      <span>Vaccine Development</span>
+    </div>
+    <div class="research-application-badge">
+      <i class="fas fa-hospital"></i>
+      <span>Public Health Planning</span>
+    </div>
+    <div class="research-application-badge">
+      <i class="fas fa-chart-line"></i>
+      <span>Policy Decision Support</span>
+    </div>
+    <div class="research-application-badge">
+      <i class="fas fa-dna"></i>
+      <span>Clinical Research</span>
+    </div>
+    <div class="research-application-badge">
+      <i class="fas fa-globe-americas"></i>
+      <span>Global Health Initiatives</span>
+    </div>
+  </div>
+</section>
 
-Our lab pioneers the development of disease-informed neural networks that combine epidemiological principles with deep learning architectures. These hybrid models enhance prediction accuracy by incorporating domain knowledge into machine learning frameworks.
+<!-- Current Projects Section -->
+<section class="research-projects-section">
+  <h2 class="research-section-title">Current Projects</h2>
 
-**Innovations include:**
-- Neural networks for predicting avian influenza spread (Nickson Golooba's work)
-- Integration of clinical, genomic, environmental, and demographic data
-- Real-time outbreak prediction and progression modeling
+  <div class="research-projects-list">
+    <div class="research-project-card">
+      <div class="research-project-header">
+        <h3 class="research-project-title">Dengue Virus-Immune System Interactions</h3>
+        <span class="research-project-status">Active</span>
+      </div>
+      <p class="research-project-desc">Modeling dengue virus interactions with the immune system to understand disease severity and develop better treatment strategies.</p>
+      <div class="research-project-team">
+        <span class="research-project-label">Team:</span> Tue Dao, Dr. Qi Deng
+      </div>
+    </div>
 
-## Mathematical Biology Applications
+    <div class="research-project-card">
+      <div class="research-project-header">
+        <h3 class="research-project-title">Mpox Spatial Distribution in Ontario</h3>
+        <span class="research-project-status">Active</span>
+      </div>
+      <p class="research-project-desc">Mapping geographical distribution and analyzing socio-environmental indicators associated with Mpox risk in Ontario.</p>
+      <div class="research-project-team">
+        <span class="research-project-label">Team:</span> Dr. Chigozie Ugwu
+      </div>
+    </div>
 
-Our mathematical biology research focuses on developing robust mathematical models for public health, policy, and industrial applications.
+    <div class="research-project-card">
+      <div class="research-project-header">
+        <h3 class="research-project-title">Avian Influenza Prediction Networks</h3>
+        <span class="research-project-status">Active</span>
+      </div>
+      <p class="research-project-desc">Developing neural networks for predicting avian influenza spread using clinical, genomic, environmental, and demographic data.</p>
+      <div class="research-project-team">
+        <span class="research-project-label">Team:</span> Nickson Golooba
+      </div>
+    </div>
 
-**Key areas include:**
-- Nonlinear dynamical systems analysis (Dr. Andrew Omame's expertise)
-- Disease modeling using ordinary differential equations
-- Vaccination strategy optimization (Farah Al Hashimi's research)
-- Mathematical models for infectious disease dynamics
+    <div class="research-project-card">
+      <div class="research-project-header">
+        <h3 class="research-project-title">Vaccination Strategy Optimization</h3>
+        <span class="research-project-status">Active</span>
+      </div>
+      <p class="research-project-desc">Mathematical modeling of vaccination strategies to optimize coverage and long-term effectiveness across populations.</p>
+      <div class="research-project-team">
+        <span class="research-project-label">Team:</span> Farah Al Hashimi, Dr. Andrew Omame
+      </div>
+    </div>
 
-## Collaborative Research
+    <div class="research-project-card">
+      <div class="research-project-header">
+        <h3 class="research-project-title">Deep Learning for Epidemiological Analysis</h3>
+        <span class="research-project-status">Active</span>
+      </div>
+      <p class="research-project-desc">Applying deep neural networks and random forests to extract meaningful patterns from complex epidemiological datasets.</p>
+      <div class="research-project-team">
+        <span class="research-project-label">Team:</span> Atiqa Naeem Alam Din
+      </div>
+    </div>
+  </div>
+</section>
 
-Our research benefits from international collaborations and interdisciplinary partnerships:
-- **International Networks**: Collaborations with researchers in Nigeria, Pakistan, Iraq, and Bahrain
-- **Interdisciplinary Approach**: Integration of mathematics, biology, computer science, and public health
-- **Industry Partnerships**: Working with health organizations on real-world applications
-- **Academic Collaborations**: Partnerships with institutions worldwide for comprehensive research projects
+<!-- Collaborative Research Section -->
+<section class="research-collab-section">
+  <h2 class="research-section-title">Collaborative Research</h2>
+  <p class="research-collab-intro">Our research benefits from international collaborations and interdisciplinary partnerships:</p>
 
+  <div class="research-collab-grid">
+    <div class="research-collab-item">
+      <i class="fas fa-globe"></i>
+      <h4>International Networks</h4>
+      <p>Collaborations with researchers in Nigeria, Pakistan, Iraq, and Bahrain</p>
+    </div>
+    <div class="research-collab-item">
+      <i class="fas fa-users"></i>
+      <h4>Interdisciplinary Approach</h4>
+      <p>Integration of mathematics, biology, computer science, and public health</p>
+    </div>
+    <div class="research-collab-item">
+      <i class="fas fa-building"></i>
+      <h4>Industry Partnerships</h4>
+      <p>Working with health organizations on real-world applications</p>
+    </div>
+    <div class="research-collab-item">
+      <i class="fas fa-university"></i>
+      <h4>Academic Collaborations</h4>
+      <p>Partnerships with institutions worldwide for comprehensive research</p>
+    </div>
+  </div>
+</section>
