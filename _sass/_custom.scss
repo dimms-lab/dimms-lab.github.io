@@ -334,11 +334,12 @@ h1.page__title {
 }
 
 .btn-outline {
-  background: transparent;
-  color: $accent-teal;
+  background: $accent-teal;
+  color: #fff;
   border: 2px solid $accent-teal;
   &:hover {
-    background: $accent-teal;
+    background: $accent-teal-dark;
+    border-color: $accent-teal-dark;
     color: #fff;
     text-decoration: none;
   }
