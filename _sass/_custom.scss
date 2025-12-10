@@ -174,7 +174,409 @@ h1.page__title {
 }
 
 /* ==========================================================================
-   E) LAST-RESORT PIN (keep at bottom so it wins)
+   E) HOMEPAGE STYLES - Hero, Sections, Cards
+   ========================================================================== */
+
+/* ---------- HERO SECTION ---------- */
+.homepage-hero {
+  background: linear-gradient(135deg, $light-gray 0%, #ffffff 100%);
+  padding: 3rem 0;
+  margin: -1rem -1rem 3rem -1rem;
+  border-bottom: 1px solid rgba(30, 58, 95, 0.1);
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 550px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: $navy-primary;
+  margin: 0 0 0.5rem 0;
+  padding: 0;
+  line-height: 1.1;
+  &::after { display: none; }
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: $accent-teal;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  letter-spacing: 0.5px;
+}
+
+.hero-tagline {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+  margin: 0 0 1.5rem 0;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-affiliation {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0;
+}
+
+.hero-graphic {
+  flex: 0 0 380px;
+  max-width: 380px;
+  svg { width: 100%; height: auto; }
+}
+
+/* ---------- BUTTONS ---------- */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: $navy-primary;
+  color: #fff;
+  &:hover {
+    background: $navy-dark;
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(30, 58, 95, 0.3);
+  }
+}
+
+.btn-secondary {
+  background: transparent;
+  color: $navy-primary;
+  border: 2px solid $navy-primary;
+  &:hover {
+    background: $navy-primary;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.btn-outline {
+  background: transparent;
+  color: $accent-teal;
+  border: 2px solid $accent-teal;
+  &:hover {
+    background: $accent-teal;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+/* ---------- SECTION STYLES ---------- */
+section {
+  margin-bottom: 4rem;
+}
+
+section > h2 {
+  font-size: 1.8rem;
+  color: $navy-primary;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 3px solid $accent-teal;
+  display: inline-block;
+}
+
+.section-intro {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  margin-bottom: 2rem;
+}
+
+.section-cta {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* ---------- WHAT WE DO / RESEARCH GRID ---------- */
+.what-we-do {
+  background: #fff;
+}
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.research-item {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: all 0.25s ease;
+  &:hover {
+    border-color: $accent-teal;
+    box-shadow: 0 8px 25px rgba(0, 151, 167, 0.12);
+    transform: translateY(-3px);
+  }
+  h3 {
+    color: $navy-primary;
+    font-size: 1.1rem;
+    margin: 0.75rem 0 0.5rem 0;
+  }
+  p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+}
+
+.research-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+/* ---------- NEWS SECTION ---------- */
+.latest-news {
+  background: $light-gray;
+  padding: 3rem;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  border-radius: 12px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.news-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.25s ease;
+  &:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+  }
+  h3 {
+    color: $navy-primary;
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+  }
+  p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0 0 1rem 0;
+  }
+}
+
+.news-featured {
+  border-left: 4px solid $accent-gold;
+}
+
+.news-date {
+  font-size: 0.8rem;
+  color: $accent-teal;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.news-link {
+  color: $accent-teal;
+  font-weight: 600;
+  font-size: 0.9rem;
+  &:hover {
+    color: $navy-primary;
+  }
+}
+
+/* ---------- PUBLICATIONS SECTION ---------- */
+.publications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.publication-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.25rem;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+  &:hover {
+    border-color: $accent-teal;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.pub-year {
+  flex: 0 0 auto;
+  background: $navy-primary;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.pub-content {
+  flex: 1;
+  h4 {
+    color: $navy-primary;
+    font-size: 1rem;
+    margin: 0 0 0.4rem 0;
+    line-height: 1.4;
+  }
+}
+
+.pub-authors {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0 0 0.25rem 0;
+}
+
+.pub-journal {
+  color: $accent-teal;
+  font-size: 0.85rem;
+  font-style: italic;
+  margin: 0;
+}
+
+.pub-link {
+  flex: 0 0 auto;
+  background: $accent-teal;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  align-self: center;
+  &:hover {
+    background: $accent-teal-dark;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+/* ---------- LAB DIRECTOR SECTION ---------- */
+.director-card {
+  background: linear-gradient(135deg, $navy-primary 0%, $navy-light 100%);
+  border-radius: 12px;
+  padding: 2.5rem;
+  color: #fff;
+}
+
+.director-info {
+  h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
+  }
+}
+
+.director-title {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+}
+
+.director-bio {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.7;
+  margin: 0 0 1.5rem 0;
+}
+
+.director-interests {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.interest-tag {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.director-contact {
+  display: inline-block;
+  color: $accent-gold-light;
+  font-weight: 600;
+  &:hover {
+    color: #fff;
+  }
+}
+
+/* ---------- RESPONSIVE ADJUSTMENTS ---------- */
+@media (max-width: 900px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-text { max-width: 100%; }
+  .hero-cta { justify-content: center; }
+  .hero-graphic {
+    flex: 0 0 300px;
+    max-width: 300px;
+  }
+  .hero-title { font-size: 2.5rem; }
+}
+
+@media (max-width: 600px) {
+  .homepage-hero { padding: 2rem 0; }
+  .hero-title { font-size: 2rem; }
+  .hero-subtitle { font-size: 1.1rem; }
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn { width: 100%; text-align: center; }
+  .latest-news {
+    padding: 2rem 1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+  .publication-item {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .pub-link { align-self: flex-start; }
+}
+
+/* ==========================================================================
+   F) LAST-RESORT PIN (keep at bottom so it wins)
    ========================================================================== */
 
 .initial-content,
