@@ -1,25 +1,91 @@
 {% include base_path %}
 
-{% if site.author.github or site.author.bitbucket or site.atom_feed.hide != true %}
-<div class="page__footer-follow">
-  <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
-    {% if site.author.github %}
-      <li><a href="http://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
-    {% endif %}
-    {% if site.author.bitbucket %}
-      <li><a href="http://bitbucket.org/{{ site.author.bitbucket }}"><i class="fab fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
-    {% endif %}
-    {% if site.atom_feed.hide != true %}
-    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
-    {% endif %}
-  </ul>
-</div>
-{% endif %}
+<!-- Professional Footer -->
+<div class="footer-main">
+  <div class="footer-container">
 
-<div class="page__footer-copyright">
-  &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }} - All Rights Reserved<br />
-  <small>Disease-Informed Modelling, Methods, and Systems Laboratory | York University | Toronto, Ontario, Canada</small>
+    <!-- Column 1: About -->
+    <div class="footer-column footer-about">
+      <div class="footer-logo">
+        <img src="/images/dimms-logo.svg" alt="DIMMS Lab Logo" class="footer-logo-img">
+      </div>
+      <p class="footer-tagline">Disease-Informed Modelling, Methods & Systems Laboratory</p>
+      <p class="footer-affiliation">
+        <i class="fas fa-university"></i> York University
+      </p>
+      <p class="footer-affiliation">
+        <i class="fas fa-map-marker-alt"></i> Toronto, Ontario, Canada
+      </p>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div class="footer-column footer-links">
+      <h4 class="footer-heading">Quick Links</h4>
+      <ul class="footer-nav">
+        <li><a href="{{ base_path }}/"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="{{ base_path }}/research/"><i class="fas fa-flask"></i> Research</a></li>
+        <li><a href="{{ base_path }}/publications/"><i class="fas fa-book"></i> Publications</a></li>
+        <li><a href="{{ base_path }}/team/"><i class="fas fa-users"></i> Team</a></li>
+        <li><a href="{{ base_path }}/news/"><i class="fas fa-newspaper"></i> News</a></li>
+        <li><a href="{{ base_path }}/contact/"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Contact Info -->
+    <div class="footer-column footer-contact">
+      <h4 class="footer-heading">Contact Us</h4>
+      <div class="footer-contact-info">
+        <p>
+          <i class="fas fa-building"></i>
+          <span>Department of Mathematics and Statistics<br>York University<br>Toronto, ON, Canada</span>
+        </p>
+        <p>
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:wassefaw@yorku.ca">wassefaw@yorku.ca</a>
+        </p>
+        <p>
+          <i class="fas fa-globe"></i>
+          <a href="https://www.yorku.ca" target="_blank" rel="noopener">York University Website</a>
+        </p>
+      </div>
+
+      <!-- Social/Academic Links -->
+      <div class="footer-social">
+        <h5 class="footer-social-heading">Connect With Us</h5>
+        <div class="footer-social-icons">
+          {% if site.author.googlescholar %}
+          <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener" title="Google Scholar" class="footer-social-link">
+            <i class="fas fa-graduation-cap"></i>
+          </a>
+          {% endif %}
+          {% if site.author.github %}
+          <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener" title="GitHub" class="footer-social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          {% endif %}
+          <a href="{{ site.author.uri }}" target="_blank" rel="noopener" title="Lab Profile" class="footer-social-link">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+          <a href="mailto:{{ site.author.email }}" title="Email" class="footer-social-link">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Bottom Bar -->
+<div class="footer-bottom">
+  <div class="footer-bottom-container">
+    <p class="footer-copyright">
+      &copy; {{ site.time | date: '%Y' }} DIMMS Lab, York University. All rights reserved.
+    </p>
+    <div class="footer-bottom-links">
+      <a href="{{ base_path }}/sitemap/">Sitemap</a>
+      <span class="footer-divider">|</span>
+      <a href="https://www.yorku.ca/privacy/" target="_blank" rel="noopener">Privacy Policy</a>
+    </div>
+  </div>
 </div>
