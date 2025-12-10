@@ -2,7 +2,7 @@
 layout: single
 title: "Team"
 permalink: /team/
-author_profile: true
+author_profile: false
 header: null
 classes: wide team-page
 ---
@@ -11,25 +11,25 @@ classes: wide team-page
 <section class="team-section">
   <h2 class="section-title">Lab Director</h2>
 
-  <div class="director-feature">
+  <div class="director-card">
     <div class="director-photo">
       <img src="/images/assefa.jpeg" alt="Prof. Woldegeriel Assefa Woldegerima">
     </div>
-    <div class="director-details">
+    <div class="director-info">
       <h3>Woldegeriel Assefa Woldegerima</h3>
-      <p class="member-title">Director of the DIMMS Lab | Assistant Professor</p>
-      <p class="member-dept">Department of Mathematics and Statistics, York University</p>
-      <p class="member-bio">Prof. Woldegerima leads the DIMMS Lab with expertise in mathematical biology, disease modeling, and computational epidemiology. His research focuses on developing innovative mathematical frameworks for understanding complex disease dynamics.</p>
-      <div class="member-interests">
-        <span class="interest">Mathematical Biology</span>
-        <span class="interest">Disease Modeling</span>
-        <span class="interest">Computational Epidemiology</span>
+      <p class="director-title">Director of the DIMMS Lab | Assistant Professor</p>
+      <p class="director-dept">Department of Mathematics and Statistics, York University</p>
+      <p class="director-bio">Prof. Woldegerima leads the DIMMS Lab with expertise in mathematical biology, disease modeling, and computational epidemiology. His research focuses on developing innovative mathematical frameworks for understanding complex disease dynamics.</p>
+      <div class="director-interests">
+        <span class="interest-tag">Mathematical Biology</span>
+        <span class="interest-tag">Disease Modeling</span>
+        <span class="interest-tag">Computational Epidemiology</span>
       </div>
-      <div class="member-links">
+      <div class="director-links">
         <a href="mailto:wassefaw@yorku.ca" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
         <a href="https://scholar.google.com/citations?user=YOUR_ID" class="link-icon" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
       </div>
-      <p class="member-contact"><strong>Office:</strong> S614 Ross Building | <strong>Phone:</strong> +1 (416) 736-2100 ext. 22889</p>
+      <p class="director-contact"><strong>Office:</strong> S614 Ross Building | <strong>Phone:</strong> +1 (416) 736-2100 ext. 22889</p>
     </div>
   </div>
 </section>
@@ -44,14 +44,12 @@ classes: wide team-page
       <div class="card-photo">
         <img src="/images/qi.jpg" alt="Dr. Qi Deng">
       </div>
-      <div class="card-content">
-        <h3 class="card-name">Dr. Qi Deng</h3>
-        <p class="card-title">Postdoctoral Researcher</p>
-        <p class="card-interests">Modeling sexually transmitted diseases, theoretical immunology, data-driven mathematical modeling, agent-based models, deep learning</p>
-        <div class="card-links">
-          <a href="mailto:" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
-          <a href="https://scholar.google.com/" class="link-icon" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-        </div>
+      <h3 class="card-name">Dr. Qi Deng</h3>
+      <p class="card-title">Postdoctoral Researcher</p>
+      <p class="card-bio">Modeling sexually transmitted diseases, theoretical immunology, data-driven mathematical modeling, agent-based models, deep learning</p>
+      <div class="card-links">
+        <a href="mailto:" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://scholar.google.com/" class="link-icon" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
       </div>
     </div>
 
@@ -60,14 +58,12 @@ classes: wide team-page
       <div class="card-photo">
         <img src="/images/andrew.jpg" alt="Dr. Andrew Omame">
       </div>
-      <div class="card-content">
-        <h3 class="card-name">Dr. Andrew Omame</h3>
-        <p class="card-title">Postdoctoral Research Fellow</p>
-        <p class="card-interests">Mathematical biology, nonlinear dynamical systems, mathematical models for public health policy and industrial applications</p>
-        <div class="card-links">
-          <a href="mailto:" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
-          <a href="https://scholar.google.com/" class="link-icon" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-        </div>
+      <h3 class="card-name">Dr. Andrew Omame</h3>
+      <p class="card-title">Postdoctoral Research Fellow</p>
+      <p class="card-bio">Mathematical biology, nonlinear dynamical systems, mathematical models for public health policy and industrial applications</p>
+      <div class="card-links">
+        <a href="mailto:" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://scholar.google.com/" class="link-icon" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
       </div>
     </div>
 
@@ -76,14 +72,12 @@ classes: wide team-page
       <div class="card-photo">
         <img src="/images/chigozie.png" alt="Dr. Chigozie Ugwu">
       </div>
-      <div class="card-content">
-        <h3 class="card-name">Dr. Chigozie L. J. Ugwu</h3>
-        <p class="card-title">Postdoctoral Fellow</p>
-        <p class="card-interests">Infectious disease modeling, spatial epidemiology, mathematical and statistical modeling, geospatial analysis, machine learning</p>
-        <div class="card-links">
-          <a href="mailto:" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
-          <a href="https://scholar.google.com/" class="link-icon" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-        </div>
+      <h3 class="card-name">Dr. Chigozie L. J. Ugwu</h3>
+      <p class="card-title">Postdoctoral Fellow</p>
+      <p class="card-bio">Infectious disease modeling, spatial epidemiology, mathematical and statistical modeling, geospatial analysis, machine learning</p>
+      <div class="card-links">
+        <a href="mailto:" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://scholar.google.com/" class="link-icon" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
       </div>
     </div>
   </div>
@@ -99,13 +93,11 @@ classes: wide team-page
       <div class="card-photo">
         <img src="/images/Farah.jpg" alt="Farah Al Hashimi">
       </div>
-      <div class="card-content">
-        <h3 class="card-name">Farah Al Hashimi</h3>
-        <p class="card-title">PhD Candidate in Applied Mathematics</p>
-        <p class="card-interests">Mathematical modeling in epidemiology, stochastic optimization, vaccination strategy optimization, infectious disease dynamics</p>
-        <div class="card-links">
-          <a href="mailto:" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
-        </div>
+      <h3 class="card-name">Farah Al Hashimi</h3>
+      <p class="card-title">PhD Candidate in Applied Mathematics</p>
+      <p class="card-bio">Mathematical modeling in epidemiology, stochastic optimization, vaccination strategy optimization, infectious disease dynamics</p>
+      <div class="card-links">
+        <a href="mailto:" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
 
@@ -114,13 +106,11 @@ classes: wide team-page
       <div class="card-photo card-photo-placeholder">
         <i class="fas fa-user"></i>
       </div>
-      <div class="card-content">
-        <h3 class="card-name">Atiqa Naeem Alam Din</h3>
-        <p class="card-title">PhD Student | Research & Teaching Assistant</p>
-        <p class="card-interests">Disease modeling, ODEs, neural networks, artificial neural networks for epidemiology, deep learning theory</p>
-        <div class="card-links">
-          <a href="mailto:" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
-        </div>
+      <h3 class="card-name">Atiqa Naeem Alam Din</h3>
+      <p class="card-title">PhD Student | Research & Teaching Assistant</p>
+      <p class="card-bio">Disease modeling, ODEs, neural networks, artificial neural networks for epidemiology, deep learning theory</p>
+      <div class="card-links">
+        <a href="mailto:" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
 
@@ -129,14 +119,12 @@ classes: wide team-page
       <div class="card-photo">
         <img src="/images/joe.jpg" alt="Joe Tran">
       </div>
-      <div class="card-content">
-        <h3 class="card-name">Joe Tran</h3>
-        <p class="card-title">PhD Student in Applied Mathematics</p>
-        <p class="card-interests">Mathematical modeling, computational approaches to epidemiology and public health</p>
-        <div class="card-links">
-          <a href="mailto:" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
-          <a href="https://doi.org/10.1016/j.chaos.2025.116209" class="link-icon" title="Publication"><i class="fas fa-file-alt"></i></a>
-        </div>
+      <h3 class="card-name">Joe Tran</h3>
+      <p class="card-title">PhD Student in Applied Mathematics</p>
+      <p class="card-bio">Mathematical modeling, computational approaches to epidemiology and public health</p>
+      <div class="card-links">
+        <a href="mailto:" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://doi.org/10.1016/j.chaos.2025.116209" class="link-icon" title="Publication"><i class="fas fa-file-alt"></i></a>
       </div>
     </div>
   </div>
@@ -152,13 +140,11 @@ classes: wide team-page
       <div class="card-photo">
         <img src="/images/Tue.jpg" alt="Tue Dao">
       </div>
-      <div class="card-content">
-        <h3 class="card-name">Tue Dao</h3>
-        <p class="card-title">MA Student</p>
-        <p class="card-interests">Mathematical modeling of immune system-dengue virus interactions, infectious disease dynamics, immune response modeling</p>
-        <div class="card-links">
-          <a href="mailto:" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
-        </div>
+      <h3 class="card-name">Tue Dao</h3>
+      <p class="card-title">MA Student</p>
+      <p class="card-bio">Mathematical modeling of immune system-dengue virus interactions, infectious disease dynamics, immune response modeling</p>
+      <div class="card-links">
+        <a href="mailto:" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
   </div>
@@ -174,13 +160,11 @@ classes: wide team-page
       <div class="card-photo">
         <img src="/images/manav.jpg" alt="Manav Pundir">
       </div>
-      <div class="card-content">
-        <h3 class="card-name">Manav Pundir</h3>
-        <p class="card-title">Third-year Psychology Student</p>
-        <p class="card-interests">Human and microbolomic immunodynamics, mathematical modeling</p>
-        <div class="card-links">
-          <a href="mailto:" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
-        </div>
+      <h3 class="card-name">Manav Pundir</h3>
+      <p class="card-title">Third-year Psychology Student</p>
+      <p class="card-bio">Human and microbolomic immunodynamics, mathematical modeling</p>
+      <div class="card-links">
+        <a href="mailto:" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
 
@@ -189,13 +173,11 @@ classes: wide team-page
       <div class="card-photo">
         <img src="/images/Chuchu.jpg" alt="Chu Chu">
       </div>
-      <div class="card-content">
-        <h3 class="card-name">Chu Chu</h3>
-        <p class="card-title">Fourth-year Pure Mathematics Student</p>
-        <p class="card-interests">Algebraic number theory, partial differential equations (PDEs), graph theory</p>
-        <div class="card-links">
-          <a href="mailto:" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
-        </div>
+      <h3 class="card-name">Chu Chu</h3>
+      <p class="card-title">Fourth-year Pure Mathematics Student</p>
+      <p class="card-bio">Algebraic number theory, partial differential equations (PDEs), graph theory</p>
+      <div class="card-links">
+        <a href="mailto:" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
 
@@ -204,13 +186,11 @@ classes: wide team-page
       <div class="card-photo">
         <img src="/images/Khue.jpg" alt="Khue Bui">
       </div>
-      <div class="card-content">
-        <h3 class="card-name">Duc Anh Khue Bui</h3>
-        <p class="card-title">Undergraduate Researcher</p>
-        <p class="card-interests">Parasite-immune system interaction modeling, ODEs and PDEs for biological systems</p>
-        <div class="card-links">
-          <a href="mailto:" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
-        </div>
+      <h3 class="card-name">Duc Anh Khue Bui</h3>
+      <p class="card-title">Undergraduate Researcher</p>
+      <p class="card-bio">Parasite-immune system interaction modeling, ODEs and PDEs for biological systems</p>
+      <div class="card-links">
+        <a href="mailto:" class="link-icon" title="Email"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
   </div>

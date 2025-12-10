@@ -1363,7 +1363,7 @@ p a, li a, td a, .pub-content a {
 }
 
 /* ==========================================================================
-   J) TEAM PAGE STYLES
+   J) TEAM PAGE STYLES - Professional Card-Based Layout
    ========================================================================== */
 
 .team-page {
@@ -1379,7 +1379,7 @@ p a, li a, td a, .pub-content a {
   }
 
   .section-title {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: $navy-primary;
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
@@ -1388,100 +1388,95 @@ p a, li a, td a, .pub-content a {
   }
 
   /* ========== LAB DIRECTOR FEATURED CARD ========== */
-  .director-feature {
-    display: flex;
-    gap: 2rem;
-    background: linear-gradient(135deg, $navy-primary 0%, $navy-light 100%);
-    border-radius: 12px;
+  .director-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     padding: 2rem;
-    color: #fff;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    }
   }
 
   .director-photo {
-    flex: 0 0 180px;
+    flex: 0 0 auto;
 
     img {
       width: 180px;
       height: 180px;
       object-fit: cover;
       border-radius: 50%;
-      border: 4px solid rgba(255, 255, 255, 0.3);
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      border: 4px solid $navy-primary;
+      box-shadow: 0 4px 15px rgba(30, 58, 95, 0.2);
     }
   }
 
-  .director-details {
+  .director-info {
     flex: 1;
 
     h3 {
-      color: #fff;
-      font-size: 1.5rem;
-      margin: 0 0 0.5rem 0;
-    }
-
-    .member-title {
-      color: $accent-gold-light;
-      font-weight: 600;
-      font-size: 1.05rem;
+      color: $navy-primary;
+      font-size: 1.4rem;
+      font-weight: 700;
       margin: 0 0 0.25rem 0;
     }
 
-    .member-dept {
-      color: rgba(255, 255, 255, 0.85);
+    .director-title {
+      color: $accent-teal;
+      font-weight: 600;
+      font-size: 1rem;
+      margin: 0 0 0.25rem 0;
+    }
+
+    .director-dept {
+      color: #666;
+      font-size: 0.9rem;
+      margin: 0 0 1rem 0;
+    }
+
+    .director-bio {
+      color: #555;
       font-size: 0.95rem;
+      line-height: 1.65;
       margin: 0 0 1rem 0;
     }
 
-    .member-bio {
-      color: rgba(255, 255, 255, 0.9);
-      line-height: 1.7;
-      margin: 0 0 1rem 0;
-    }
-
-    .member-interests {
+    .director-interests {
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem;
       margin-bottom: 1rem;
-
-      .interest {
-        background: rgba(255, 255, 255, 0.15);
-        color: #fff;
-        padding: 0.3rem 0.7rem;
-        border-radius: 20px;
-        font-size: 0.85rem;
-        font-weight: 500;
-      }
     }
 
-    .member-links {
+    .interest-tag {
+      background: rgba(0, 151, 167, 0.1);
+      color: $accent-teal-dark;
+      padding: 0.3rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    .director-links {
       display: flex;
-      gap: 0.75rem;
-      margin-bottom: 1rem;
-
-      .link-icon {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 36px;
-        height: 36px;
-        background: rgba(255, 255, 255, 0.2);
-        border-radius: 50%;
-        color: #fff;
-        font-size: 1rem;
-        transition: all 0.25s ease;
-
-        &:hover {
-          background: $accent-gold;
-          transform: translateY(-2px);
-        }
-      }
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
     }
 
-    .member-contact {
-      color: rgba(255, 255, 255, 0.8);
-      font-size: 0.9rem;
+    .director-contact {
+      color: #666;
+      font-size: 0.85rem;
       margin: 0;
+
+      strong {
+        color: $navy-primary;
+      }
     }
   }
 
@@ -1496,99 +1491,100 @@ p a, li a, td a, .pub-content a {
     background: #fff;
     border: 1px solid #e8e8e8;
     border-radius: 12px;
-    overflow: hidden;
+    padding: 1.5rem;
+    text-align: center;
     transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 
     &:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
       border-color: $accent-teal;
     }
+  }
 
-    .card-photo {
+  .card-photo {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1rem auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #e8e8e8;
+    transition: border-color 0.3s ease;
+
+    img {
       width: 100%;
-      height: 200px;
-      overflow: hidden;
-      background: linear-gradient(135deg, $light-gray 0%, #e8e8e8 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.3s ease;
-      }
-
-      &:hover img {
-        transform: scale(1.05);
-      }
+      height: 100%;
+      object-fit: cover;
     }
 
-    .card-photo-placeholder {
-      background: linear-gradient(135deg, $navy-light 0%, $navy-primary 100%);
-
-      i {
-        font-size: 4rem;
-        color: rgba(255, 255, 255, 0.4);
-      }
+    .team-card:hover & {
+      border-color: $accent-teal;
     }
+  }
 
-    .card-content {
-      padding: 1.25rem;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
+  .card-photo-placeholder {
+    background: linear-gradient(135deg, $light-gray 0%, #e0e0e0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      font-size: 3.5rem;
+      color: #bbb;
     }
+  }
 
-    .card-name {
-      color: $navy-primary;
-      font-size: 1.15rem;
-      font-weight: 600;
-      margin: 0 0 0.35rem 0;
-    }
+  .card-name {
+    color: $navy-primary;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 0.25rem 0;
+  }
 
-    .card-title {
-      color: $accent-teal;
-      font-weight: 500;
-      font-size: 0.9rem;
-      margin: 0 0 0.75rem 0;
-    }
+  .card-title {
+    color: $accent-teal;
+    font-weight: 500;
+    font-size: 0.85rem;
+    margin: 0 0 0.75rem 0;
+  }
 
-    .card-interests {
-      color: #666;
-      font-size: 0.85rem;
-      line-height: 1.5;
-      margin: 0 0 1rem 0;
-      flex: 1;
-    }
+  .card-bio {
+    color: #666;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+    /* Limit to 3 lines */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 
-    .card-links {
-      display: flex;
-      gap: 0.5rem;
-      margin-top: auto;
+  .card-links {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
 
-      .link-icon {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 32px;
-        height: 32px;
-        background: $light-gray;
-        border-radius: 50%;
-        color: $navy-primary;
-        font-size: 0.9rem;
-        transition: all 0.25s ease;
+  .link-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    min-height: 32px;
+    background: $light-gray;
+    border-radius: 50%;
+    color: $navy-primary;
+    font-size: 0.85rem;
+    transition: all 0.25s ease;
 
-        &:hover {
-          background: $accent-teal;
-          color: #fff;
-          transform: translateY(-2px);
-        }
-      }
+    &:hover {
+      background: $accent-teal;
+      color: #fff;
+      transform: translateY(-2px);
+      text-decoration: none;
     }
   }
 
@@ -1602,7 +1598,7 @@ p a, li a, td a, .pub-content a {
   .collab-intro {
     color: #555;
     margin: 0 0 1.5rem 0;
-    font-size: 1.05rem;
+    font-size: 1rem;
   }
 
   .collab-grid {
@@ -1615,7 +1611,7 @@ p a, li a, td a, .pub-content a {
     background: #fff;
     padding: 0.75rem 1rem;
     border-radius: 8px;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 
     .flag {
@@ -1644,7 +1640,7 @@ p a, li a, td a, .pub-content a {
 
     p {
       margin: 0;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       line-height: 1.6;
     }
   }
@@ -1660,7 +1656,7 @@ p a, li a, td a, .pub-content a {
     background: #fff;
     border: 1px solid #e8e8e8;
     border-radius: 10px;
-    padding: 1.5rem;
+    padding: 1.25rem;
     text-align: center;
     transition: all 0.25s ease;
 
@@ -1671,30 +1667,30 @@ p a, li a, td a, .pub-content a {
     }
 
     .opp-icon {
-      width: 50px;
-      height: 50px;
+      width: 45px;
+      height: 45px;
       background: linear-gradient(135deg, $navy-primary 0%, $navy-light 100%);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 0 auto 1rem auto;
+      margin: 0 auto 0.75rem auto;
 
       i {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
         color: #fff;
       }
     }
 
     h4 {
       color: $navy-primary;
-      font-size: 1rem;
-      margin: 0 0 0.5rem 0;
+      font-size: 0.95rem;
+      margin: 0 0 0.4rem 0;
     }
 
     p {
       color: #666;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       line-height: 1.5;
       margin: 0;
     }
@@ -1704,17 +1700,18 @@ p a, li a, td a, .pub-content a {
     background: #fff;
     border: 2px solid $navy-primary;
     border-radius: 12px;
-    padding: 2rem;
+    padding: 1.75rem;
     text-align: center;
 
     h4 {
       color: $navy-primary;
-      font-size: 1.2rem;
+      font-size: 1.15rem;
       margin: 0 0 0.75rem 0;
     }
 
     p {
       margin: 0 0 0.5rem 0;
+      font-size: 0.95rem;
     }
 
     .apply-contact {
@@ -1723,13 +1720,13 @@ p a, li a, td a, .pub-content a {
       a {
         color: $accent-teal;
         font-weight: 600;
-        font-size: 1.1rem;
+        font-size: 1.05rem;
       }
     }
 
     .apply-note {
       color: #888;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
     }
   }
 }
@@ -1744,28 +1741,38 @@ p a, li a, td a, .pub-content a {
     .opportunities-grid {
       grid-template-columns: repeat(2, 1fr);
     }
+
+    .director-card {
+      padding: 1.5rem;
+      gap: 1.5rem;
+    }
+
+    .director-photo img {
+      width: 150px;
+      height: 150px;
+    }
   }
 }
 
 @media (max-width: 768px) {
   .team-page {
-    .director-feature {
+    .director-card {
       flex-direction: column;
+      align-items: center;
       text-align: center;
       padding: 1.5rem;
     }
 
     .director-photo {
-      flex: 0 0 auto;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
     }
 
-    .director-details {
-      .member-interests {
+    .director-info {
+      .director-interests {
         justify-content: center;
       }
 
-      .member-links {
+      .director-links {
         justify-content: center;
       }
     }
@@ -1775,8 +1782,9 @@ p a, li a, td a, .pub-content a {
       gap: 1rem;
     }
 
-    .team-card .card-photo {
-      height: 180px;
+    .card-photo {
+      width: 120px;
+      height: 120px;
     }
 
     .opportunities-grid {
@@ -1791,8 +1799,9 @@ p a, li a, td a, .pub-content a {
       grid-template-columns: 1fr;
     }
 
-    .team-card .card-photo {
-      height: 220px;
+    .card-photo {
+      width: 140px;
+      height: 140px;
     }
 
     .opportunities-grid {
@@ -1804,7 +1813,12 @@ p a, li a, td a, .pub-content a {
     }
 
     .apply-box {
-      padding: 1.5rem;
+      padding: 1.25rem;
+    }
+
+    .director-photo img {
+      width: 140px;
+      height: 140px;
     }
   }
 }
