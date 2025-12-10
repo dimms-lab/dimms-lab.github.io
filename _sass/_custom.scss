@@ -2816,43 +2816,42 @@ p a, li a, td a, .pub-content a {
    PROFESSIONAL FOOTER STYLES - COMPACT & FULL WIDTH
    ========================================================================== */
 
-/* ---------- FORCE FULL WIDTH - SCROLLBAR FIX ---------- */
+/* ---------- OVERRIDE THEME FOOTER COMPLETELY ---------- */
 html {
   overflow-x: hidden !important;
-  margin: 0 !important;
-  padding: 0 !important;
 }
 
 body {
   overflow-x: hidden !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  width: 100% !important;
-  max-width: 100% !important;
 }
 
-/* ---------- FOOTER WRAPPER - ABSOLUTE POSITIONING ---------- */
+/* Override theme's _footer.scss completely */
 .page__footer {
-  margin-top: 3rem !important;
+  position: static !important;
+  float: none !important;
+  bottom: auto !important;
+  height: auto !important;
+  margin: 3rem 0 0 0 !important;
   padding: 0 !important;
   width: 100% !important;
   max-width: none !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  position: relative !important;
-  left: 0 !important;
-  right: 0 !important;
+  background: none !important;
+  border-top: none !important;
+  animation: none !important;
+  -webkit-animation: none !important;
 }
 
+/* Override the inner footer element that has max-width: 1280px */
 .page__footer footer {
-  margin: 0;
-  padding: 0;
-  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
 }
 
 /* ---------- MAIN FOOTER - FULL WIDTH ---------- */
 .footer-main {
-  background: $navy-dark;
+  background: $navy-dark !important;
   width: 100% !important;
   max-width: none !important;
   margin: 0 !important;
@@ -2860,12 +2859,6 @@ body {
   box-sizing: border-box !important;
   color: #fff;
   border-top: 3px solid $accent-teal;
-  position: relative !important;
-  left: 50% !important;
-  right: 50% !important;
-  margin-left: -50vw !important;
-  margin-right: -50vw !important;
-  width: 100vw !important;
 }
 
 .footer-container {
@@ -3013,14 +3006,10 @@ body {
 
 /* ---------- FOOTER BOTTOM BAR ---------- */
 .footer-bottom {
-  background: darken($navy-dark, 4%);
-  position: relative !important;
-  left: 50% !important;
-  right: 50% !important;
-  margin-left: -50vw !important;
-  margin-right: -50vw !important;
-  width: 100vw !important;
+  background: darken($navy-dark, 4%) !important;
+  width: 100% !important;
   max-width: none !important;
+  margin: 0 !important;
   padding: 0.75rem 5% !important;
   box-sizing: border-box !important;
   display: flex;
