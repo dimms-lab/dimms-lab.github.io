@@ -273,51 +273,85 @@ classes: wide
 
 </div>
 
-<script>
-// Simple filter functionality
-document.addEventListener('DOMContentLoaded', function() {
-  const filterBtns = document.querySelectorAll('.news-filter-btn');
-  const newsCards = document.querySelectorAll('.news-card');
+<script type="text/javascript">
+(function() {
+  // News filter functionality
+  function initNewsFilters() {
+    var filterButtons = document.querySelectorAll('.news-filter-btn');
+    var newsCards = document.querySelectorAll('.news-card');
 
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', function() {
-      // Update active button
-      filterBtns.forEach(b => b.classList.remove('active'));
-      this.classList.add('active');
+    if (filterButtons.length === 0 || newsCards.length === 0) {
+      return;
+    }
 
-      // Filter cards
-      const filter = this.dataset.filter;
-      newsCards.forEach(card => {
-        if (filter === 'all' || card.dataset.category === filter) {
-          card.style.display = 'flex';
-        } else {
-          card.style.display = 'none';
+    filterButtons.forEach(function(button) {
+      button.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        // Remove active class from all buttons
+        filterButtons.forEach(function(btn) {
+          btn.classList.remove('active');
+        });
+
+        // Add active class to clicked button
+        this.classList.add('active');
+
+        // Get filter value
+        var filter = this.getAttribute('data-filter');
+
+        // Filter cards
+        newsCards.forEach(function(card) {
+          var category = card.getAttribute('data-category');
+          if (filter === 'all' || category === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  }
+
+  // Smooth scroll for "Read more" links
+  function initReadMoreLinks() {
+    var links = document.querySelectorAll('.news-card-link');
+    links.forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        var href = this.getAttribute('href');
+        if (href && href.charAt(0) === '#') {
+          e.preventDefault();
+          var target = document.querySelector(href);
+          if (target) {
+            target.style.display = 'block';
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
         }
       });
     });
-  });
-
-  // Smooth scroll for "Read more" links
-  document.querySelectorAll('.news-card-link').forEach(link => {
-    link.addEventListener('click', function(e) {
-      const href = this.getAttribute('href');
-      if (href.startsWith('#')) {
-        e.preventDefault();
-        const target = document.querySelector(href);
-        if (target) {
-          target.style.display = 'block';
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      }
-    });
-  });
+  }
 
   // Back to news functionality
-  document.querySelectorAll('.news-back-link').forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+  function initBackLinks() {
+    var backLinks = document.querySelectorAll('.news-back-link');
+    backLinks.forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
     });
-  });
-});
+  }
+
+  // Initialize when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      initNewsFilters();
+      initReadMoreLinks();
+      initBackLinks();
+    });
+  } else {
+    initNewsFilters();
+    initReadMoreLinks();
+    initBackLinks();
+  }
+})();
 </script>
