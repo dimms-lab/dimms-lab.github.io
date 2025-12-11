@@ -3993,7 +3993,7 @@ body {
 }
 
 /* ==========================================================================
-   TEAM PAGE - ANIMATED NETWORK BACKGROUND
+   TEAM PAGE - COMPLETE STYLES
    ========================================================================== */
 
 .team-page-wrapper {
@@ -4018,10 +4018,19 @@ body {
   height: 100%;
 }
 
-/* Team section animated entries */
+/* Team section titles */
 .team-section-title {
   position: relative;
   overflow: hidden;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $navy-dark;
+  margin: 2.5rem 0 1.5rem 0;
+  padding-bottom: 0.75rem;
+}
+
+.team-section-title:first-of-type {
+  margin-top: 0;
 }
 
 .team-section-title::after {
@@ -4035,14 +4044,148 @@ body {
   animation: pulse 2s ease-in-out infinite;
 }
 
-/* Team card hover glow */
+/* ---------- TEAM GRID - FULL WIDTH LAYOUT ---------- */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* ---------- TEAM CARD STYLING ---------- */
 .team-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
 }
 
 .team-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15), 0 0 0 2px rgba($accent-teal, 0.1);
+}
+
+/* Team photo */
+.team-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1rem auto;
+  display: block;
+  border: 3px solid rgba($accent-teal, 0.2);
+  transition: border-color 0.3s ease;
+}
+
+.team-card:hover .team-photo {
+  border-color: $accent-teal;
+}
+
+/* Photo placeholder for missing images */
+.team-photo-placeholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba($accent-teal, 0.1) 0%, rgba($navy-dark, 0.05) 100%);
+  margin: 0 auto 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid rgba($accent-teal, 0.2);
+}
+
+.team-photo-placeholder i {
+  font-size: 2.5rem;
+  color: rgba($navy-dark, 0.3);
+}
+
+/* Team member name */
+.team-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: $navy-dark;
+  margin: 0 0 0.25rem 0;
+  line-height: 1.3;
+}
+
+/* Team role */
+.team-role {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0 0 1rem 0;
+  line-height: 1.4;
+}
+
+/* Read more button */
+.team-readmore {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  background: transparent;
+  color: $accent-teal;
+  border: 2px solid $accent-teal;
+  border-radius: 25px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.team-readmore:hover {
+  background: $accent-teal;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ---------- RESPONSIVE TEAM GRID ---------- */
+@media (max-width: 1200px) {
+  .team-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .team-card {
+    padding: 1.25rem;
+    max-width: none;
+  }
+
+  .team-photo,
+  .team-photo-placeholder {
+    width: 100px;
+    height: 100px;
+  }
+
+  .team-name {
+    font-size: 1rem;
+  }
+
+  .team-section-title {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-card {
+    max-width: 280px;
+  }
 }
 
 /* Collaboration nodes animation */
