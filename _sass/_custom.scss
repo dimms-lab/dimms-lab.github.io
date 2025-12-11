@@ -2825,6 +2825,11 @@ body {
   overflow-x: hidden !important;
 }
 
+/* Fix: Remove body padding-bottom that creates space after footer */
+body {
+  padding-bottom: 0 !important;
+}
+
 /* Override theme's _footer.scss completely */
 .page__footer {
   position: static !important;
@@ -3605,23 +3610,31 @@ body {
    ========================================================================== */
 
 .hero-graphic {
-  flex: 0 0 400px !important;
-  width: 400px !important;
-  min-width: 350px !important;
-  max-width: 450px !important;
+  flex: 0 0 480px !important;
+  width: 480px !important;
+  min-width: 400px !important;
+  max-width: 520px !important;
 
   svg {
     width: 100% !important;
     height: auto !important;
-    min-height: 300px;
+    min-height: 360px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero-graphic {
+    flex: 0 0 420px !important;
+    width: 420px !important;
+    min-width: 350px !important;
   }
 }
 
 @media (max-width: 1024px) {
   .hero-graphic {
-    flex: 0 0 350px !important;
-    width: 350px !important;
-    min-width: 300px !important;
+    flex: 0 0 380px !important;
+    width: 380px !important;
+    min-width: 320px !important;
   }
 }
 
@@ -3629,7 +3642,7 @@ body {
   .hero-graphic {
     flex: 0 0 100% !important;
     width: 100% !important;
-    max-width: 350px !important;
+    max-width: 380px !important;
     margin: 0 auto;
   }
 }
