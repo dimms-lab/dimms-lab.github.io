@@ -3119,3 +3119,333 @@ body {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
+
+/* ==========================================================================
+   CONTACT PAGE STYLES
+   ========================================================================== */
+
+.contact-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* ---------- HERO SECTION ---------- */
+.contact-hero {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, $navy-dark 0%, lighten($navy-dark, 8%) 100%);
+  border-radius: 12px;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+
+.contact-hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem 0;
+  color: #fff;
+}
+
+.contact-hero-subtitle {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+}
+
+/* ---------- CONTACT CARDS SECTION ---------- */
+.contact-cards-section {
+  margin-bottom: 3rem;
+}
+
+.contact-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.contact-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.contact-card-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, $accent-teal 0%, darken($accent-teal, 10%) 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.contact-card-icon i {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.contact-card-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: $navy-dark;
+  margin: 0 0 1rem 0;
+}
+
+.contact-card-content {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.contact-card-content p {
+  margin: 0 0 0.5rem 0;
+}
+
+.contact-org {
+  font-weight: 600;
+  color: $navy-dark;
+  font-size: 1rem;
+}
+
+.contact-name {
+  font-weight: 600;
+  color: $navy-dark;
+  font-size: 1.05rem;
+  margin-bottom: 1rem !important;
+}
+
+.contact-highlight {
+  margin-top: 1rem !important;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+  color: $navy-dark;
+  font-weight: 500;
+}
+
+.contact-highlight i {
+  color: $accent-teal;
+  margin-right: 0.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem !important;
+}
+
+.contact-item i {
+  color: $accent-teal;
+  width: 18px;
+  text-align: center;
+}
+
+.contact-item a {
+  color: $accent-teal;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.contact-item a:hover {
+  color: darken($accent-teal, 15%);
+  text-decoration: underline;
+}
+
+/* ---------- GET IN TOUCH CTA SECTION ---------- */
+.contact-cta-section {
+  background: linear-gradient(135deg, rgba($accent-teal, 0.08) 0%, rgba($accent-teal, 0.03) 100%);
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  border: 1px solid rgba($accent-teal, 0.15);
+}
+
+.contact-cta-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: $navy-dark;
+  margin: 0 0 1rem 0;
+}
+
+.contact-cta-text {
+  font-size: 1.05rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 1.5rem auto;
+  line-height: 1.7;
+}
+
+.contact-cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, $accent-teal 0%, darken($accent-teal, 10%) 100%);
+  color: #fff;
+  padding: 0.9rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba($accent-teal, 0.3);
+}
+
+.contact-cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba($accent-teal, 0.4);
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-cta-button i {
+  font-size: 1.1rem;
+}
+
+/* ---------- MAP SECTION ---------- */
+.contact-map-section {
+  margin-bottom: 2rem;
+}
+
+.contact-map-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $navy-dark;
+  text-align: center;
+  margin: 0 0 1.5rem 0;
+}
+
+.contact-map-container {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.contact-map-container iframe {
+  display: block;
+  width: 100%;
+  height: 400px;
+}
+
+.contact-map-directions {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.contact-map-directions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: $accent-teal;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-map-directions a:hover {
+  color: darken($accent-teal, 15%);
+}
+
+.contact-map-directions i {
+  font-size: 1.1rem;
+}
+
+/* ---------- RESPONSIVE STYLES ---------- */
+@media (max-width: 768px) {
+  .contact-hero {
+    padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-hero-title {
+    font-size: 2rem;
+  }
+
+  .contact-hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .contact-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .contact-card {
+    padding: 1.5rem;
+  }
+
+  .contact-cta-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .contact-cta-title {
+    font-size: 1.5rem;
+  }
+
+  .contact-cta-text {
+    font-size: 1rem;
+  }
+
+  .contact-map-container iframe {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-page {
+    padding: 0 0.75rem;
+  }
+
+  .contact-hero {
+    padding: 1.5rem 1rem;
+    border-radius: 8px;
+  }
+
+  .contact-hero-title {
+    font-size: 1.75rem;
+  }
+
+  .contact-card {
+    padding: 1.25rem;
+    border-radius: 8px;
+  }
+
+  .contact-card-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .contact-card-icon i {
+    font-size: 1.25rem;
+  }
+
+  .contact-card-title {
+    font-size: 1.2rem;
+  }
+
+  .contact-cta-section {
+    padding: 1.5rem 1rem;
+    border-radius: 8px;
+  }
+
+  .contact-cta-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .contact-map-container iframe {
+    height: 250px;
+  }
+}
