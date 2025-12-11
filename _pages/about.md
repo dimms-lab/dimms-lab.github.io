@@ -110,6 +110,18 @@ redirect_from:
 
 <!-- ======================= WHAT WE DO SECTION ======================= -->
 <section class="what-we-do">
+  <!-- Animated floating particles -->
+  <div class="animated-particles">
+    <div class="particle particle--large"></div>
+    <div class="particle"></div>
+    <div class="particle particle--small"></div>
+    <div class="particle"></div>
+    <div class="particle particle--large"></div>
+    <div class="particle particle--small"></div>
+    <div class="particle"></div>
+    <div class="particle particle--small"></div>
+  </div>
+
   <h2>What We Do</h2>
   <p class="section-intro">Our interdisciplinary research integrates mathematical modeling, machine learning, and statistical analysis to tackle complex challenges in disease dynamics and public health.</p>
 

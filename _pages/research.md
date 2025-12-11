@@ -9,6 +9,45 @@ classes: wide
 
 <!-- Hero Section -->
 <div class="research-hero">
+  <!-- Animated disease network visualization -->
+  <div class="research-hero-animation">
+    <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+      <!-- Network edges (connections) -->
+      <line class="network-edge" x1="80" y1="60" x2="200" y2="100" />
+      <line class="network-edge" x1="200" y1="100" x2="320" y2="80" style="animation-delay: 0.5s;" />
+      <line class="network-edge" x1="200" y1="100" x2="150" y2="180" style="animation-delay: 1s;" />
+      <line class="network-edge" x1="150" y1="180" x2="250" y2="200" style="animation-delay: 1.5s;" />
+      <line class="network-edge" x1="320" y1="80" x2="300" y2="160" style="animation-delay: 0.8s;" />
+      <line class="network-edge" x1="250" y1="200" x2="300" y2="160" style="animation-delay: 1.2s;" />
+      <line class="network-edge" x1="80" y1="60" x2="100" y2="150" style="animation-delay: 0.3s;" />
+      <line class="network-edge" x1="100" y1="150" x2="150" y2="180" style="animation-delay: 0.7s;" />
+      <line class="network-edge" x1="200" y1="100" x2="250" y2="200" style="animation-delay: 1.3s;" />
+      <line class="network-edge" x1="320" y1="80" x2="350" y2="150" style="animation-delay: 0.9s;" />
+      <line class="network-edge" x1="300" y1="160" x2="350" y2="150" style="animation-delay: 1.1s;" />
+      <line class="network-edge" x1="250" y1="200" x2="200" y2="260" style="animation-delay: 1.4s;" />
+      <line class="network-edge" x1="150" y1="180" x2="100" y2="240" style="animation-delay: 1.6s;" />
+      <!-- Network nodes (representing disease spread points) -->
+      <circle class="network-node" cx="80" cy="60" r="8" style="animation-delay: 0s;" />
+      <circle class="network-node" cx="200" cy="100" r="12" style="animation-delay: 0.2s;" />
+      <circle class="network-node" cx="320" cy="80" r="7" style="animation-delay: 0.4s;" />
+      <circle class="network-node" cx="150" cy="180" r="9" style="animation-delay: 0.6s;" />
+      <circle class="network-node" cx="250" cy="200" r="10" style="animation-delay: 0.8s;" />
+      <circle class="network-node" cx="300" cy="160" r="6" style="animation-delay: 1s;" />
+      <circle class="network-node" cx="100" cy="150" r="5" style="animation-delay: 1.2s;" />
+      <circle class="network-node" cx="350" cy="150" r="7" style="animation-delay: 1.4s;" />
+      <circle class="network-node" cx="200" cy="260" r="8" style="animation-delay: 1.6s;" />
+      <circle class="network-node" cx="100" cy="240" r="6" style="animation-delay: 1.8s;" />
+    </svg>
+  </div>
+
+  <!-- Floating mathematical equations -->
+  <div class="floating-equations">
+    <span class="floating-eq">dS/dt = -βSI</span>
+    <span class="floating-eq">R₀ = β/γ</span>
+    <span class="floating-eq">∂u/∂t = D∇²u</span>
+    <span class="floating-eq">λ = eig(J)</span>
+  </div>
+
   <h1 class="research-hero-title">Our Research</h1>
   <p class="research-hero-intro">
     The DIMMS Lab employs a multidisciplinary approach to understand disease dynamics through advanced mathematical modeling, statistical analysis, and machine learning. Our work bridges molecular-level interactions to population-scale epidemiology, informing public health strategies and clinical decisions.
