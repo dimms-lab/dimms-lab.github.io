@@ -8,13 +8,9 @@ repository: "dimms-lab/dimms-lab.github.io"
 # Site Author
 author:
   name             : "DIMMS Lab"
-  avatar           : "https://dimmslab.org/images/dimms-logo.svg"  # Original working logo
+  avatar           : "https://dimmslab.org/images/dimms-logo.svg"
   bio              : "Disease-Informed Modelling, Methods, and Systems Laboratory at York University"
-  location         : "Toronto, ON, Canada"
-  employer         : "York University"
-  pubmed           : 
   googlescholar    : "https://scholar.google.ca/citations?user=QjS_7EgAAAAJ&hl=en&oi=sra"
-  email            : "wassefaw@yorku.ca"
   uri              : "https://www.yorku.ca/professor/waw/disease-informed-modelling-methods-and-systems-dimms-lab/"
 
 # Build settings

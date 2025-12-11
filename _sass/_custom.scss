@@ -3107,6 +3107,69 @@ body {
 }
 
 /* ==========================================================================
+   WIDER CONTENT LAYOUT
+   ========================================================================== */
+
+/* Increase main container max-width */
+#main {
+  max-width: 1400px !important;
+  width: 100% !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+/* Sidebar: fixed 250px width */
+.sidebar {
+  @media screen and (min-width: 1024px) {
+    width: 250px !important;
+    min-width: 250px !important;
+    flex-shrink: 0 !important;
+  }
+}
+
+/* Main content: fills remaining space */
+.page {
+  @media screen and (min-width: 1024px) {
+    width: calc(100% - 280px) !important;
+    max-width: none !important;
+    float: right !important;
+    padding-left: 2rem !important;
+  }
+}
+
+/* Override the grid system spans */
+.sidebar {
+  @media screen and (min-width: 925px) {
+    float: left !important;
+    width: 250px !important;
+  }
+}
+
+/* Author profile in sidebar */
+.author__avatar img {
+  max-width: 200px !important;
+}
+
+/* Ensure content doesn't have arbitrary max-width */
+.page__content {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+.page__inner-wrap {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+/* Wide class pages get full width */
+.wide .page {
+  @media screen and (min-width: 1024px) {
+    max-width: none !important;
+    width: calc(100% - 280px) !important;
+  }
+}
+
+/* ==========================================================================
    K) LAST-RESORT PIN (keep at bottom so it wins)
    ========================================================================== */
 
