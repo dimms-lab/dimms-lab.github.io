@@ -2816,18 +2816,44 @@ p a, li a, td a, .pub-content a {
    PROFESSIONAL FOOTER STYLES - COMPACT & FULL WIDTH
    ========================================================================== */
 
-/* ---------- OVERRIDE THEME FOOTER COMPLETELY ---------- */
+/* ==========================================================================
+   STICKY FOOTER FIX - REMOVE ALL SPACE BELOW FOOTER
+   ========================================================================== */
+
 html {
+  height: 100% !important;
   overflow-x: hidden !important;
 }
 
 body {
-  overflow-x: hidden !important;
-}
-
-/* Fix: Remove body padding-bottom that creates space after footer */
-body {
+  min-height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  margin: 0 !important;
+  padding: 0 !important;
   padding-bottom: 0 !important;
+  overflow-x: hidden !important;
+}
+
+/* Main content area grows to fill space */
+.initial-content,
+#main {
+  flex: 1 0 auto !important;
+}
+
+/* Footer sticks to bottom */
+.page__footer {
+  flex-shrink: 0 !important;
+  margin-top: auto !important;
+  margin-bottom: 0 !important;
+}
+
+/* Remove any pseudo-elements that might add space */
+.page__footer::after,
+.footer-bottom::after,
+.footer-main::after {
+  display: none !important;
+  content: none !important;
 }
 
 /* Override theme's _footer.scss completely */
@@ -3610,31 +3636,31 @@ body {
    ========================================================================== */
 
 .hero-graphic {
-  flex: 0 0 480px !important;
-  width: 480px !important;
-  min-width: 400px !important;
-  max-width: 520px !important;
+  flex: 0 0 520px !important;
+  width: 520px !important;
+  min-width: 450px !important;
+  max-width: 90vw !important;
 
   svg {
     width: 100% !important;
     height: auto !important;
-    min-height: 360px;
+    min-height: 400px;
   }
 }
 
 @media (max-width: 1200px) {
   .hero-graphic {
-    flex: 0 0 420px !important;
-    width: 420px !important;
-    min-width: 350px !important;
+    flex: 0 0 450px !important;
+    width: 450px !important;
+    min-width: 380px !important;
   }
 }
 
 @media (max-width: 1024px) {
   .hero-graphic {
-    flex: 0 0 380px !important;
-    width: 380px !important;
-    min-width: 320px !important;
+    flex: 0 0 400px !important;
+    width: 400px !important;
+    min-width: 340px !important;
   }
 }
 
@@ -3642,8 +3668,22 @@ body {
   .hero-graphic {
     flex: 0 0 100% !important;
     width: 100% !important;
-    max-width: 380px !important;
+    max-width: 320px !important;
     margin: 0 auto;
+  }
+
+  .hero-graphic svg {
+    min-height: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-graphic {
+    max-width: 280px !important;
+  }
+
+  .hero-graphic svg {
+    min-height: 210px;
   }
 }
 
