@@ -422,30 +422,48 @@ section > h2 {
 
 .news-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .news-card {
+  display: flex;
+  flex-direction: column;
   background: #fff;
   border-radius: 10px;
-  padding: 1.5rem;
+  padding: 25px;
+  gap: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   transition: all 0.25s ease;
+  min-height: 220px;
+
   &:hover {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     transform: translateY(-3px);
   }
+
   h3 {
     color: $navy-primary;
-    font-size: 1.1rem;
-    margin: 0.5rem 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 8px 0 4px 0;
+    line-height: 1.3;
   }
+
   p {
     color: #666;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     line-height: 1.6;
-    margin: 0 0 1rem 0;
+    margin: 0;
+    flex-grow: 1;
   }
 }
 
@@ -454,17 +472,26 @@ section > h2 {
 }
 
 .news-date {
-  font-size: 0.8rem;
-  color: $accent-teal;
-  font-weight: 600;
+  display: inline-block;
+  background: $accent-teal;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  width: fit-content;
 }
 
 .news-link {
   color: $accent-teal;
   font-weight: 600;
   font-size: 0.9rem;
+  text-decoration: none;
+  margin-top: auto;
+  align-self: flex-start;
+
   &:hover {
     color: $navy-primary;
   }
@@ -1409,15 +1436,22 @@ p a, li a, td a, .pub-content a {
   }
 
   .news-card {
-    padding: 1rem;
+    padding: 20px;
+    min-height: auto;
+    gap: 10px;
 
     h3 {
-      font-size: 1rem;
+      font-size: 1.05rem;
     }
 
     p {
-      font-size: 0.9rem;
+      font-size: 0.875rem;
     }
+  }
+
+  .news-date {
+    padding: 4px 10px;
+    font-size: 0.7rem;
   }
 
   .news-link {
